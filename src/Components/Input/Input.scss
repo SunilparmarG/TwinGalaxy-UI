@@ -1,0 +1,18 @@
+@import '../../assets/scss/modules/variables.scss';
+.inputFeild{
+    .form-control, .form-select{
+        //border: 0;        
+        border-radius: 0;
+        // font-size: $body;
+        padding: .675rem .75rem;
+        //color:$inputBorder;
+        outline: 0;
+        box-shadow: none;
+        ::placeholder{
+           // color:$inputBorder;
+        }
+    }
+    select{
+       background-image: url("../../assets/icon/arrow-down.svg");
+    }
+}

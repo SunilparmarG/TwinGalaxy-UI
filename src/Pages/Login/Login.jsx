@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Input from "../../Component/Input/Input";
+// import Input from "../../Components/Input/Input";
 import '../Login/Login.scss';
 
 const Login = () => {
@@ -9,7 +9,7 @@ const Login = () => {
        <Container>
       <Row>
         <Col>
-        <Input type="text" id="loginID" labelValue="abc" placeholder="john.doe@gmail.com" className="my-5" />
+        {/* <Input type="text" id="loginID" labelValue="abc" placeholder="john.doe@gmail.com" className="my-5" /> */}
         </Col>
       </Row>
     </Container>
