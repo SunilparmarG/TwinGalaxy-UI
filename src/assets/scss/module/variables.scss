@@ -1,0 +1,76 @@
+// background: linear-gradient(90deg, #F99851 0%, #FF4431 100%); // orange
+// background: linear-gradient(92.26deg, #025999 3%, #0093FF 96.92%); // blue
+// background: linear-gradient(228.96deg, #09A6FF -18.08%, #53E0FF 122.67%); // blue light
+// background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%); // red
+// background: linear-gradient(90deg, #FDCA17 0%, #FFA928 100%); //yellow
+// box-shadow: 0px 27.6253px 124.314px rgba(0, 0, 0, 0.25);
+
+// colors variables
+$col1:#222222;
+$col2:#888888;
+$col3:#1D242B;
+$col4:#D5251E;
+$col5:#555555;
+
+// color classes
+$colours: (
+  "col1" $col1,
+  "col2" $col2,
+  "col3" $col3,
+  "col4" $col4,
+  "col5" $col5
+);
+
+// Color Function
+@each $i in $colours {
+    //bg-col1
+      .bg-#{nth($i,1)} {
+          background-color: nth($i, 2) !important;
+      }
+       //text-col1
+      .text-#{nth($i, 1)}{
+          color:nth($i, 2) !important;
+      }
+  }
+
+// fonts weight
+$fw100:100;
+$fw400:400;
+$fw500:500;
+$fw600:600;
+$fw700:700;
+$fwbold:bold;
+
+// font weight classes
+.fw100{
+  font-weight: $fw100;
+}
+.fw400{
+  font-weight: $fw400;
+}
+.fw500{
+  font-weight: $fw500;
+}
+.fw600{
+  font-weight: $fw600;
+}
+.fw700{
+  font-weight: $fw700;
+}
+.fwbold{
+  font-weight: $fwbold;
+}
+
+//Font-Size;
+$unit: (
+  rem: "rem",
+);
+
+// font size function
+$baseFontSize:16;
+@for $size from 10 to 90 {
+ @each $unit, $ut in $unit {
+    //.fs-12
+      .fs-#{$size}{font-size:#{($size/$baseFontSize)}#{$ut}}
+    }       
+}
