@@ -23,7 +23,7 @@ function App() {
       <Image 
         src={ImageTop}
         className="img-fluid pb-3"
-        name="Riya"
+        name="images"
       />
       <Heading 
         color='text-col1'
@@ -34,7 +34,7 @@ function App() {
       />
       <Buttons
         title="Button"
-        // variant="primary"
+        variant="primary"
         className="primary"
     />
     
