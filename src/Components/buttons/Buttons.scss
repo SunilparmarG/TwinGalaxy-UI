@@ -1,5 +1,5 @@
-@import "../../assets/scss/modules/variables.scss";
-@import "../../assets/scss/modules/mixin.scss";
+@import "../../assets/scss/module/variables.scss";
+// @import "../../assets/scss/modules/mixin.scss";
 .btn{          
     outline: none;
     border-radius:0px !important;    
@@ -13,21 +13,24 @@
         box-shadow: none !important;
     }
   }
-  .primary{
-    background-color:$primaryColor !important;
-    border-color:$primaryColor;   
-    color:$white !important;
+  .primary, .btn-primary{
+    // background-color:$primaryColor !important;
+    background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%) !important;
+    border: none !important;   
+    color:$col6 !important;
     background-image:none;
     &:hover,
     &:focus,
     &:active,
     &:active:hover {
-      background-color: $primaryColor !important;
-      border-color:$primaryColor !important;        
+      background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%) !important;
+      // background-color: $primaryColor !important;
+      // border-color:$primaryColor !important;        
     }
     &:active {
       &:focus {
-        background-color:$primaryColor !important;        
+        background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%) !important;
+        // background-color:$primaryColor !important;        
         box-shadow: none;
       }
     }
@@ -73,25 +76,28 @@
 
   // }
 
-  .btn-primary{
-    @include button-variant(black, $successColor, $successColor)
-  }
+  // .btn-primary{
+  //   @include button-variant(black, $successColor, $successColor)
+  // }
 
   .success{
-    background-color:$successColor !important;
-    border-color:$successColor;   
-    color:$primaryColor !important;
+    // background-color:$successColor !important;
+    background-color:green !important;
+    // border-color:$successColor;   
+    // color:$primaryColor !important;
     background-image:none;
     &:hover,
     &:focus,
     &:active,
     &:active:hover {
-      background-color: $successColor !important;
-      border-color: $successColor;      
+      background-color: green !important;
+      // background-color: $successColor !important;
+      // border-color: $successColor;      
     }
     &:active {
       &:focus {
-        background-color:$successColor !important;      
+        background-color:green !important;      
+        // background-color:$successColor !important;      
         
       }
     }
@@ -195,11 +201,11 @@
 
 
 // Font Size
-.xSmall{font-size:$xSmall;}
-.Small{font-size:$body !important;}
-.regular{font-size:$regular;}
-.medium{font-size:$medium;}
-.large{font-size:$large;}
+// .xSmall{font-size:$xSmall;}
+// .Small{font-size:$body !important;}
+// .regular{font-size:$regular;}
+// .medium{font-size:$medium;}
+// .large{font-size:$large;}
 
 // Font Color 
 // .primaryColor{color:$primaryColor;}
@@ -209,3 +215,18 @@
 // .white{color:$white !important;}
 // .black{color:$black;}
 // .gray{color:$gray;}
+.xyz {
+  border-radius: 6px !important;
+  background-color: red !important;
+  color: #fff !important;
+}
+.abc {
+  border-radius: 6px !important;
+  background-color: black !important;
+  color: #fff !important;
+}
+.red {
+  border-radius: 6px !important;
+  background-color: orange !important;
+  color: #fff !important;
+}
