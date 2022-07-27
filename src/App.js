@@ -5,6 +5,9 @@ import Login from './Pages/Login/Login';
 import "../src/assets/scss/style.scss";
 import Text from './Components/text/Text';
 import Heading from './Components/heading/Heading';
+import Slider from './Components/slider/slider'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
         text='this is hedings'
         size='fs-15'
       />
+      <Slider />
     </div>
   );
 }
