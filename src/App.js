@@ -10,9 +10,11 @@ import Buttons from './Components/buttons/Button';
 import Image from './Components/image/Image';
 import ImageTop from './assets/images/photo.jpg';
 
+import Slider from './Components/slider/slider'
+
 function App() {
   return (
-    <div className="App p-3">
+    <div className="App p-3 container">
       <NavScrollExample />
       <Text 
         text="Text Component"
@@ -37,8 +39,9 @@ function App() {
         variant="primary"
         className="primary"
     />
-    
+     <Slider />
     </div>
+   
   );
 }
 
