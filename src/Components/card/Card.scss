@@ -1,0 +1,60 @@
+@import "../../assets/scss/module/variables.scss";
+.matchesCard{
+    margin-bottom: 20px;
+    position: relative;
+    .card{
+       
+        border-radius: 12px;
+        min-height: 370px;
+        &.bgImage{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/photo.jpg) 100%;
+            padding-top: 130px;
+            border: 0;
+        }
+        .card-body{
+            background: linear-gradient(172deg, transparent 18%, #9817FD 0%, #D42AFF 92%);
+            border-radius: 12px;
+            padding: 20px 15px; 
+        
+        .cardImage{
+            border: 1px solid #FFFAFA;
+            box-shadow: 0px 10px 60px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            width: 82px;
+            height: 82px;
+        }
+        .card-text{
+            color:$col6;
+            font-size: 20px;            
+            font-weight: 500;
+            
+        }
+        .cardList{
+            list-style-type: none;
+            padding-left: 15px;
+            li{
+                display: inline-block;
+                padding: 0 20px;
+                border-right:  1px solid $col6;
+            }
+            li:last-child{
+                border-right: 0;
+            }
+            li:first-child{
+                padding-left: 0;
+            }
+        }
+      }
+    }  
+    
+    .ellipsis{
+        overflow: hidden; 
+        text-overflow: ellipsis;  		
+          max-width:105px;
+        display: inline-block !important;
+        white-space: nowrap;
+    }
+}
+
+
+

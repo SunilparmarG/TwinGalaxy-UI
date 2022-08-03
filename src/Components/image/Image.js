@@ -14,7 +14,7 @@ import './Image.scss';
 const Image = ({ src, name, className = '', alt, ...rest }) => {
 
   return (
-    <div className='cardImage'>
+    
       <img
         src={src}
         name={name}
@@ -22,7 +22,7 @@ const Image = ({ src, name, className = '', alt, ...rest }) => {
         alt={alt || name || "Twin_Galaxy_Image"}
         {...rest}
       />
-    </div>
+    
   );
 };
 

@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import NavScrollExample from './Layout/Header/Header';
-import Login from './Pages/Login/Login';
+//import Login from './Pages/Login/Login';
 import "../src/assets/scss/style.scss";
 import Text from './Components/text/Text';
 import Heading from './Components/heading/Heading';
@@ -9,6 +9,9 @@ import Heading from './Components/heading/Heading';
 import Buttons from './Components/buttons/Button';
 import Image from './Components/image/Image';
 import ImageTop from './assets/images/photo.jpg';
+import Cardbox from './Components/card/Card';
+import Switch from './Components/switch/Switch';
+import Checkbox from './Components/checkbox/Checkbox';
 
 function App() {
   return (
@@ -20,11 +23,20 @@ function App() {
         color="text-col4"
         className="fs-14 py-3"
       />
-      <Image 
-        src={ImageTop}
-        className="img-fluid pb-3"
-        name="images"
-      />
+      <div className='cardImage'>
+        <Image 
+          src={ImageTop}
+          className="img-fluid"
+          name="images"
+        />
+      </div>
+      <div className='row'>
+        <div className='col-md-4'>
+          <Cardbox></Cardbox>
+        </div>
+      </div>
+      <Switch></Switch>
+      <Checkbox></Checkbox>
       <Heading 
         color='text-col1'
         fontWeight='fw500'
@@ -36,7 +48,12 @@ function App() {
         title="Button"
         variant="primary"
         className="primary"
-    />
+      />
+      <Buttons
+        title="Button"
+        variant="borderBtn"
+        className="borderBtn"
+      />
     
     </div>
   );
