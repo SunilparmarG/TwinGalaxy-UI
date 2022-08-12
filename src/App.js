@@ -14,19 +14,22 @@ import Switch from './Components/switch/Switch';
 import Checkbox from './Components/checkbox/Checkbox';
 
 import Slider from './Components/slider/slider'
+import Login from './Pages/Login/Login';
 
 function App() {
   return (
     <div className="App p-3 container">
       <NavScrollExample />
-      <Text 
+
+      <Login />
+      <Text
         text="Text Component"
         fontWeight="fw500"
         color="text-col4"
         className="fs-14 py-3"
       />
       <div className='cardImage'>
-        <Image 
+        <Image
           src={ImageTop}
           className="img-fluid"
           name="images"
@@ -39,7 +42,7 @@ function App() {
       </div>
       <Switch></Switch>
       <Checkbox></Checkbox>
-      <Heading 
+      <Heading
         color='text-col1'
         fontWeight='fw500'
         className='fs-15 pb-3'
@@ -50,17 +53,17 @@ function App() {
         title="Button"
         variant="primary"
         className="primary"
-    />
-     
-     
+      />
+
+
       <Buttons
         title="Button"
         variant="borderBtn"
         className="borderBtn"
       />
-    
+
     </div>
-   
+
   );
 }
 

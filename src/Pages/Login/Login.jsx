@@ -6,14 +6,14 @@ import '../Login/Login.scss';
 const Login = () => {
   return (
     <div className='loginWrapper d-flex justify-content-center align-items-top pt-5'>
-       <Container>
-      <Row>
-        <Col>
-        {/* <Input type="text" id="loginID" labelValue="abc" placeholder="john.doe@gmail.com" className="my-5" /> */}
-        </Col>
-      </Row>
-    </Container>
-</div>
+      <Container>
+        <Row>
+          <Col>
+            {/* <Input type="text" id="loginID" labelValue="abc" placeholder="john.doe@gmail.com" className="my-5" /> */}
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
 }
 

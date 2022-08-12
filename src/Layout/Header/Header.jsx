@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../../assets/images/svg/logo.svg";
+import Switch from '../../Components/switch/Switch';
 import './Header.scss';
 
 function NavScrollExample() {
@@ -10,7 +11,7 @@ function NavScrollExample() {
     <Navbar bg="white" expand="lg">
       <Container>
         <Navbar.Brand href="#">
-          <img src={Logo} />
+          <img src={Logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -29,12 +30,15 @@ function NavScrollExample() {
               <NavDropdown.Item href="#action6">TG Record 3</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Community" id="navbarCommunity">
-                <NavDropdown.Item href="#action7">Community 1</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action8">Community 2</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action9">Community 3</NavDropdown.Item>
+              <NavDropdown.Item href="#action7">Community 1</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action8">Community 2</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action9">Community 3</NavDropdown.Item>
             </NavDropdown>
+            <li>
+              <Switch />
+            </li>
           </Nav>
           {/* <Form className="d-flex">
             <Form.Control
