@@ -12,7 +12,11 @@ $col3:#1D242B;
 $col4:#D5251E;
 $col5:#555555;
 $col6:#ffffff;
-
+$col7:#D9D9D9;
+$col8: #FFD542;
+$col9: #80E045;
+$col10: #025999;
+$col11: #0093FF;
 
 // $primaryColor:background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%);
 // color classes
@@ -22,21 +26,34 @@ $colours: (
   "col3" $col3,
   "col4" $col4,
   "col5" $col5,
-  "col6" $col6
+  "col6" $col6,
+  "col7" $col7,
+  "col9" $col9,
+  "col10" $col10,
+  "col11" $col11,
 );
 
 // Color Function
 @each $i in $colours {
     //bg-col1
       .bg-#{nth($i,1)} {
-          background-color: nth($i, 2) !important;
+          background-color: nth($i, 2);
       }
        //text-col1
       .text-#{nth($i, 1)}{
-          color:nth($i, 2) !important;
+          color:nth($i, 2);
       }
   }
 
+//font-size
+$xSmall: 12px;
+$small: 14px;
+$regular: 16px;
+$medium: 18px;
+$large: 20px;
+$xlarge: 24px;
+$xxlarge: 30px;
+$xxxlarge: 48px;
 // fonts weight
 $fw100:100;
 $fw400:400;

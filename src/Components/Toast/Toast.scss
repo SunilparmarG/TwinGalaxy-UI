@@ -1,0 +1,16 @@
+@import '../../assets/scss/module/variables.scss';
+
+.toast2{
+    top: 60px;
+    width: 100%;
+    &.success{
+        background-color: $col9;
+    }
+    &.default{
+        background-color: $col3;
+    }
+    padding: 20px 40px;
+    @media (max-width:991px){
+        padding: 20px 25px;
+    }
+}

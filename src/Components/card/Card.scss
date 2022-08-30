@@ -55,6 +55,67 @@
         white-space: nowrap;
     }
 }
+.cardOne{
+    background: $col6;
+    border: 1px solid $col8;
+    position: relative;
+    /* White shadow */
+
+    box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    .card-body{
+        border-radius: 12px;
+    }
+    .activityList{
+        list-style-type: none;
+        padding-left: 0;
+        li{
+            display: inline-block;
+            padding: 2px 8px;
+            border-right:  0.419782px solid $col5;
+            min-width: 160px;
+            line-height: 1;
+            &:last-child{
+                border-right: 0;
+            }
+            &:first-child{
+                padding-left: 0;
+            }
+            @media (max-width:767px){
+                padding-left: 0;
+                border-right: 0;
+            }
+        }
+    }
+    .cardImageWrap{
+        width: 300px;
+        height: 127px;
+    }
+    .cardOneImage{
+        border-radius: 12px;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    &.warningBorder:before,&.successBorder:before{
+        content: '';
+        width: 2px;
+        height: 95%;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        
+        z-index: 2;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    &.warning::before{
+        background-color: $col8;
+    }
+    &.successBorder:before{
+        background-color: $col9;
+    }
+}
 
 
 

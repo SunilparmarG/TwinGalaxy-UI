@@ -3,23 +3,14 @@
 import NavScrollExample from './Layout/Header/Header';
 //import Login from './Pages/Login/Login';
 import "../src/assets/scss/style.scss";
-import Text from './Components/text/Text';
-import Heading from './Components/heading/Heading';
-// import ButtonComponent from './Components/buttons/Button';
-import Buttons from './Components/buttons/Button';
-import Image from './Components/image/Image';
-import ImageTop from './assets/images/photo.jpg';
-import Cardbox from './Components/card/Card';
-import Switch from './Components/switch/Switch';
-import Checkbox from './Components/checkbox/Checkbox';
-
-import Slider from './Components/slider/slider'
-import Login from './Pages/Login/Login';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
-    <div className="App p-3 container">
-      <NavScrollExample />
+    <div className="App">
+      <Home/>
+
+      {/* <NavScrollExample />
 
       <Login />
       <Text
@@ -60,7 +51,7 @@ function App() {
         title="Button"
         variant="borderBtn"
         className="borderBtn"
-      />
+      /> */}
 
     </div>
 

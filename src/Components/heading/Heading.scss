@@ -1,22 +1,18 @@
 @import "../../assets/scss/module/variables.scss";
 // Font Size
-// .xSmall{font-size:$xSmall;}
-// .body{font-size: $body;}
-// .smRegular{font-size: $smRegular;}
-// .regular{font-size:$regular;}
-// .medium{font-size:$medium;}
-// .large{font-size:$large;}
-// .xlarge{font-size:$xLarge}
-// .title{font-size:$title}
-// .xxlarge{font-size:$xxlarge}
-// .xxxLarge{font-size: $xxxLarge;}
-// .lineHt{font-size: $lineHt;}
-// .smLarge{font-size: $smLarge;}
+.xSmall{font-size:$xSmall;}
+.small{font-size: $small;}
+.regular{font-size:$regular;}
+.medium{font-size:$medium;}
+.large{font-size:$large;}
+.xlarge{font-size:$xlarge}
+.xxlarge{font-size:$xxlarge}
+.xxxLarge{font-size: $xxxlarge;}
 
 
 // Font color 
-// .primaryColor{color:$primaryColor;}
-// .secondryColor{color:$secondryColor;}
+.primaryColor{color:$col1;}
+.secondryColor{color:$col6;}
 // .dangerText{ color:$dangerousColor;}
 // .successColor{color:$successColor;}
 // .white{color:$white;}

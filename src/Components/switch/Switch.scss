@@ -8,8 +8,8 @@
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner{
     margin: 0px;
-    width: 140px;
-    height: 30px;
+    width: 106px;
+    height: 27px;
     background: $col2;
     border-radius: 26px;
     overflow: hidden;
@@ -17,6 +17,10 @@
     transition: all 0.3s ease;
     /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
     display: block;
+    @media (max-width:767px){
+        width: 85px;
+        height: 24px;
+    }
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
@@ -26,23 +30,36 @@
     font-weight: 500;
     top: 7px;
     right: 20px;
-    line-height: 15px;
+    line-height: 12px;
+    @media (max-width:767px){
+        font-size: 11px;
+        line-height: 10px;
+        right: 10px;
+    }
 }
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
     content: attr(data-off);
     line-height: 15px;
-    width: 70px;
+    width: 52px;
     height: 26px;
     background: $col6;
     border-radius: 26px;
     position: absolute;
-    left: 2px;
-    top: 2px;
+    left: 0px;
+    top: 0px;
+    font-size: 12px;
+    color: $col1;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0px 0px 6px -2px $col1;
     padding: 5px 0px;
+    @media (max-width:767px){
+        width: 41px;
+        height: 24px;
+        font-size: 10px;
+        line-height: 13px;
+    }
 }
 
 .btn-color-mode-switch > .alert{
@@ -70,14 +87,18 @@
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
     content: attr(data-on);
-    left: 68px;
+    left: 55px;
     background: $col5;
+    color: $col6;
+    @media (max-width:767px){
+        left: 45px;
+    }
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
     content: attr(data-off);
     right: auto;
-    left: 20px;
+    left: 12px;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{

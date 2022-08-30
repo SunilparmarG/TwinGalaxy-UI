@@ -24,12 +24,12 @@ function ButtonComponent(props) {
 
 }
 
-// ButtonComponent.propTypes = {
-//   variant: PropTypes.string.isRequired,
-//   size: PropTypes.string.isRequired,
-//   className: PropTypes.string,
-//   iconSrc: PropTypes.string,
-//   title: PropTypes.string.isRequired,
-// };
+ButtonComponent.propTypes = {
+  variant: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  iconSrc: PropTypes.string,
+  title: PropTypes.string.isRequired,
+};
 
 export default ButtonComponent;

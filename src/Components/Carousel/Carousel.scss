@@ -1,0 +1,78 @@
+@import '../../assets/scss/module/variables.scss';
+
+.homeSlider{
+    .carousel-indicators{
+        [data-bs-target]{
+            background-color: $col7;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            @media (max-width:767px){
+                width: 12px;
+                height: 12px;
+            }
+            @media (max-width:576px){
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .active{
+            background-color: $col4;
+        }
+    }
+    .carousel-caption {
+        position: absolute;
+        right: auto;
+        bottom: auto;
+        left: 8%;
+        text-align: left;
+        top: 50%;
+        width: 25%;
+        transform: translate(0px, -50%);
+        @media(max-width:1200px){
+            h2{
+                font-size: 2.2rem;
+            }
+        }
+        @media(max-width:991px){
+            h2{
+                font-size: 1.6rem;
+            }
+            & {
+                width: 35%;
+            }
+            .switchWrap {
+                left: -82px;
+                top: 65px;
+            }
+        }
+        @media(max-width:767px){
+            h2{
+                font-size: 1.2rem;
+            }
+            .switchWrap {
+                left: -70px;
+                top: 65px;
+            }
+        }
+        @media(max-width:576px){
+            width: 100%;
+            padding-left: 30px;
+            .switchWrap {
+                left: -50px;
+                top: 48px;
+            }
+        }
+    }
+    .switchWrap{
+        transform: rotate(270deg);
+        display: inline-block;
+        position: absolute;
+        left: -95px;
+        top: 72px;
+    }
+    img{
+        min-height: 200px;
+    object-fit: cover;
+    }
+}
