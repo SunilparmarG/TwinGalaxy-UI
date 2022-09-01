@@ -17,6 +17,9 @@ $col8: #FFD542;
 $col9: #80E045;
 $col10: #025999;
 $col11: #0093FF;
+$col12: #C4C4C4;
+$col13: #004C84;
+$col14: #36C2C2;
 
 // $primaryColor:background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%);
 // color classes
@@ -31,6 +34,9 @@ $colours: (
   "col9" $col9,
   "col10" $col10,
   "col11" $col11,
+  "col12" $col12,
+  "col13" $col13,
+  "col14" $col14,
 );
 
 // Color Function
@@ -51,9 +57,10 @@ $small: 14px;
 $regular: 16px;
 $medium: 18px;
 $large: 20px;
-$xlarge: 24px;
-$xxlarge: 30px;
-$xxxlarge: 48px;
+$xlarge: 22px;
+$xxlarge: 24px;
+$xxxlarge: 30px;
+$xxxxlarge: 48px;
 // fonts weight
 $fw100:100;
 $fw400:400;

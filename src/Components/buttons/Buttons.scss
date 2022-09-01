@@ -1,5 +1,5 @@
 @import "../../assets/scss/module/variables.scss";
-// @import "../../assets/scss/modules/mixin.scss";
+@import "../../assets/scss/module/mixin.scss";
 .btn{          
     outline: none;
     border-radius:50px !important;    
@@ -169,15 +169,35 @@
   //     }
   //   }
   // }
-  .borderBtn{
+  .btn-borderDanger{
     background-color:$col6 ;
-    border-color: $col4 !important;      
+    font-size: small !important;
     background-image:none;
     padding: 2px 10px !important;
     color: $col4 !important;
+    border-color: $col4 !important;
+    
   }
-
-
+  .btn-borderInfo{
+    background-color:$col6 ;
+    font-size: small !important;
+    background-image:none;
+    padding: 2px 10px !important;
+    color: $col13 !important;
+    border-color: $col13 !important;
+    
+  }
+  
+  .btn-borderSuccess{
+    background-color:$col6 ;
+    font-size: small !important;
+    background-image:none;
+    padding: 2px 10px !important;
+    color: $col9 !important;
+    border-color: $col9 !important;
+    
+  }
+  
 
   // .disable{
   //   background-color:$white !important;

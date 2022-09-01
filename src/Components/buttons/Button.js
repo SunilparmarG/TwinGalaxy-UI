@@ -13,7 +13,7 @@ function ButtonComponent(props) {
       className={props.className}
     >
       {props.iconSrc ? (
-        <img src={props.iconSrc} className="mr-2" alt="img" />
+        <img src={props.iconSrc} className="me-2" alt="img" />
       ) : (
         ''
       )}
@@ -29,6 +29,7 @@ ButtonComponent.propTypes = {
   size: PropTypes.string.isRequired,
   className: PropTypes.string,
   iconSrc: PropTypes.string,
+  color: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 

@@ -1,0 +1,37 @@
+@import '../../assets/scss/module/variables.scss';
+.badges{
+    font-size: $xSmall;
+    font-weight:$fw500;
+    min-width: 56px;
+    color:$col6;
+    padding:3px 13px;
+    background-color:$col8;
+    box-shadow: 0px 23.2012px 104.406px rgba(0, 0, 0, 0.25);
+    border-radius: 58.0031px;
+    display: inline-block;
+    &.primaryBadge{
+        background: linear-gradient(92.26deg, $col10 3%, $col11 96.92%);
+        
+       color:$col6;
+    }
+    &.secondryBadge{
+        background-color:$col3 ; 
+         color:$col6;
+     }
+     &.successBadge{
+        background-color:$col9 ; 
+         color:$col6;
+     }
+     &.dangerBadge{
+        background-color:$col5 ; 
+         color:$col6;
+     }
+     &.warningBadge{
+        background-color:$col7 ; 
+         color:$col6;
+     }
+     &.infoBadge{
+        background-color:$col10 ; 
+         color:$col6;
+     }
+}
