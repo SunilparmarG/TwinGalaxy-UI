@@ -13,24 +13,23 @@ const Badges = (props) => {
   const name = `${className || ""}${"badges"}`; 
   return (
     <>
-      <span className={name} {...rest}>
-      {iconSrc ? (
+      <div className={name} {...rest}>
+        <span className="d-flex">
+        {iconSrc ? (
         <Image src={iconSrc} className="me-2 img-fluid" alt="img" />
       ) : (
         ''
       )}
         
-        {badgeText}      
-      </span>
+        {badgeText}
+        </span>
+            
+      </div>
     </>
   );
 };
 
-Text.propTypes = { 
-  className: PropTypes.string,
-  text: PropTypes.string,
-  isRequired: PropTypes.bool,
-};
+// 
 
 export default Badges;
 
@@ -39,6 +38,6 @@ export default Badges;
 import Badges from '../../components/Badges/Badges';
 <Badges
     badgeText="New Property "
-    class="badges primaryBadge"
+    className="badges primary"
 />
 */

@@ -1,0 +1,74 @@
+@import '../../assets/scss/module/variables.scss';
+
+.cardBg{
+    padding: 30px;
+    background-image: url(../../assets/images/cardBg.png);
+    background-repeat: no-repeat;
+    background-size: 102%;
+    border-radius: 12px;
+    overflow: hidden;
+    @media (max-width:1200px){
+        background-size: cover;
+    }
+    .imgWrap{
+        max-width: 74px;
+        max-height: 74px;
+        min-height: 74px;
+        border: 1.5px solid $col6;
+        border-radius: 100px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .borderBox{
+        border: 1px solid $col6;
+        border-radius: 12px;
+        padding: 15px;
+        margin-right: 20px;
+        @media (max-width:767px){
+            margin-bottom: 20px;
+        }
+    }
+    .borderBefore{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            width: 4px;
+            height: 100%;
+        }
+        &.bGreen:before{            
+            background: $col17;
+        }
+        &.bOrange:before{            
+            background: $col18;
+        }
+        
+    }
+}
+.cardList{
+    list-style-type: none;
+    padding-left: 15px;
+    li{
+        display: inline-block;
+        padding: 0 20px;
+        min-width: 225px;
+        border-right:  2px solid $col6;
+        @media (max-width:576px){
+            display: block;
+            padding-left: 0;
+            border-right: 0;
+        }
+    }
+    li:last-child{
+        border-right: 0;
+    }
+    li:first-child{
+        padding-left: 0;
+    }
+}
