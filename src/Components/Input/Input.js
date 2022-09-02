@@ -15,7 +15,7 @@ const Input = (props) => {
           onKeyPress={props.handleOnKeyPress}
         />
         {props.iconSrc ? (
-          <img src={props.iconSrc} className={props.className} alt="img" />
+          <img src={props.iconSrc} className={props.className} alt="img" />     
         ) : (
           ''
         )}

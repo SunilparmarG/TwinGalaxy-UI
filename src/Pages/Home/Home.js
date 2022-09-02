@@ -9,7 +9,7 @@ import Toast from '../../Components/Toast/ToastAlert';
 import Image from '../../assets/images/photo.jpg';
 import ProfileImage from '../../assets/images/avatar_sml.png';
 
-const Home = () => {
+const Home = () => {  
     return (
       <div>
         <Header/>
@@ -23,8 +23,6 @@ const Home = () => {
 
           </Row>
         </Container>
-        
-        
       </div>
     )
   }

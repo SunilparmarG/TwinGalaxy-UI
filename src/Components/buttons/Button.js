@@ -1,8 +1,8 @@
 import { Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import './Buttons.scss';
+import './Buttons.scss'; 
 
-function ButtonComponent(props) {
+function ButtonComponent(props) { 
 
   return (
 
@@ -13,7 +13,7 @@ function ButtonComponent(props) {
       className={props.className}
     >
       {props.iconSrc ? (
-        <img src={props.iconSrc} className="mr-2" alt="img" />
+        <img src={props.iconSrc} className="mr-2" alt="img" /> 
       ) : (
         ''
       )}

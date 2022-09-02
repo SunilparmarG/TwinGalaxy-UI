@@ -17,6 +17,8 @@ $col8: #FFD542;
 $col9: #80E045;
 $col10: #025999;
 $col11: #0093FF;
+$col19: #004C84;
+$col20: #DCDCDC;  
 
 // $primaryColor:background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%);
 // color classes
@@ -31,6 +33,8 @@ $colours: (
   "col9" $col9,
   "col10" $col10,
   "col11" $col11,
+  "col19" $col19,
+  "col20" $col20  
 );
 
 // Color Function

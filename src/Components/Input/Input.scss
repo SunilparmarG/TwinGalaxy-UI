@@ -1,6 +1,6 @@
-@import '../../assets/scss/modules/variables.scss';
+@import '../../assets/scss/module/variables.scss';  
 .inputFeild{
-    .form-control, .form-select{
+    .form-control, .form-select {  
         //border: 0;        
         border-radius: 0;
         // font-size: $body;
@@ -8,11 +8,11 @@
         //color:$inputBorder;
         outline: 0;
         box-shadow: none;
-        ::placeholder{
+        ::placeholder { 
            // color:$inputBorder;
         }
     }
-    select{
-       background-image: url("../../assets/icon/arrow-down.svg");
+    select {
+    //    background-image: url("../../assets/icon/arrow-down.svg");    
     }
 }
