@@ -36,8 +36,11 @@ const CardOne = (props) => {
                   typeofHeading='h1'
                   text={props.heading}
                 />
+                <div className="d-flex">
                 <Button variant="borderDanger" title="Ignore" className="fs-12 me-3"/>
                 <Button variant="borderInfo" title="Follow" className="fs-12"/>
+                </div>
+                
               </div>
             
             

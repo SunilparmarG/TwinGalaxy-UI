@@ -1,6 +1,8 @@
 @import './module/variables.scss';
+@import './module/mixin.scss';
 body{
-    font-family: 'Barlow', sans-serif;
+    @include font-family;
+    background-color: $col2 !important;
 }
 // body, html, #root{
 //     height: 100%;

@@ -15,6 +15,7 @@ import Profile1 from '../../assets/images/profile1.jpg';
 import Verify from '../../assets/images/svg/verify.svg';
 import Verify1 from '../../assets/images/svg/verify1.svg';
 import Badges from '../../Components/Badges/Badges';
+import Tab from '../../Components/Tab/tab';
 
 import './Home.scss';
 
@@ -58,7 +59,7 @@ team showing off the final version of the Promised End." imgFirst={ProfileImage}
                 <div className='d-flex align-items-end'>
                 <Badges
                 badgeText="Verfied "
-                className="badges mb-2 ms-3 success"
+                className="badges  mb-4 mb-md-2 ms-3 success"
                 iconSrc={Verify1}
                 />
                 </div>
@@ -166,6 +167,7 @@ team showing off the final version of the Promised End." imgFirst={ProfileImage}
             </div>
               
             </div>
+            <Tab/>
             </Col>
           </Row>
         </Container>
