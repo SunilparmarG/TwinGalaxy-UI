@@ -3,25 +3,31 @@
     margin-bottom: 20px;
     position: relative;
     .card{
-       
+       min-width: 465px;
+       max-width: 465px;
+       margin-right: 25px;
         border-radius: 12px;
-        min-height: 370px;
-        &.bgImage{
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/photo.jpg) 100%;
+        border: 0;
+        .bgImage{
+            background-size: cover !important;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/cardBg1.png) 100% no-repeat;
             padding-top: 130px;
             border: 0;
+            min-height: 245px;
+            border-radius: 12px;
         }
         .card-body{
             background: linear-gradient(172deg, transparent 18%, #9817FD 0%, #D42AFF 92%);
-            border-radius: 12px;
+            border-radius: 12px 12px 0px 0px;
             padding: 20px 15px; 
+            margin-top: -100px;
         
         .cardImage{
             border: 1px solid #FFFAFA;
             box-shadow: 0px 10px 60px 2px rgba(0, 0, 0, 0.2);
             border-radius: 6px;
-            width: 82px;
-            height: 82px;
+            min-width: 82px;
+            min-height: 82px;
         }
         .card-text{
             color:$col6;
@@ -29,12 +35,19 @@
             font-weight: 500;
             
         }
-        .cardList{
+        
+      }
+      .cardBottom{
+        background: $col20;
+        border-radius: 0px 0px 12px 12px;
+        padding: 15px;
+        .cardList1{
             list-style-type: none;
-            padding-left: 15px;
+            padding-left: 0;
+            margin-bottom: 0;
             li{
                 display: inline-block;
-                padding: 0 20px;
+                padding: 0 15px;
                 border-right:  1px solid $col6;
             }
             li:last-child{
@@ -57,12 +70,16 @@
 }
 .cardOne{
     background: $col6;
-    border: 1px solid $col8;
+    border: 1px solid $col12;
     position: relative;
     /* White shadow */
 
     box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    .card{
+        border: 0;
+        border-radius: 12px;
+    }
     .card-body{
         border-radius: 12px;
     }

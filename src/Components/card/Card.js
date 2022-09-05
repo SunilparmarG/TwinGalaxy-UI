@@ -6,22 +6,22 @@ import Card from "react-bootstrap/Card";
 import Image from "../image/Image";
 import Text from "../text/Text";
 import Heading from "../heading/Heading";
-import ImageTop from '../../assets/images/photo.jpg';
+import Profile2 from '../../assets/images/profile1.jpg';
 import Buttons from '../buttons/Button';
 
 
 const Cardbox = (props) => {
   return (
     <div className="matchesCard">
-      <Card className="bgImage">
-        
+      <Card >
+        <div className="bgImage"></div>
         <Card.Body>
           
           <div className="d-flex align-item-center mb-2">
             
               <div className="cardImage">
               <Image 
-                src={ImageTop}
+                src={Profile2}
                 className="img-fluid"
                 name="images"
               />
@@ -46,58 +46,69 @@ const Cardbox = (props) => {
           </div>
           <Card.Text className="mb-4">
           <Text
-                text="Nintendo Switch - Super Smash Bros. Ultimate - Spirit Battles"
+                text="Super Smash Bros. Ultimate"
                 color="text-col6"
-                className=" fs-26 fw-600"
+                className=" fs-25 fw-600"
               />
+          <Text text="Track : Spirit Battles" className="fs-16 fw-600 text-col19"/>
+          <Text text="Platform : Nintendo Switch" className="fs-16 fw-600 text-col19"/>
+          <Text text="Potential RANK: 30" className="fs-16 fw-600 text-col19"/>
           
           </Card.Text>
-          <div className="d-flex align-items-center mt-1">
-            <ul className="cardList">
+          
+        </Card.Body>
+        <div className="d-flex align-items-center cardBottom justify-content-between">
+            <ul className="cardList1">
               <li>
-              <Text
-                text="Points"
-                color="text-col6"
-                className=" fs-16 fw-500 w-100"
-              />
-              <Text
-                text="1,60,000"
-                color="text-col6"
-                className=" fs-20 fw-600"
-              />
+                <span className="d-flex">
+                  <Text
+                  text="Points:"
+                  color="text-col6"
+                  className=" fs-14 fw-500 w-100"
+                  />
+                  <Text
+                    text="1,60,000"
+                    color="text-col6"
+                    className=" fs-14 fw-600 ms-2"
+                  />
+                </span>
+              
               </li>
               <li>
+              <span className="d-flex">
               <Text
-                text="Views"
+                text="Views:"
                 color="text-col6"
-                className=" fs-16 fw-500 w-100"
+                className=" fs-14 fw-500 w-100"
               />
               <Text
                 text="12"
                 color="text-col6"
-                className=" fs-20 fw-600"
+                className=" fs-14 fw-600 ms-2"
               />
+              </span>
               </li>
               <li>
+              <span className="d-flex">
               <Text
-                text="Shared"
+                text="Shared:"
                 color="text-col6"
-                className=" fs-16 fw-500 w-100"
+                className=" fs-14 fw-500 w-100"
               />
               <Text
                 text="04"
                 color="text-col6"
-                className=" fs-20 fw-600"
+                className=" fs-14 fw-600 ms-2"
               />
+              </span>
               </li>
             </ul>
             <Buttons
               title="Vote Now"
               variant="primary"
-              className="primary"
+              className="primary pad1 fs-14"
             />
           </div>
-        </Card.Body>
       </Card>
       
     </div>
