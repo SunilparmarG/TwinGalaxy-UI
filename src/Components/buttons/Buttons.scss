@@ -5,13 +5,21 @@
     border-radius:50px !important;    
     align-items: center;
     padding:19px 28px !important;
-    //@include font-family;
+    @include font-family;
     position: relative;
-    // font-size: inherit !important;  
     line-height: 1;
     &:focus,
     &:hover{
         box-shadow: none !important;
+    }
+    &.pad1{
+      padding: 9px 20px !important;
+    }
+    &.fs-14{
+      font-size: 14px !important;
+    }
+    &.fs-20{
+      font-size: 20px !important;
     }
   }
   .btn-info{ 
@@ -22,7 +30,6 @@
     padding:6px 17px !important;
   }
   .primary, .btn-primary {
-    // background-color:$primaryColor !important;
     background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%) !important;
     border: none !important;   
     color:$col6 !important;
@@ -32,143 +39,37 @@
     &:active,
     &:active:hover {
       background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%) !important;
-      // background-color: $primaryColor !important;
-      // border-color:$primaryColor !important;        
+      
     }
     &:active {
       &:focus {
         background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%) !important;
-        // background-color:$primaryColor !important;        
+              
         box-shadow: none;
       }
     }
   }
   
-  // .secondary{
-  //   background-color:$secondryColor !important;
-  //   border-color:$secondryColor;   
-  //   color:$secondryColor !important;
-  //   background-image:none;
-  //   &:hover,
-  //   &:focus,
-  //   &:active,
-  //   &:active:hover {
-  //     background-color: $secondryColor !important;
-  //     border-color: $secondryColor;      
-  //   }
-  //   &:active {
-  //     &:focus {
-  //       background-color:$secondryColor !important;      
-        
-  //     }
-  //   }
-  // }
-  // .waring{
-  //   background-color:$primaryColor !important;
-  //   border-color:$primaryColor;   
-  //   color:$primaryColor !important;
-  //   background-image:none;
-  //   &:hover,
-  //   &:focus,
-  //   &:active,
-  //   &:active:hover {
-  //     background-color: $primaryColor !important;
-  //     border-color: $primaryColor;      
-  //   }
-  //   &:active {
-  //     &:focus {
-  //       background-color:$primaryColor !important;      
-        
-  //     }
-  //   }
-
-  // }
-
-  // .btn-primary{
-  //   @include button-variant(black, $successColor, $successColor)
-  // }
+  
 
   .success{
-    // background-color:$successColor !important;
     background-color:green !important;
-    // border-color:$successColor;   
-    // color:$primaryColor !important;
     background-image:none;
     &:hover,
     &:focus,
     &:active,
     &:active:hover {
       background-color: green !important;
-      // background-color: $successColor !important;
-      // border-color: $successColor;      
     }
     &:active {
       &:focus {
-        background-color:green !important;      
-        // background-color:$successColor !important;      
+        background-color:green !important;          
         
       }
     }
   }
 
-  // .buttonGray{
-  //   background-color:$lightprime !important;
-  //   border-color:$primaryColor !important;   
-  //   color:$primaryColor!important;
-  //   background-image:none;
-  //   &:hover,
-  //   &:focus,
-  //   &:active,
-  //   &:active:hover {
-  //     background-color: $lightprime!important;
-  //     border-color: $primaryColor;      
-  //   }
-  //   &:active {
-  //     &:focus {
-  //       background-color:$lightprime !important;      
-        
-  //     }
-  //   }
-  // }
-
-  // .link{
-  //   background-color:transparent ;
-  //   border-color:transparent;      
-  //   background-image:none;
-  //   &:hover,
-  //   &:focus,
-  //   &:active,
-  //   &:active:hover {
-  //     background-color: $primaryColor;
-  //     border-color: $primaryColor;      
-  //     color:$white !important;     
-  //   }
-  //   &:active {
-  //     &:focus {
-  //       background-color:$primaryColor; 
-  //       color:$white !important;     
-        
-  //     }
-  //   }
-  // }
-  // .lightBtn{
-  //   background-color:$white !important;
-  //   border-color:$white !important;       
-  //   background-image:none;
-    
-  //   &:hover,
-  //   &:focus,
-  //   &:active,
-  //   &:active:hover {
-  //     background-color: $white ;
-  //     border-color: $white;            
-  //   }
-  //   &:active {
-  //     &:focus {
-  //       background-color:$white ;         
-  //     }
-  //   }
-  // }
+  
   .btn-borderDanger{
     background-color:$col6 ;
     font-size: small !important;
@@ -176,7 +77,13 @@
     padding: 2px 10px !important;
     color: $col4 !important;
     border-color: $col4 !important;
-    
+    min-height: 25px;
+    padding: 0 !important;
+    min-width: 65px;
+    align-items: center !important;
+    line-height: 14px !important;
+    display: flex !important;
+    justify-content: center;
   }
   .btn-borderInfo{
     background-color:$col6 ;
@@ -185,7 +92,14 @@
     padding: 2px 10px !important;
     color: $col13 !important;
     border-color: $col13 !important;
-    
+    min-height: 25px;
+    padding: 0 !important;
+    min-width: 65px;
+    text-align: center !important;
+    align-items: center !important;
+    line-height: 14px !important;
+    display: flex !important;
+    justify-content: center;
   }
   
   .btn-borderSuccess{
@@ -195,32 +109,18 @@
     padding: 2px 10px !important;
     color: $col9 !important;
     border-color: $col9 !important;
-    
+    min-height: 25px;
+    padding: 0 !important;
+    min-width: 65px;
+    text-align: center !important;
+    align-items: center !important;
+    line-height: 14px !important;
+    display: flex !important;
+    justify-content: center;
   }
   
 
-  // .disable{
-  //   background-color:$white !important;
-  //   border:1px solid $gray !important;
-  //   color:$gray !important;
-  //   background-image:none;
-  //   border-radius: 8px;
-  //   &:hover,
-  //   &:focus,
-  //   &:active,
-  //   &:active:hover {
-  //     background-color:$white ;
-      
-         
-  //   }
-  //   &:active {
-  //     &:focus {
-  //       background-color:$white ;
-        
-        
-  //     }
-  //   }
-  // }
+  
 
   @media (max-width:768px){ 
     .btn {padding:5px 15px !important;}
@@ -242,18 +142,3 @@
 // .white{color:$white !important;}
 // .black{color:$black;}
 // .gray{color:$gray;}
-.xyz {
-  border-radius: 6px !important;
-  background-color: red !important;
-  color: #fff !important;
-}
-.abc {
-  border-radius: 6px !important;
-  background-color: black !important;
-  color: #fff !important;
-}
-.red {
-  border-radius: 6px !important;
-  background-color: orange !important;
-  color: #fff !important;
-}

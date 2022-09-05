@@ -8,8 +8,6 @@ function ButtonComponent(props) {
 
     <Button
       variant={props.variant}
-      size={props.size}
-      color={props.color}
       className={props.className}
     >
       {props.iconSrc ? (
@@ -26,10 +24,8 @@ function ButtonComponent(props) {
 
 ButtonComponent.propTypes = {
   variant: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
   className: PropTypes.string,
   iconSrc: PropTypes.string,
-  color: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 

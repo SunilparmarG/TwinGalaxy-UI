@@ -1,0 +1,71 @@
+@import './../../assets/scss/module/variables.scss';   
+.settingWrap {
+    background-color: $col3;
+    padding: 22px 50px;
+    @media (max-width:767px){
+        .btn-type1{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+.tabs-style {
+    .nav-tabs {
+        border: 0;
+
+        .nav-item {
+            @media (max-width:767px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .nav-link {
+            font-size: 22px;
+            font-weight: 600;
+            color: $col2;
+            border: 0;
+            border-top: 4px solid transparent;
+            border-radius: 12px 12px 0px 0px;
+            padding: 0 20px;
+            margin-right: 10px;
+            min-height: 70px;
+            background-color: $col6;
+            @media (max-width:1200px){
+                font-size: 20px;
+                padding: 0 18px;
+                min-height: 66px;
+            }
+            @media (max-width:991px){
+                
+                font-size: 16px;
+                padding: 0 12px;
+                margin-right: 5px;
+                min-height: 60px;
+            }
+            @media (max-width:767px) {
+                display: inline-block;
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 4px;
+            }
+
+            &.active,
+            &:hover {
+                color: $col4;
+                border-color: $col4;
+                background-color: $col6;
+
+            }
+
+        }
+    }
+    .tab-content {
+        padding: 35px 20px;
+        border-radius: 0px 12px 12px 12px;
+        background-color: $col6;
+        @media (max-width:767px){
+            border-radius: 0;
+        }
+    }
+}

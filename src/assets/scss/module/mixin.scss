@@ -1,7 +1,11 @@
 // import "../modules/variables.scss";
 
-@mixin font-family {
-  font-family: 'Alumni Sans', sans-serif;
+  @mixin font-family {    
+  font-family: 'Barlow', sans-serif;
+  }
+@mixin Roboto{
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 @mixin Montserrat {

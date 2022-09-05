@@ -36,9 +36,9 @@ function NavScrollExample() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action9">Community 3</NavDropdown.Item>
             </NavDropdown>
-            <li>
+            {/* <li>
               <Switch />
-            </li>
+            </li> */}
           </Nav>
           {/* <Form className="d-flex">
             <Form.Control
