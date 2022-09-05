@@ -15,16 +15,16 @@ const Login = () => {
   return (
     <div>
       <Header />
-      <div className='position-relative overflow-hidden'> 
+      <div className='position-relative overflow-hidden'>
         <Container className='mt-5 mb-5'>
           <div className='userLayout'>
             <div className='innerLayout'>
               <Row>
                 <Col md={6}>
-                  <Heading text="Login" typeofHeading="h2" size="fs-36" color="text-col12" className="text-capitalize fw600" />
-                  <div className='d-flex'>
+                  <Heading text="Login" typeofHeading="h2" size="fs-36" color="text-col13" className="text-capitalize fw600" />
+                  <div className='d-flex align-items-center'>
                     <Text text="Don’t have an account ?" className="text-col2 fs-20 fw500" />
-                    <Nav.Link className="text-col4 fs-20 fw500 ms-1">Register</Nav.Link>
+                    <Nav.Link className="ms-1"><span className='text-col4 fs-20 fw500'>Register</span></Nav.Link>
                   </div>
                   <Row>
                     <Col md={12}>
@@ -42,22 +42,28 @@ const Login = () => {
                         required="true"
                       />
                     </Col>
-                    <Col md={6}>
+                  </Row>
+                  <Row>
+                    <Col md={6} className="mt-2 mb-4">
                       <Checkbox label="Keep me signed in" />
                     </Col>
-                    <Col md={6} className="text-md-end"><Nav.Link className="text-col4 fs-20 fw500 ms-1">Forget password?</Nav.Link></Col>
-                    <Col md={12}>
-                      <Button
-                        size="fs-24" 
-                        className="btn-primary text-col3 fw-600 mt36 w-100 fs-24"
-                        title="Login Now" 
-                      />
+                    <Col md={6} className="text-md-end mt-2 mb-4">  
+                      <Nav.Link className="ms-1">
+                        <span className='text-col4 fs-20 fw500'>Forget password?</span>
+                      </Nav.Link>
                     </Col>
+                    <Col md={12}>
+                    <Button
+                      size="fs-24"
+                      className="btn-primary text-col3 fw-600 mt36 w-100 fs-24"
+                      title="Login Now"
+                    />
+                  </Col>
                   </Row>
                 </Col>
                 <Col md={6}>
-                  <div className='position-absolute'> 
-                    <Image src={LoginUser} className="img-fluid" />
+                  <div className='position-absolute userRight'>
+                    <Image src={LoginUser} className="img-fluid" /> 
                   </div>
                 </Col>
               </Row>

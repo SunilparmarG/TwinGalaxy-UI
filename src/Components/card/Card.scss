@@ -88,14 +88,16 @@
         }
     }
     .cardImageWrap{
-        width: 300px;
+        min-width: 101px;
+        max-width: 101px;
+        border-radius: 12px;
         height: 127px;
+        overflow: hidden;
     }
     .cardOneImage{
-        border-radius: 12px;
+        
         height: 100%;
         object-fit: cover;
-        width: 100%;
     }
     &.warningBorder:before,&.successBorder:before{
         content: '';
@@ -109,11 +111,40 @@
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
-    &.warning::before{
+    &.warningBorder::before{
         background-color: $col8;
     }
     &.successBorder:before{
         background-color: $col9;
+    }
+    &.infoBorder::before{
+        background-color: $col14;
+    }
+}
+.cardTwo{
+    .card-body, .card{
+        border: 0;
+        border-bottom: 0.8px solid $col12;
+    }
+    
+    .cardImageWrap{
+        min-width: 45px;
+        max-width: 45px;
+        border: 0.538805px solid $col12;
+        box-shadow: 0px 5.38805px 32.3283px 1.07761px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        height: 45px;
+        overflow: hidden;
+        .cardImage{
+        
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:767px){
+        .fs-20{
+            font-size: 16px;
+        }
     }
 }
 

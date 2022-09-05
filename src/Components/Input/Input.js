@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import './Input.scss';
 const Input = (props) => {
   return (
-    <div className="inputFeild">
+    <div className="inputFeild"> 
       <Form.Group className="mb-3">
         <Form.Label>{props.label}</Form.Label>
         <Form.Control
