@@ -18,4 +18,4 @@ Checkbox.propTypes = {
     className: PropTypes.string,
 };
 
-export default Checkbox;
+export default Checkbox; 

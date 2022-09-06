@@ -1,7 +1,7 @@
 
-// import Image from '../Image/Image';
-import Text from '../Text/Text';
-import Button from '../Buttons/Buttons';
+// import Image from '../image/Image';
+import Text from '../text/Text';
+import Button from '../buttons/Button';
 import './Toast.scss';
 
 const Toast = ({  content,backgroundColor }) => {

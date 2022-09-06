@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.scss';
+import './footer.scss';
 import LogoImg from '../../assets/images/logo-white.png';
 import Image from '../../Components/image/Image';
 import Twitter from '../../assets/images/svg/twitter.svg';
