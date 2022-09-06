@@ -1,6 +1,6 @@
 import "./Badges.scss";
 import PropTypes from "prop-types";
-import Image from '../image/Image'
+import Image from '../Image/Image'
 
 /**
  * Name: Badges

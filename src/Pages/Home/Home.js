@@ -5,13 +5,14 @@ import Col from 'react-bootstrap/Col';
 import Header from '../../Layout/Header/Header';
 import Footer from '../../Layout/Footer/Footer';
 import Carousel from '../../Components/Carousel/Carousel';
-import Card from '../../Components/card/Card';
-import CardOne from '../../Components/card/CardOne';
-import CardThree from '../../Components/card/CardThree';
+import Card from '../../Components/Card/Card';
+import CardOne from '../../Components/Card/CardOne';
+import CardThree from '../../Components/Card/CardThree';
 import Toast from '../../Components/Toast/ToastAlert';
-import Image from '../../Components/image/Image';
-import Text from '../../Components/text/Text';
-import Buttons from '../../Components/buttons/Button';
+import Image from '../../Components/Image/Image';
+import Text from '../../Components/Text/Text';
+import Slider from '../../Components/Slider/Slider';
+import Buttons from '../../Components/Buttons/Buttons';
 import Image1 from '../../assets/images/photo.jpg';
 import ProfileImage from '../../assets/images/avatar_sml.png';
 import Profile1 from '../../assets/images/profile1.jpg';
@@ -41,16 +42,9 @@ const Home = () => {
             />
             </div>
           </div>
-          <Text text='Performances' className="fs-30 fw600"/>
-          <div className='d-flex mt-4 mb-3'>
-            
-            <Card/>
-            
-            
-            <Card/>
-            
-            
-          </div>
+          <Text text='Performances' className="fs-30 fw600 mb-3"/>
+          
+          <Slider/>
           <Row className='mt-4 mb-3'>
             <Col lg={8}>
             

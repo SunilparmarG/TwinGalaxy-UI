@@ -3,11 +3,11 @@ import "./Card.scss";
 import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 
-import Image from "../image/Image";
-import Text from "../text/Text";
-import Heading from "../heading/Heading";
+import Image from "../Image/Image";
+import Text from "../Text/Text";
+import Heading from "../Heading/Heading";
 import ImageTop from '../../assets/images/photo.jpg';
-import Buttons from '../buttons/Button';
+import Buttons from '../Buttons/Buttons';
 
 
 const CardOne = (props) => {

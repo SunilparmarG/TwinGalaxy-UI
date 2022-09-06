@@ -3,10 +3,10 @@ import "./Card.scss";
 import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 
-import Image from "../image/Image";
+import Image from "../Image/Image";
 import Text from "../text/Text";
-import Heading from "../heading/Heading";
-import Button from '../buttons/Button';
+import Heading from "../Heading/Heading";
+import Button from '../Buttons/Buttons';
 import Clock from '../../assets/images/svg/clock.svg';
 import Comment from '../../assets/images/svg/chat.svg';
 import Like from '../../assets/images/svg/like.svg';

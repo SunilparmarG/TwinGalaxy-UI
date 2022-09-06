@@ -37,6 +37,13 @@
         }
         
       }
+      @media(max-width:1400px){
+        min-width: 365px;
+      }
+      @media (max-width:992px){
+        min-width: auto;
+        max-width: auto;
+    }
       .cardBottom{
         background: $col20;
         border-radius: 0px 0px 12px 12px;

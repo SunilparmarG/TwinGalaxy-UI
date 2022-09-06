@@ -1,13 +1,13 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import Image from '../image/Image';
+import Image from '../Image/Image';
 import Banner from '../../assets/images/banner.png';
 import Banner1 from '../../assets/images/banner2.png';
 import Banner2 from '../../assets/images/banner3.png';
-import Heading from '../heading/Heading';
-import Button from '../buttons/Button';
+import Heading from '../Heading/Heading';
+import Button from '../Buttons/Buttons';
 import './Carousel.scss';
-import Switch from '../switch/Switch';
+import Switch from '../Switch/Switch';
 
 function CarouselSlider() {
   return (
