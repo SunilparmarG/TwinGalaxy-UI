@@ -13,7 +13,7 @@ import Buttons from '../Buttons/Buttons';
 const Cardbox = (props) => {
   return (
     <div className="matchesCard">
-      <Card >
+      <Card>
         <div className="bgImage"></div>
         <Card.Body>
           
