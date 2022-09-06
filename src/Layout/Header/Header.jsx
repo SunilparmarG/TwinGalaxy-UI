@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../../assets/images/svg/logo.svg";
-import Switch from '../../Components/Switch/Switch';
+import Switch from '../../Components/switch/Switch';
 import './Header.scss';
 
 function NavScrollExample() {

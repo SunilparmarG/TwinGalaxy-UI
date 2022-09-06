@@ -1,8 +1,8 @@
 import React, { memo } from "react";
 import { Tabs, Tab, Container } from "react-bootstrap";  
-import "./Tab.scss";
-import CardTwo from '../Card/CardTwo';
-import CardOne from '../Card/CardOne';
+import "./tab.scss";
+import CardTwo from '../card/CardTwo';
+import CardOne from '../../Components/card/CardOne';
 import Image1 from '../../assets/images/photo.jpg';
 import ProfileImage from '../../assets/images/avatar_sml.png';
 

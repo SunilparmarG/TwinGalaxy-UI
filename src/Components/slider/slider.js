@@ -1,63 +1,35 @@
 import React from "react";
 import Slider from "react-slick";
-import Card from '../Card/Card';
 
 
 export default function SimpleSlider() {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.5,
-    slidesToScroll: 1,
-    initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+    slidesToShow: 1,
+    slidesToScroll: 1
   };
   return (
    
     <Slider {...settings}>
       <div>
-      <Card/>
+        <h3>Slider</h3>
       </div>
       <div>
-      <Card/>
+        <h3>Slider1</h3>
       </div>
       <div>
-      <Card/>
+        <h3>3</h3>
       </div>
       <div>
-      <Card/>
+        <h3>4</h3>
       </div>
       <div>
-      <Card/>
+        <h3>5</h3>
       </div>
       <div>
-      <Card/>
+        <h3>6</h3>
       </div>
     </Slider>
    

@@ -2,7 +2,7 @@ import "./Checkbox.scss";
 // import Form from 'react-bootstrap/Form';
 
 import PropTypes from 'prop-types';
-// import Image from '../Image/Image'
+// import Image from '../image/Image'
 
 const Checkbox = (props) => {
 
