@@ -1,18 +1,29 @@
-@import '../../assets/scss/modules/variables.scss';
-.inputFeild{
-    .form-control, .form-select{
-        //border: 0;        
-        border-radius: 0;
-        // font-size: $body;
-        padding: .675rem .75rem;
-        //color:$inputBorder;
+@import '../../assets/scss/module/variables.scss';
+
+.inputFeild {
+    .form-control,
+    .form-select {         
+        border-radius: 10px;
+        background: $col6;
+        padding: .675rem 1.125rem;
+        height: 56px; 
+        font-size: 18px;
+        font-weight: 500;
+        color: $col2 !important;
         outline: 0;
-        box-shadow: none;
-        ::placeholder{
-           // color:$inputBorder;
+        box-shadow: 0px 7.72141px 46.3285px 1.54428px rgba(0, 0, 0, 0.1);
+        border-color: col19;
+
+        &:hover,
+        &:focus {
+            box-shadow: none !important;
+        }
+        &:focus {
+            border-color: $col10;
+            box-shadow: inherit;
         }
     }
-    select{
-       background-image: url("../../assets/icon/arrow-down.svg");
+    select {
+        //    background-image: url("../../assets/icon/arrow-down.svg");    
     }
 }

@@ -44,7 +44,7 @@ import { Button } from 'bootstrap';
 import InfoBlock from '../../Components/InfoBlock/InfoBlock';
 import ToppBarOne from '../../Components/TopBarOne/TopBarOne';
 
-const Home = () => {
+const Home = () => {  
     return (
       <div>
         <Header/>
@@ -333,7 +333,6 @@ const Home = () => {
           </Row>
           
         </Container>
-        
         <Footer/>
       </div>
     )

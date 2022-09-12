@@ -1,14 +1,15 @@
 // import logo from './logo.svg';
 // import './App.css';
 import NavScrollExample from './Layout/Header/Header';
-//import Login from './Pages/Login/Login';
+import Login from './Pages/Login/Login';
 import "../src/assets/scss/style.scss";
 import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      {/* <Home/> */}
+      <Login />
 
       {/* <NavScrollExample />
 

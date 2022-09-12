@@ -1,8 +1,8 @@
 import { Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import './Buttons.scss';
+import './Buttons.scss'; 
 
-function ButtonComponent(props) {
+function ButtonComponent(props) { 
 
   return (
 
