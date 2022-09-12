@@ -19,10 +19,10 @@ function NavScrollExample() {
             className="ms-auto my-2 my-lg-0 text-col2 fw600 fs-18"
             navbarScroll
           >
-            <Nav.Link href="#action1" className='active text-col1'>Home</Nav.Link>
-            <Nav.Link href="#action2">Wall</Nav.Link>
-            <Nav.Link href="#action3">News</Nav.Link>
-            <NavDropdown title="TG Records" id="navbarRecords">
+            <Nav.Link href="#action1" className='active text-col1 me-35'>Home</Nav.Link>
+            <Nav.Link href="#action2" className=' me-35'>Wall</Nav.Link>
+            <Nav.Link href="#action3" className=' me-35'>News</Nav.Link>
+            <NavDropdown title="TG Records" id="navbarRecords" className=' me-35'>
               <NavDropdown.Item href="#action4">TG Record 1</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">TG Record 2</NavDropdown.Item>

@@ -15,18 +15,18 @@ const Cardbox = (props) => {
     <div className="matchesCard">
       <Card >
         <div className="bgImage"></div>
-        <Card.Body>
+        <Card.Body className="linearBg">
           
-          <div className="d-flex align-item-center mb-2">
+          <div className="d-flex flex-wrap flex-md-nowrap align-item-center mb-2">
             
-              <div className="cardImage">
+              <div className="cardImage mx-auto mx-md-0 mb-md-0 mb-3">
               <Image 
                 src={Profile2}
                 className="img-fluid"
                 name="images"
               />
               </div>
-              <div className="ms-3 d-flex flex-wrap align-items-end align-content-end">
+              <div className="ms-0 ms-md-3 w-100 d-flex flex-wrap align-items-end align-content-end">
               <Heading 
                 color='text-col6'
                 fontWeight='fw500'
@@ -36,7 +36,7 @@ const Cardbox = (props) => {
               />
               <Text
                 text="Submitted today at 01:25 PM"
-                color="text-col6"
+                color="text-col21"
                 className=" fs-14 fw-400"
               />
             </div>
@@ -57,8 +57,8 @@ const Cardbox = (props) => {
           </Card.Text>
           
         </Card.Body>
-        <div className="d-flex align-items-center cardBottom justify-content-between">
-            <ul className="cardList1">
+        <div className="d-flex align-items-center flex-wrap flex-md-nowrap cardBottom justify-content-between">
+            <ul className="cardList1 mb-3 mb-md-0">
               <li>
                 <span className="d-flex">
                   <Text
@@ -103,11 +103,14 @@ const Cardbox = (props) => {
               </span>
               </li>
             </ul>
-            <Buttons
-              title="Vote Now"
-              variant="primary"
-              className="primary pad1 fs-14"
-            />
+            <div>
+              <Buttons
+                title="Vote Now"
+                variant="primary"
+                className="primary pad1 fs-14"
+              />
+            </div>
+            
           </div>
       </Card>
       

@@ -17,3 +17,12 @@
         padding: 20px 25px;
     }
 }
+.profileWrap{
+    max-width: 38px;
+    min-width: 38px;
+    border: 2px solid $col4;
+    border-radius: 100px;
+    img{
+        object-fit: cover;
+    }
+}

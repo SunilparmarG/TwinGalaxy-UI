@@ -50,27 +50,15 @@
             h2{
                 font-size: 1.2rem;
             }
-            .switchWrap {
-                left: -70px;
-                top: 65px;
-            }
+            
         }
         @media(max-width:576px){
             width: 100%;
             padding-left: 30px;
-            .switchWrap {
-                left: -50px;
-                top: 48px;
-            }
+            
         }
     }
-    .switchWrap{
-        transform: rotate(270deg);
-        display: inline-block;
-        position: absolute;
-        left: -95px;
-        top: 72px;
-    }
+    
     img{
         min-height: 200px;
     object-fit: cover;
