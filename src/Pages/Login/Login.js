@@ -4,7 +4,7 @@ import Header from '../../Layout/Header/Header';
 import Footer from '../../Layout/Footer/Footer';
 import Heading from '../../Components/heading/Heading';
 import Text from '../../Components/text/Text';
-import Input from '../../Components/Input/Input';
+import Input from '../../Components/Input/InputFloat';
 import Checkbox from '../../Components/checkbox/Checkbox';
 import Button from '../../Components/buttons/Button';
 import Image from '../../Components/image/Image';
@@ -70,7 +70,7 @@ const Login = () => {
                     <Col md={12}> 
                       <Button 
                         className="btn-primary fs-24 text-col3 fw-600 mt36 w-100 mb-3"
-                        title="Login Now"
+                        text="Login Now"
                       />
                     </Col>
                     <Col md={12}>

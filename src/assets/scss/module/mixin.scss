@@ -113,7 +113,17 @@ $breakpoints: (
     }
   }
 }
-
+@mixin borderBtn{
+    font-size: small  ;
+    padding: 2px 10px  ;
+    min-height: 25px;
+    
+    min-width: 65px;
+    align-items: center  ;
+    line-height: 14px  ;
+    display: flex  ;
+    justify-content: center;
+}
 //Statistics Card
 @mixin smallCardBox {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);

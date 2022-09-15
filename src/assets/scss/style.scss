@@ -56,7 +56,7 @@ body {
       text-align: center;
       background-color: $col6;
       border-radius: 10px;
-      border: 1px solid $col21;
+      border: 1px solid $col25;
       box-shadow: 0px 7.72141px 46.3285px 1.54428px rgba(0, 0, 0, 0.1);
       cursor: pointer;
     }
@@ -66,7 +66,7 @@ body {
 .showPass {
   position: absolute;
   right: 28px;
-  top: 40px; 
+  top: 15px; 
   cursor: pointer; 
   .disabledImg {
     display: block;
@@ -75,6 +75,22 @@ body {
     display: none; 
   }
 }
+.mx-20{
+    max-width: 20px;
+}
+.mxWdth{
+    max-width: 170px;
+    @media (max-width:767px){
+        max-width: none;
+    }
+}
+.mxWdth1{
+    max-width: 66px;
+}
 .paddingRight {
-  padding-right: 50px !important;
+  padding-right: 62px !important;
+}
+.upIndex{
+    position: relative;
+    z-index: 2;
 }

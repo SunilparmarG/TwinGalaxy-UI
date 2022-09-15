@@ -2,6 +2,7 @@
 // import './App.css';
 import NavScrollExample from './Layout/Header/Header';
 import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 import "../src/assets/scss/style.scss";
 import Home from './Pages/Home/Home';
 
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       {/* <Home/> */}
       <Login />
-
+      {/* <Register/> */}
       {/* <NavScrollExample />
 
       <Login />
@@ -42,14 +43,14 @@ function App() {
         text='this is hedings'
       />
       <Buttons
-        title="Button"
+        text="Button"
         variant="primary"
         className="primary"
       />
 
 
       <Buttons
-        title="Button"
+        text="Button"
         variant="borderBtn"
         className="borderBtn"
       /> */}

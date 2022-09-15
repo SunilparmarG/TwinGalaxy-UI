@@ -37,8 +37,8 @@ const CardOne = (props) => {
                   text={props.heading}
                 />
                 <div className="d-flex">
-                <Button variant="borderDanger" title="Ignore" className="fs-12 me-3"/>
-                <Button variant="borderInfo" title="Follow" className="fs-12"/>
+                <Button variant="borderDanger" text="Ignore" className="fs-12 me-3"/>
+                <Button variant="borderInfo" text="Follow" className="fs-12"/>
                 </div>
                 
               </div>

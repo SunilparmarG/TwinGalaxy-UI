@@ -20,7 +20,7 @@ function CarouselSlider() {
         />
         <Carousel.Caption>
           <Heading typeofHeading="h2" size="fs-48" fontWeight="fw700" color="text-col6" className="text-capitalize" text="Show your achievements to the world"/>
-          <Button title="Submit a Performance" variant="primary" size="fs-25" className="fw600"/>
+          <Button text="Submit a Performance" variant="primary" size="fs-25" className="fw600"/>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,7 +33,7 @@ function CarouselSlider() {
         <Carousel.Caption>
           
           <Heading typeofHeading="h2" size="fs-48" fontWeight="fw700" color="text-col6"  className="text-capitalize" text="Contribute and gain credibility"/>
-          <Button title="Vote on Performances" variant="primary" size="fs-25" className="fw600"/>
+          <Button text="Vote on Performances" variant="primary" size="fs-25" className="fw600"/>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -46,7 +46,7 @@ function CarouselSlider() {
         <Carousel.Caption>
           
           <Heading typeofHeading="h2" size="fs-48" fontWeight="fw700" color="text-col6"  className="text-capitalize" text="A Community For Gamers"/>
-          <Button title="Join the Community" variant="primary" size="fs-25" className="fw600"/>
+          <Button text="Join the Community" variant="primary" size="fs-25" className="fw600"/>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

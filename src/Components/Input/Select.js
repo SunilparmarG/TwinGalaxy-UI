@@ -4,7 +4,7 @@ import './Input.scss';
 
 function Select(props) {
   return (
-    <Form.Group className="mb-3 inputFeild">
+    <Form.Group className="mb-3 me-3 inputFeild">
       <Form.Label>{props.label}</Form.Label>
       <Form.Select className={props.className}>
         <option>Open this select menu</option>

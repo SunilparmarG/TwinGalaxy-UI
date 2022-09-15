@@ -105,7 +105,7 @@ const Cardbox = (props) => {
             </ul>
             <div>
               <Buttons
-                title="Vote Now"
+                text="Vote Now"
                 variant="primary"
                 className="primary pad1 fs-14"
               />

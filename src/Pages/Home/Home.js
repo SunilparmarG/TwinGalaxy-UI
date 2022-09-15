@@ -225,7 +225,7 @@ const Home = () => {
             <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
               <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6"/>
               <Buttons
-              title="Submit a performance"
+              text="Submit a performance"
               variant="primary"
               className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
             />
@@ -285,7 +285,7 @@ const Home = () => {
                       </div>
                       
                       <Buttons
-                      title="Vote Now"
+                      text="Vote Now"
                       variant="primary"
                       className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
                       />
@@ -316,7 +316,7 @@ const Home = () => {
                 <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris"/>
               </div>
               <div className='d-flex justify-content-center'>
-              <Buttons title="View all" className="fs-20 fw600" variant="borderDanger"/>
+              <Buttons text="View all" className="fs-20 fw600" variant="borderDanger"/>
               </div>
               
               

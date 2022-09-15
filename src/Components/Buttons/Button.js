@@ -1,32 +1,24 @@
-import { Button } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import './Buttons.scss';
+// import {Button} from 'react-bootstrap';
+import Image from '../image/Image';
 
-function ButtonComponent(props) {
 
+const ButtonComponent = ({ size, variant, color, className, text,  iconSrc,   ...rest }) => {
+  const classes =
+    "button " +
+    (variant || "") + " " + (className || "") + " " + (size || "");
+  
   return (
-
-    <Button
-      variant={props.variant}
-      className={props.className}
-    >
-      {props.iconSrc ? (
-        <img src={props.iconSrc} className="me-2" alt="img" />
-      ) : (
-        ''
-      )}
-      {props.title}
-    </Button>
-
+    <button className={classes} {...rest} name={text}>
+          {iconSrc ? (
+            <Image className='me-2' src={iconSrc} alt="img" />
+          ) : (
+            ''
+          )}
+          {text}
+    </button>
   );
-
-}
-
-ButtonComponent.propTypes = {
-  variant: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  iconSrc: PropTypes.string,
-  title: PropTypes.string.isRequired,
 };
+
 
 export default ButtonComponent;

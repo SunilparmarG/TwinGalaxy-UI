@@ -26,7 +26,7 @@ const TopBarOne = ({ profile, content, name, post,backgroundColor }) => {
                 <Text className='text-col6 fw400 fs-12'  text={post}/>
                 </div>
                 
-                <Button variant='borderWhite' className="ms-3 "  title='Customize' iconSrc={Customize}/>
+                <Button variant='borderWhite' className="ms-3 "  text='Customize' iconSrc={Customize}/>
                 
               </div>
             </div>
