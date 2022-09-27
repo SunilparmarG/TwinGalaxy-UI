@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-import NavScrollExample from './Layout/Header/Header';
+import NavScrollExample from './Layout/Header/Header'; 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import "../src/assets/scss/style.scss";
