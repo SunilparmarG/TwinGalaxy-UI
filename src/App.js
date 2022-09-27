@@ -3,20 +3,21 @@
 
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
+import Performance from './Pages/Performance/Performance';
 import Header from './Layout/Header/Header';
 import Footer from './Layout/Footer/Footer';
-import Login from './Pages/Login/Login';
-import Register from './Pages/Register/Register';
+
+
 import "../src/assets/scss/style.scss";
 
-import Performance from './Pages/Performance/Performance';
+
 import NavScrollExample from './Layout/Header/Header'; 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import "../src/assets/scss/style.scss";
-import Home from './Pages/Home/Home';
-import TheWall from './Pages/Home/ThewallHome';
-import Performance from './Pages/Performance/Performance'; 
+
+
+
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
 
       {/* <Home/> */}
       {/* <Home /> */}
-      <TheWall /> 
+      
       {/* <Performance/> */}
       {/* <Register/> */}
       {/* <NavScrollExample />
