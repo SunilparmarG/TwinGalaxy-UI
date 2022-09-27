@@ -103,6 +103,7 @@ const Register = () => {
                       
                       <div className="w-100">
                       <Input
+                        type="number"
                         placeholder="Phone Number"
                         name="Phone number"
                         required="true"

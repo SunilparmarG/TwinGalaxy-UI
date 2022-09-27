@@ -37,7 +37,7 @@ const CardOne = (props) => {
               <ul className="activityList mb-1">
                 <li>
                   <Text text="Game:" className="text-col1  fs-16 fw600 d-inline-block me-2"/>
-                  <Text text=" Hill Climb.." className="text-col4 fs-16 fw600 d-inline-block"/>
+                  <Text text="Hill Climb" className="text-col4 fs-16 fw600 d-inline-block ellipsis"/>
                   
                 </li>
                 <li>

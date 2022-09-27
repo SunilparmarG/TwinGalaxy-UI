@@ -32,7 +32,7 @@ const Login = () => {
               <Row>
                 <Col md={12} lg={6}>  
                   <Heading text="Login" typeofHeading="h2" size="fs-36" color="text-col13" className="text-capitalize fw600" />
-                  <div className='d-flex align-items-center'>
+                  <div className='d-flex align-items-center mb-4'>
                     <Text text="Don’t have an account ?" className="text-col2 fs-20 fw500" />
                     <Nav.Link className="ms-1"><span className='text-col4 fs-20 fw500'>Register</span></Nav.Link>
                   </div>
@@ -69,7 +69,7 @@ const Login = () => {
                     </Col>
                     <Col md={12}> 
                       <Button 
-                        className="btn-primary fs-24 text-col3 fw-600 mt36 w-100 mb-3"
+                        className="btn-primary fs-24 text-col6 fw-600 mt36 w-100 mb-3"
                         text="Login Now"
                       />
                     </Col>

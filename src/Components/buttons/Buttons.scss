@@ -1,5 +1,4 @@
 @import "../../assets/scss/module/variables.scss";
-@import "../../assets/scss/module/mixin.scss";
 .button{          
     outline: none;
     border-radius:50px  ;    
@@ -109,7 +108,11 @@
   
 
   @media (max-width:768px){ 
-    .button {padding:5px 15px  ;}
+    .button {
+      &.fs-25{
+        font-size: 18px;
+      }
+    }
   }
 
 

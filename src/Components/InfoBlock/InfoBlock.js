@@ -14,7 +14,7 @@ const InfoBlock = (props) => {
             <Image src={props.img} className=' img-fluid'/>
         </div>
         <div>
-            <Heading typeofHeading="h4" text={props.heading} className='fs-15 fw600 text-col1' />
+            <Heading typeofHeading="h4" text={props.heading} className='fs-15 fw600 text-col1 mb-0' />
             <Text text={props.text} className='fs-14 fw500 text-col2'/>
         </div>
                 
