@@ -10,7 +10,7 @@ import Tab from '../../Components/Tab/tab';
 import Text from '../../Components/text/Text';
 import Switch from '../../Components/switch/Switch';
 import Buttons from '../../Components/buttons/Button';
-import TopBarOne from '../../Components/TopBarOne/TopBarOne'; 
+import TopBarOne from '../../Components/TopBarOne/TopBarOne';   
 
 // images and icons 
 import Profile1 from '../../assets/images/profile1.jpg';

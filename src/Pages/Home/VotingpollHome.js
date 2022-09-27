@@ -5,19 +5,22 @@ import Col from 'react-bootstrap/Col';
 import Header from '../../Layout/Header/Header';
 import Footer from '../../Layout/Footer/Footer';
 import Carousel from '../../Components/Carousel/Carousel';
-import Card from '../../Components/card/Card';
 import CardOne from '../../Components/card/CardOne';
 import CardThree from '../../Components/card/CardThree';
-import CardTwo from '../../Components/card/CardTwo';
 import Toast from '../../Components/Toast/ToastAlert';
 import ListOne from '../../Components/ListOne/ListOne';
 import Image from '../../Components/image/Image';
-import Tab from '../../Components/Tab/tab';
 import Text from '../../Components/text/Text';
 import Slider from '../../Components/slider/slider';
 import Switch from '../../Components/switch/Switch';
-import Buttons from '../../Components/buttons/Button';
-import TopBarOne from '../../Components/TopBarOne/TopBarOne';
+import Buttons from '../../Components/buttons/Button'; 
+
+// Badge component
+import Badges from '../../Components/Badges/Badges';
+import './Home.scss';
+import InfoBlock from '../../Components/InfoBlock/InfoBlock';
+
+// images and icons 
 import Image1 from '../../assets/images/photo.jpg';
 import ProfileImage from '../../assets/images/avatar_sml.png';
 import Profile1 from '../../assets/images/profile1.jpg';
@@ -33,45 +36,20 @@ import Back from '../../assets/images/svg/arrowUpLeft.svg';
 import Doubleuotes1 from '../../assets/images/svg/double-quotes-1.svg';
 import Doubleuotes2 from '../../assets/images/svg/double-quotes-2.svg';
 import VideoImg from '../../assets/images/video.png';
-import Verify from '../../assets/images/svg/verify.svg';
-
 import Verify1 from '../../assets/images/svg/verify1.svg';
-import Badges from '../../Components/Badges/Badges';
-// import Tab from '../../Components/Tab/tab';
-import FbPost from '../../assets/images/fbPosts.png';
-
-import './Home.scss';
-import { Button } from 'bootstrap';
-import InfoBlock from '../../Components/InfoBlock/InfoBlock';
-import ToppBarOne from '../../Components/TopBarOne/TopBarOne';
 
 const Home = () => {
   return (
     <div>
       <Header /> 
       <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default" />
-      {/* <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/> */}
       <div className='position-relative'>
         <div className="switchWrap">
           <Switch id="btn1" />
         </div>
         <Carousel />
         <Container>
-          <Row className='mt-5'>
-            {/* <Col lg={9}>
-                <div className='profileWrap'>
-                  <div className='d-flex align-items-end'>
-                    <Text text='Welcome' className='fs-32 fw500 text-col1'/>
-                    <Text text=' Jonathan Doe' className='fs-32 fw700 text-col1 ms-2'/>
-                    <Text text='Verified' className='fs-20 fw700 text-col22 ms-2 mb-1' />
-                  </div>
-                  <div className='d-flex mb-3'>
-                    <Text text='TG World Record' className='text-col23 fs-22 fw500'/>
-                    <Text text='120' className='fs-22 text-col23 fw700 ms-2'/>
-                  </div>
-                  <ListOne/>
-                </div>
-              </Col> */}
+          <Row className='mt-5'> 
             <Col lg={9}>
               <div className='cardBg  mb-4'>
                 <div className='d-flex mb-3 flex-wrap flex-md-nowrap flex-lg-nowrap'>
@@ -89,8 +67,6 @@ const Home = () => {
                       iconSrc={Verify1}
                     />
                   </div>
-
-
                 </div>
                 <div className='d-flex mb-3'>
                   <Text text='TG World Record' className="fs-22 fw500 text-col6" />
@@ -98,9 +74,7 @@ const Home = () => {
                 </div>
                 <div className='mb-3'>
                   <ListOne />
-                </div>
-
-
+                </div> 
                 <div className='borderBox d-inline-block text-col6 me-4'>
                   <div className='d-flex'>
                     <div>
@@ -117,10 +91,8 @@ const Home = () => {
                         <Text text='Total' className="fs-22 fw500" />
                         <Text text='30' className="fs-22 fw700 ms-3" />
                       </div>
-
                     </div>
                   </div>
-
                 </div>
                 <div className='borderBox d-inline-block text-col6 me-4'>
                   <div className='d-flex'>
@@ -138,14 +110,10 @@ const Home = () => {
                         <Text text='Total' className="fs-22 fw500" />
                         <Text text='120' className="fs-22 fw700 ms-3" />
                       </div>
-
                     </div>
                   </div>
-
                 </div>
-
               </div>
-
             </Col>
             <Col lg={3}>
               <div className="contentWrap">
@@ -321,14 +289,6 @@ const Home = () => {
 
             </div>
           </Col>
-          {/* <Col lg={4}>
-              <div className='contentWrap'>
-                <div className='d-flex justify-content-center overflow-hiddenH'>
-                  <Image src={FbPost} className="img-fluid" />
-                </div>
-              
-              </div>
-            </Col> */}
         </Row>
 
       </Container>

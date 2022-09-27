@@ -1,18 +1,31 @@
 // import logo from './logo.svg';
 // import './App.css';
+
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import Performance from './Pages/Performance/Performance';
+import Header from './Layout/Header/Header';
+import Footer from './Layout/Footer/Footer';
+import "../src/assets/scss/style.scss";
 import NavScrollExample from './Layout/Header/Header'; 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
-import "../src/assets/scss/style.scss";
-import Home from './Pages/Home/Home';
-import TheWall from './Pages/Home/ThewallHome';
-import Performance from './Pages/Performance/Performance'; 
+import ThewallHome from './Pages/Home/ThewallHome'; 
+import "../src/assets/scss/style.scss";  
 
 function App() {
   return (
-    <div className="App"> 
+    <div className="App">
+      <Header />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='performance' element={<Performance />}/>
+      <Route path='thewallhome' element={<ThewallHome />}/>
+    </Routes>
+         <Footer/>
+      {/* <Home/> */}
       {/* <Home /> */}
-      <TheWall /> 
+      
       {/* <Performance/> */}
       {/* <Register/> */}
       {/* <NavScrollExample />

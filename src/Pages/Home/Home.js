@@ -2,8 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from '../../Layout/Header/Header';
-import Footer from '../../Layout/Footer/Footer';
+
 import Carousel from '../../Components/Carousel/Carousel';
 import Card from '../../Components/card/Card';
 import CardOne from '../../Components/card/CardOne';
@@ -48,7 +47,7 @@ import ToppBarOne from '../../Components/TopBarOne/TopBarOne';
 const Home = () => {
   return (
     <div>
-      <Header /> 
+      
       <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default" />
       {/* <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/> */}
       <div className='position-relative'>
@@ -332,7 +331,7 @@ const Home = () => {
         </Row>
 
       </Container>
-      <Footer />
+      
     </div>
   )
 }
