@@ -13,14 +13,22 @@ import Register from './Pages/Register/Register';
 import ThewallHome from './Pages/Home/ThewallHome'; 
 import "../src/assets/scss/style.scss";  
 
+import "../src/assets/scss/style.scss";
+
+
+
+
+
 function App() {
   return (
-    <div className="App">
+    <div className="App">  
       <Header />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='performance' element={<Performance />}/>
       <Route path='thewallhome' element={<ThewallHome />}/>
+      <Route path='login' element={<Login />}/>
+      <Route path='register' element={<Register />}/>
     </Routes>
          <Footer/>
       {/* <Home/> */}

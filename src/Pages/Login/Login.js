@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-import Header from '../../Layout/Header/Header';
-import Footer from '../../Layout/Footer/Footer';
+
 import Heading from '../../Components/heading/Heading';
 import Text from '../../Components/text/Text';
 import Input from '../../Components/Input/InputFloat';
@@ -20,7 +19,7 @@ import './Login.scss';
 const Login = () => {
   return (
     <div>
-      <Header />
+      
       <div className='position-relative overflow-hidden'>
         <Container className='mt-5 mb-5'>
           <div className='userLayout'>
@@ -105,7 +104,7 @@ const Login = () => {
           </div>
         </Container>
       </div>
-      <Footer />
+      
     </div>
   )
 }
