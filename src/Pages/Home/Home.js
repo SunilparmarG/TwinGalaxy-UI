@@ -48,7 +48,7 @@ import Header from '../../Layout/Header/Header';
 const Home = () => {  
     return (
       <div>
-        <Header/>
+        
         
         
         <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default"/>
