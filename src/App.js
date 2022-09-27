@@ -6,14 +6,9 @@ import Home from './Pages/Home/Home';
 import Performance from './Pages/Performance/Performance';
 import Header from './Layout/Header/Header';
 import Footer from './Layout/Footer/Footer';
-
-
-import "../src/assets/scss/style.scss";
-
-
-import NavScrollExample from './Layout/Header/Header'; 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+
 import "../src/assets/scss/style.scss";
 
 
@@ -27,6 +22,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='performance' element={<Performance />}/>
+      <Route path='login' element={<Login />}/>
+      <Route path='register' element={<Register />}/>
     </Routes>
          <Footer/>
 
