@@ -3,17 +3,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../../assets/images/svg/logo.svg";
+import Image from '../../Components/image/Image';
 import Switch from '../../Components/switch/Switch';
-import './Header.scss';
+import './Header.scss'; 
 
 function NavScrollExample() {
   return (
     <Navbar bg="white" expand="lg">
       <Container>
-        <Navbar.Brand href="#">
-          <img src={Logo} alt="logo" />
+        <Navbar.Brand href="#">  
+          <Image src={Logo} name="Twin Galaxies" title='Welcome to Twin Galaxies' className='img-fluid' />        
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Toggle aria-controls="navbarScroll" /> 
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="ms-auto my-2 my-lg-0 text-col2 fw600 fs-18"
