@@ -10,7 +10,7 @@ import Performance from './Pages/Performance/Performance';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> 
       {/* <Home /> */}
       <TheWall /> 
       {/* <Performance/> */}
