@@ -5,12 +5,13 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import "../src/assets/scss/style.scss";
 import Home from './Pages/Home/Home';
+import Performance from './Pages/Performance/Performance';
 
 function App() {
   return (
     <div className="App">
-      {/* <Home/> */}
-      <Login />
+      <Home/>
+      {/* <Performance/> */}
       {/* <Register/> */}
       {/* <NavScrollExample />
 

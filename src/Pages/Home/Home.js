@@ -12,6 +12,7 @@ import CardTwo from '../../Components/card/CardTwo';
 import Toast from '../../Components/Toast/ToastAlert';
 import ListOne from '../../Components/ListOne/ListOne';
 import Image from '../../Components/image/Image';
+import Tab from '../../Components/Tab/tab';
 import Text from '../../Components/text/Text';
 import Slider from '../../Components/slider/slider';
 import Switch from '../../Components/switch/Switch';
@@ -50,13 +51,13 @@ const Home = () => {
         <Header/>
         
         
-        {/* <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default"/> */}
-        <TopBarOne name="Jonathan Doe" post="(Junior Member)" backgroundColor="default"/>
+        <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default"/>
+        {/* <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/> */}
         <div className='position-relative'>
           <div className="switchWrap">
               <Switch id="btn1"/>
             </div>
-          {/* <Carousel/> */}
+          <Carousel/>
           <Container>
             <Row className='mt-5'>
               {/* <Col lg={9}>
@@ -280,7 +281,7 @@ const Home = () => {
                     <div className='submitWrap padInc d-flex align-items-center ms-3 flex-wrap flex-md-nopwrap justify-content-start justify-content-lg-between '>
                       <Text text='Voting Poll: Is this Performance Claim Valid?' className="fs-25 fw600 text-col6 mb-3 mb-lg-0"/>
                       <div className='mb-3 mb-md-0'>
-                        <Image src={Like1} className="img-fuid mx-2"/>
+                        <Image src={Like1} className="img-fuid mx-2" alt='Like'/>
                         <Image src={Dislike} className="img-fuid mx-2"/>
                       </div>
                       
@@ -298,11 +299,11 @@ const Home = () => {
                     <Text text="You, Diana Prince and 10 others" className="text-col4 fs-18 fw600  me-3"/>
                   </div>
                   <div className='d-flex'>
-                    <Image className="img-fluid me-2" src={Back}  />
-                    <Image className="img-fluid me-2" src={Doubleuotes1}  />
-                    <Image className="img-fluid me-2" src={Doubleuotes2}  />
-                    <Image className="img-fluid me-2" src={Spam}  />
-                    <Image className="img-fluid me-2" src={Envelop}  />
+                    <Image className="img-fluid me-3" src={Back}  />
+                    <Image className="img-fluid me-3" src={Doubleuotes1}  />
+                    <Image className="img-fluid me-3" src={Doubleuotes2}  />
+                    <Image className="img-fluid me-3" src={Spam}  />
+                    <Image className="img-fluid me-3" src={Envelop}  />
                   </div>
 
                   
@@ -316,7 +317,7 @@ const Home = () => {
                 <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris"/>
               </div>
               <div className='d-flex justify-content-center'>
-              <Buttons text="View all" className="fs-20 fw600" variant="borderDanger"/>
+              <Buttons text="View all" className="fs-20 fw600 pdCustom" variant="borderDanger"/>
               </div>
               
               
