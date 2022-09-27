@@ -1,5 +1,5 @@
 @import './module/variables.scss';
-@import './module/mixin.scss';  
+
 
 body {
   @include font-family;
@@ -84,6 +84,18 @@ body {
         max-width: none;
     }
 }
+.mxWdth2{
+    max-width: 550px;
+    @media (max-width:767px){
+        max-width: none;
+    }
+}
+.minWdth{
+    min-width: 200px;
+    @media (max-width:767px){
+        min-width: none;
+    }
+}
 .mxWdth1{
     max-width: 66px;
 }
@@ -93,4 +105,14 @@ body {
 .upIndex{
     position: relative;
     z-index: 2;
+}
+.ellipsis{
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+}
+.pdCustom{
+    padding: 5px 20px !important;
 }

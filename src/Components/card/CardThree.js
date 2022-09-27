@@ -6,8 +6,6 @@ import Card from "react-bootstrap/Card";
 import Image from "../image/Image";
 import Text from "../text/Text";
 import Heading from "../heading/Heading";
-import ImageTop from '../../assets/images/photo.jpg';
-import Buttons from '../buttons/Button';
 
 
 const CardThree = (props) => {
@@ -19,17 +17,13 @@ const CardThree = (props) => {
           
           <div className="d-flex align-items-start flex-wrap flex-md-nowrap flex-lg-nowrap mb-2">
             
-              
-              
-              
-              
               <div className="d-flex align-items-start">
                 <Image src={props.imgSecond} className="img-fluid   me-3"/>
                 <div>
                 <Heading 
                 color="primaryColor"
                 size="large"
-                className=' w-100 mb-1 fw500'
+                className='w-100 mb-1 fw500'
                 typeofHeading='h1'
                 text={props.heading}
                 />
@@ -37,9 +31,6 @@ const CardThree = (props) => {
                   <Text text="At 06:31 PM, Aug 1, 2022" className="text-col2 fs-12 fw600 "/>
                 </div>
               </div>
-            
-            
-
             
           </div>
           

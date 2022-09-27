@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import Card from '../card/Card';
+import './slider.scss';
 
 
 export default function SimpleSlider() {
@@ -8,11 +9,11 @@ export default function SimpleSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.1,
+    slidesToShow: 2.6,
     slidesPerRow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
-    centerMode: true,
+    initialSlide: 1,
+    centerMode: false,
       responsive: [
         {
           breakpoint: 1400,
@@ -30,7 +31,7 @@ export default function SimpleSlider() {
             slidesToScroll: 1,
             infinite: true,
             dots: false,
-            centerMode: true,
+            centerMode: false,
           }
         },
         {
@@ -39,7 +40,7 @@ export default function SimpleSlider() {
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 1,
-            centerMode: true,
+            centerMode: false,
           }
         },
         {
@@ -47,14 +48,14 @@ export default function SimpleSlider() {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            centerMode: true,
+            centerMode: false,
           }
         }
       ]
   };
   return (
    
-    <Slider {...settings}>
+    <Slider {...settings} className='homeSliderOne'>
       <div>
       <Card/>
       </div>
