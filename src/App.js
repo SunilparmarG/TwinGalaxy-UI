@@ -1,16 +1,41 @@
 // import logo from './logo.svg';
 // import './App.css';
-import NavScrollExample from './Layout/Header/Header';
+
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import Performance from './Pages/Performance/Performance';
+import Header from './Layout/Header/Header';
+import Footer from './Layout/Footer/Footer';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+
 import "../src/assets/scss/style.scss";
-import Home from './Pages/Home/Home';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
+      <Header />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='performance' element={<Performance />}/>
+      <Route path='login' element={<Login />}/>
+      <Route path='register' element={<Register />}/>
+    </Routes>
+         <Footer/>
+
+
+
+
+
+
       {/* <Home/> */}
-      <Login />
+      {/* <Home /> */}
+      
+      {/* <Performance/> */}
       {/* <Register/> */}
       {/* <NavScrollExample />
 

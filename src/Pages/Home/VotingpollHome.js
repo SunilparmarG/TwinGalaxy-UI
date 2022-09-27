@@ -2,7 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import Header from '../../Layout/Header/Header';
+import Footer from '../../Layout/Footer/Footer';
 import Carousel from '../../Components/Carousel/Carousel';
 import Card from '../../Components/card/Card';
 import CardOne from '../../Components/card/CardOne';
@@ -43,25 +44,21 @@ import './Home.scss';
 import { Button } from 'bootstrap';
 import InfoBlock from '../../Components/InfoBlock/InfoBlock';
 import ToppBarOne from '../../Components/TopBarOne/TopBarOne';
-import Header from '../../Layout/Header/Header';
 
-const Home = () => {  
-    return (
-      <div>
-        <Header/>
-        
-        
-        <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default"/>
-        {/* <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/> */}
-        <div className='position-relative'>
-          <div className="switchWrap">
-              <Switch id="btn1"/>
-            </div>
-          <Carousel/>
-          <Container>
-            <Row className='mt-5'>
-              {/* <Col lg={9}>
-
+const Home = () => {
+  return (
+    <div>
+      <Header /> 
+      <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default" />
+      {/* <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/> */}
+      <div className='position-relative'>
+        <div className="switchWrap">
+          <Switch id="btn1" />
+        </div>
+        <Carousel />
+        <Container>
+          <Row className='mt-5'>
+            {/* <Col lg={9}>
                 <div className='profileWrap'>
                   <div className='d-flex align-items-end'>
                     <Text text='Welcome' className='fs-32 fw500 text-col1'/>
@@ -223,7 +220,7 @@ const Home = () => {
 
       </div>
       <Container  >
-        
+        <div>
           <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
             <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6" />
             <Buttons
@@ -232,15 +229,15 @@ const Home = () => {
               className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
             />
           </div>
-          <Text text='Performances' className="fs-30 fw600 mb-3"/>
-          <div className='position-relative'>
-            <Slider/>
-            <Text text='View all' className='fs-20 fw600 text-col4 viewBtn'/>
-          </div>
-          
-          <Row className='mt-4 mb-3'>
-            <Col lg={12}>
-            
+        </div>
+        <Text text='Performances' className="fs-30 fw600 mb-3" />
+        <div className='position-relative'>
+          <Slider />
+
+        </div>
+
+        <Row className='mt-4 mb-3'>
+          <Col lg={12}>
 
             {/* <Tab/> */}
             <div className='contentWrap'>
@@ -318,7 +315,7 @@ const Home = () => {
                 <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
               </div>
               <div className='d-flex justify-content-center'>
-              <Buttons text="View all" className="fs-20 fw600 pdCustom" variant="borderDanger"/>
+                <Buttons text="View all" className="fs-20 fw600 pdCustom" variant="borderDanger" />
               </div>
 
 
@@ -335,9 +332,9 @@ const Home = () => {
         </Row>
 
       </Container>
-      
+      <Footer />
     </div>
   )
 }
 
-export default Home
+export default Home;

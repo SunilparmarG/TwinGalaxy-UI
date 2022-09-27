@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-import Header from '../../Layout/Header/Header';
-import Footer from '../../Layout/Footer/Footer';
+import {useNavigate} from 'react-router-dom'
 import Heading from '../../Components/heading/Heading';
 import Text from '../../Components/text/Text';
 import Input from '../../Components/Input/InputFloat';
@@ -18,9 +17,10 @@ import EyeSvgrepo from '../../assets/images/svg/eye-svgrepo.svg';
 import './Login.scss';
 
 const Login = () => {
+    const navigate = useNavigate();
   return (
     <div>
-      <Header />
+      
       <div className='position-relative overflow-hidden'>
         <Container className='mt-5 mb-5'>
           <div className='userLayout'>
@@ -32,7 +32,7 @@ const Login = () => {
               <Row>
                 <Col md={12} lg={6}>  
                   <Heading text="Login" typeofHeading="h2" size="fs-36" color="text-col13" className="text-capitalize fw600" />
-                  <div className='d-flex align-items-center'>
+                  <div className='d-flex align-items-center mb-4'>
                     <Text text="Don’t have an account ?" className="text-col2 fs-20 fw500" />
                     <Nav.Link className="ms-1"><span className='text-col4 fs-20 fw500'>Register</span></Nav.Link>
                   </div>
@@ -69,8 +69,12 @@ const Login = () => {
                     </Col>
                     <Col md={12}> 
                       <Button 
-                        className="btn-primary fs-24 text-col3 fw-600 mt36 w-100 mb-3"
+                       onClick={() =>                  
+                       navigate('/', {replace: true})
+                      }
+                        className="btn-primary fs-24 text-col6 fw-600 mt36 w-100 mb-3"
                         text="Login Now"
+                        
                       />
                     </Col>
                     <Col md={12}>
@@ -105,7 +109,7 @@ const Login = () => {
           </div>
         </Container>
       </div>
-      <Footer />
+      
     </div>
   )
 }
