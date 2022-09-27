@@ -11,6 +11,7 @@ import NavScrollExample from './Layout/Header/Header';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import ThewallHome from './Pages/Home/ThewallHome'; 
+// import ThewallHome from './Pages/Home/ThewallHome'; 
 import "../src/assets/scss/style.scss";  
 
 import "../src/assets/scss/style.scss";

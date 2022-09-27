@@ -13,9 +13,7 @@ function NavScrollExample() {
     <Navbar bg="white" expand="lg">
       <Container>
         <Navbar.Brand href="/">  
-        
-          <Image src={Logo} name="Twin Galaxies" title='Welcome to Twin Galaxies' className='img-fluid' />        
-        
+          <Image src={Logo} name="Twin Galaxies" title='Welcome to Twin Galaxies' className='img-fluid' />                
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" /> 
         <Navbar.Collapse id="navbarScroll">

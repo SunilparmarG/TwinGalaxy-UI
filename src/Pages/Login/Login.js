@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-
+import {useNavigate} from 'react-router-dom'
 import Heading from '../../Components/heading/Heading';
 import Text from '../../Components/text/Text';
 import Input from '../../Components/Input/InputFloat';
@@ -17,6 +17,7 @@ import EyeSvgrepo from '../../assets/images/svg/eye-svgrepo.svg';
 import './Login.scss';
 
 const Login = () => {
+    const navigate = useNavigate();
   return (
     <div>
       
@@ -68,8 +69,12 @@ const Login = () => {
                     </Col>
                     <Col md={12}> 
                       <Button 
+                       onClick={() =>                  
+                       navigate('/', {replace: true})
+                      }
                         className="btn-primary fs-24 text-col6 fw-600 mt36 w-100 mb-3"
                         text="Login Now"
+                        
                       />
                     </Col>
                     <Col md={12}>
