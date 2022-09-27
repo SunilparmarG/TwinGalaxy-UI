@@ -38,7 +38,7 @@ const Performance = () => {
         {/* <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default"/> */}
         <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/>
         <div className='position-relative'>
-          <div className="switchWrap">
+          <div className="switchWrap"> 
               <Switch id="btn1"/>
           </div>
         </div>
