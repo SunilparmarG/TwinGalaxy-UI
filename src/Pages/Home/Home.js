@@ -318,7 +318,7 @@ const Home = () => {
                 <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
               </div>
               <div className='d-flex justify-content-center'>
-              <Buttons text="View all" className="fs-20 fw600 pdCustom" variant="borderDanger"/>
+              <Buttons text="View all" className="fs-20 fw600 " variant="borderDanger"/>
               </div>
 
 

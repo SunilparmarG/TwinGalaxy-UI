@@ -25,7 +25,8 @@ const Login = () => {
         <Container className='mt-5 mb-5'>
           <div className='userLayout'>
             <div className='backBtn pt-3 ps-3'>
-                <Nav.Link className="fs-18 p-0  d-flex align-items-center"><Image src={BackArrow} className="img-fluid" /> 
+                <Nav.Link className="fs-18 p-0  d-flex align-items-center">
+                  <Image src={BackArrow} className="img-fluid" /> 
                 <span className='text-col4 ms-2 fw500'>Back</span></Nav.Link>   
             </div>
             <div className='innerLayout'>
@@ -70,7 +71,7 @@ const Login = () => {
                     <Col md={12}> 
                       <Button 
                        onClick={() =>                  
-                       navigate('/', {replace: true})
+                       navigate('/thewallhome', {replace: true})
                       }
                         className="btn-primary fs-24 text-col6 fw-600 mt36 w-100 mb-3"
                         text="Login Now"

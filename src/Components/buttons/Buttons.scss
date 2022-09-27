@@ -1,9 +1,9 @@
 @import "../../assets/scss/module/variables.scss";
 .button{          
     outline: none;
-    border-radius:50px  ;    
+    border-radius:50px;    
     align-items: center;
-    padding:19px 28px  ;
+    padding:19px 28px;
     @include font-family;
     position: relative;
     line-height: 1;

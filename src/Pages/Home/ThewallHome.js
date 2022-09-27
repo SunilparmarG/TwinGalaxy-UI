@@ -25,8 +25,7 @@ import './Home.scss';
 
 const TheWall = () => {
     return (
-        <div>
-            <Header />
+        <div>            
             <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default" />
             <div className='position-relative'>    
                 <div className="switchWrap">
@@ -195,7 +194,7 @@ const TheWall = () => {
                     </Col>
                 </Row>
             </Container>
-            <Footer />
+            
         </div>
     )
 }

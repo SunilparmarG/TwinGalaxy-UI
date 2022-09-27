@@ -13,10 +13,8 @@ import './Text.scss';
  */
 
 const Text = (props) => {
-  const { size, color, fontWeight, className, ...rest } = props;
-  const name = `${size || ''} ${color || ''} ${fontWeight || ''} ${
-    className || ''
-  } ${'text'} `;
+  const {size, color, fontWeight, className, ...rest } = props;
+  const name = `${size || ''} ${color || ''} ${fontWeight || ''} ${className || '' } ${'text'} `;
   return (
     <React.Fragment>
       <span className={name} {...rest}>
