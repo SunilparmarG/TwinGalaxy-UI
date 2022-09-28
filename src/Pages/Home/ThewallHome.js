@@ -33,7 +33,7 @@ const TheWall = () => {
                 </div>
                 <Container>
                     <Row className='mt-5'>
-                        <Col lg={9}>
+                        <Col xl={9} lg={8}>
                             <div className='cardBg  mb-4'>
                                 <div className='d-flex mb-3 flex-wrap flex-md-nowrap flex-lg-nowrap'>
                                     <div className='imgWrap mx-auto mx-sm-0 mb-3 mb-md-0'>
@@ -108,7 +108,7 @@ const TheWall = () => {
                             </div>
 
                         </Col>
-                        <Col lg={3}>
+                        <Col xl={3} lg={4}>
                             <div className="contentWrap">
 
                                 <div className='d-flex justify-content-between brdr-btm-1 pb-2 mb-3'>
