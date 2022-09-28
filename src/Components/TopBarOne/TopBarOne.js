@@ -12,7 +12,7 @@ import Badges from '../Badges/Badges';
 import { Container, Row, Col } from 'react-bootstrap';
 const TopBarOne = ({ profile, content, name, post, backgroundColor }) => {
   const classes =
-    "toast2 position-absolute " + (backgroundColor || "");
+    "toast2 " + (backgroundColor || "");
   return (
     <div className='toastBar'>
       {
