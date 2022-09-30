@@ -13,12 +13,9 @@ import Buttons from '../buttons/Button';
 const CardOne = (props) => {
   return (
     <div className="cardOne warningBorder">
-      <Card>
-        
-        <Card.Body>
-          
-          <div className="d-flex align-item-center flex-wrap flex-md-nowrap flex-lg-nowrap mb-2">
-            
+      <Card>        
+        <Card.Body>          
+          <div className="d-flex align-item-center flex-wrap flex-md-nowrap flex-lg-nowrap mb-2">            
               <div className="cardImageWrap mx-auto mx-md-0 mb-3 mb-md-0">
               <Image 
                 src={props.imgFirst}
@@ -27,13 +24,23 @@ const CardOne = (props) => {
               />
               </div>
               <div className="ms-3 d-flex flex-wrap ">
-              <Heading 
-                color="primaryColor"
-                size="large"
-                className=' w-100 mb-1 fw500'
-                typeofHeading='h1'
-                text={props.heading}
-              />
+                <div className="d-flex flex-wrap">
+                  <Heading 
+                    color="primaryColor"
+                    size="large"
+                    className='fw500'
+                    typeofHeading='h1'
+                    text={props.heading}
+                  />
+                  <Heading 
+                    color="col5"
+                    size="large"
+                    className='fw500 ms-1'
+                    typeofHeading='h1'
+                    text={props.headingTwo}
+                  />
+               </div>
+
               <ul className="activityList mb-1">
                 <li>
                   <Text text="Game:" className="text-col1  fs-16 fw600 d-inline-block me-2"/>

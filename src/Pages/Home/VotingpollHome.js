@@ -76,22 +76,40 @@ const Home = () => {
               <Text text='Recent Activity' className="fs-25 fw600 text-col1 mb-4" />
 
               <div className='mb-3'>
-                <CardOne heading="Crazymoose3k’s has been submitted a performance" bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage} />
+                <CardOne heading="Crazymoose3k's"
+                 headingTwo="has been submitted a performance"
+                 bottomText=" Game: Hill Climb.." 
+                 imgFirst={Image1}
+                  imgSecond={ProfileImage} 
+                  />
               </div>
               <div className='mb-3'>
-                <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
+                <CardThree 
+                heading="RaGeNyc" 
+                headingTwo="has just posted"
+                imgSecond={ProfileImage} 
+                subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
               </div>
               <div className='mb-3'>
-                <CardOne heading="Crazymoose3k’s has been submitted a performance" bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage} />
+                <CardOne heading="Crazymoose3k’s"
+                headingTwo="has been submitted a performance"
+                 bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage} />
               </div>
               <div className='mb-3'>
-                <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
+                <CardThree heading="RaGeNyc"
+                 headingTwo="has just posted"
+                 imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
               </div>
               <div className='mb-3'>
-                <CardOne heading="Crazymoose3k’s has been submitted a performance" bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage} />
+                <CardOne heading="Crazymoose3k’s"
+                headingTwo="has been submitted a performance"
+                bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage} />
               </div>
               <div className='mb-3'>
-                <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
+                <CardThree 
+                 heading="RaGeNyc"
+                 headingTwo="has just posted"
+                 imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
               </div>
               <div className='d-flex justify-content-center'>
                 <Buttons text="View all" className="fs-20 fw600 pdCustom" variant="borderDanger" />
