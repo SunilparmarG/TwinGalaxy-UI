@@ -82,7 +82,7 @@ const Home = () => {
                  imgFirst={Image1}
                   imgSecond={ProfileImage} 
                   />
-              </div>
+              </div>   
               <div className='mb-3'>
                 <CardThree 
                 heading="RaGeNyc" 
