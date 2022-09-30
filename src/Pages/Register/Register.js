@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
+import {NavLink } from 'react-router-dom';
 
 
 import Heading from '../../Components/heading/Heading';
@@ -36,7 +37,7 @@ const Register = () => {
                   <Heading text="Register" typeofHeading="h2" size="fs-36" color="text-col13" className="text-capitalize fw600" />
                   <div className='d-flex align-items-center mb-4'>
                     <Text text="Already have an account ?" className="text-col2 fs-20 fw500" />
-                    <Nav.Link className="ms-1"><span className='text-col4 fs-20 fw500'>Login</span></Nav.Link>
+                    <NavLink className="ms-1" to='/login'><span className='text-col4 fs-20 fw500'>Login</span></NavLink>
                   </div>
                   <div>
                     <div className='mb-md-4 mb-3'>
@@ -141,19 +142,19 @@ const Register = () => {
                       <Text text="Or continue with" className="text-col2 fs-18 fw500 mb-3 text-center" /> 
                       <ul className='socialLogin'>
                         <li>
-                          <Nav.Link>
+                          <NavLink>
                             <Image src={Facebook} className="img-fluid" />
-                          </Nav.Link>
+                          </NavLink>
                         </li>
                         <li>
-                          <Nav.Link>
+                          <NavLink>
                             <Image src={Comments} className="img-fluid" />
-                          </Nav.Link>
+                          </NavLink>
                         </li>
                         <li>
-                          <Nav.Link>
+                          <NavLink>
                             <Image src={Twitters} className="img-fluid" />
-                          </Nav.Link>
+                          </NavLink>
                         </li>
                       </ul>
                     </div>

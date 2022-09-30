@@ -1,11 +1,16 @@
 import React from 'react';
+import {NavLink } from 'react-router-dom';
+
+import Text from '../../Components/text/Text'; 
 import './footer.scss';
+
+// Images and icon
 import LogoImg from '../../assets/images/logo-white.png';
 import Image from '../../Components/image/Image';
 import Twitter from '../../assets/images/svg/twitter.svg';
 import Instagram from '../../assets/images/svg/instagram.svg';
 import Emails from '../../assets/images/svg/emails.svg';
-import Text from '../../Components/text/Text';
+
 
 const Footer = () => {
   return (
@@ -13,34 +18,35 @@ const Footer = () => {
       <img src={LogoImg} />
       <ul className="footer-links w-100">
         <li>
-          <a>Contact Us</a>
+          <NavLink to=''>Contact Us 132</NavLink>
+          
         </li>
         <li>
-          <a>Score Review</a>
+          <NavLink to=''>Score Review</NavLink>
         </li>
         <li>
-          <a>Leaderboards</a>
+          <NavLink to=''>Leaderboards</NavLink>
         </li>
         <li>
-          <a>Archive</a>
+          <NavLink to=''>Archive</NavLink>
         </li>
         <li>
-          <a>Site Info</a>
+          <NavLink to=''>Site Info</NavLink>
         </li>
       </ul>
       <ul className='socialLink'>
         <li>
-          <a>
+         <a href='https://twitter.com/' target="_blank">
             <Image src={Twitter} className="img-fluid" />
           </a>
         </li>
         <li>
-          <a>
-            <Image src={Instagram} className="img-fluid" />
+          <a href='https://www.instagram.com/' target="_blank">
+            <Image src={Instagram} className="img-fluid" /> 
           </a>
         </li>
         <li>
-          <a>
+          <a  href="mailto:someone@example.com">
             <Image src={Emails} className="img-fluid" />
           </a>
         </li>

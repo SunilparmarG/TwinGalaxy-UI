@@ -306,8 +306,6 @@ const Home = () => {
                     <Image className="img-fluid me-3" src={Spam} />
                     <Image className="img-fluid me-3" src={Envelop} />
                   </div>
-
-
                 </div>
               </div>
 

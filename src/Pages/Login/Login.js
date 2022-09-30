@@ -14,6 +14,7 @@ import Comments from '../../assets/images/svg/comments.svg';
 import BackArrow from '../../assets/images/svg/backArrow.svg';  
 import EyeSlace from '../../assets/images/svg/eye-slash.svg'; 
 import EyeSvgrepo from '../../assets/images/svg/eye-svgrepo.svg';
+import {NavLink } from 'react-router-dom';
 import './Login.scss';
 
 const Login = () => {
@@ -25,9 +26,9 @@ const Login = () => {
         <Container className='mt-5 mb-5'>
           <div className='userLayout'>
             <div className='backBtn pt-3 ps-3'>
-                <Nav.Link className="fs-18 p-0  d-flex align-items-center">
+                <NavLink className="fs-18 p-0  d-flex align-items-center">
                   <Image src={BackArrow} className="img-fluid" /> 
-                <span className='text-col4 ms-2 fw500'>Back</span></Nav.Link>   
+                <span className='text-col4 ms-2 fw500'>Back</span></NavLink>   
             </div>
             <div className='innerLayout'>
               <Row>
@@ -35,7 +36,9 @@ const Login = () => {
                   <Heading text="Login" typeofHeading="h2" size="fs-36" color="text-col13" className="text-capitalize fw600" />
                   <div className='d-flex align-items-center mb-4'>
                     <Text text="Don’t have an account ?" className="text-col2 fs-20 fw500" />
-                    <Nav.Link className="ms-1"><span className='text-col4 fs-20 fw500'>Register</span></Nav.Link>
+                    <NavLink className="ms-1" to='/register'>
+                      <span className='text-col4 fs-20 fw500'>Register</span>
+                      </NavLink>
                   </div>
                   <Row>
                     <Col md={12}>
@@ -64,9 +67,9 @@ const Login = () => {
                       <Checkbox label="Keep me signed in" />
                     </Col>
                     <Col md={6} className="text-md-end mt-2 mb-4">
-                      <Nav.Link className="ms-1">
+                      <NavLink className="ms-1">
                         <span className='text-col4 fs-18 fw500'>Forget password?</span>
-                      </Nav.Link>
+                      </NavLink>
                     </Col>
                     <Col md={12}> 
                       <Button 
@@ -82,19 +85,19 @@ const Login = () => {
                       <Text text="Or continue with" className="text-col2 fs-18 fw500 mb-3 text-center" /> 
                       <ul className='socialLogin'>
                         <li>
-                          <Nav.Link>
+                          <NavLink>
                             <Image src={Facebook} className="img-fluid" />
-                          </Nav.Link>
+                          </NavLink>
                         </li>
                         <li>
-                          <Nav.Link>
+                          <NavLink>
                             <Image src={Comments} className="img-fluid" />
-                          </Nav.Link>
+                          </NavLink>
                         </li>
                         <li>
-                          <Nav.Link>
+                          <NavLink>
                             <Image src={Twitters} className="img-fluid" />
-                          </Nav.Link>
+                          </NavLink>
                         </li>
                       </ul>
                     </Col>

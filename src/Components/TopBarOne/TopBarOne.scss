@@ -1,8 +1,8 @@
 @import '../../assets/scss/module/variables.scss';
 
-.toast1 {
-    min-height: 70px;
-}
+// .toast1 {
+//     min-height: 70px;
+// }
 
 .toast2 {
     width: 100%;
@@ -15,7 +15,7 @@
         background-color: $col3;
     }
 
-    padding: 11px 40px;
+    padding: 15px 40px;
 
     @media (max-width:991px) {
         padding: 20px 25px;

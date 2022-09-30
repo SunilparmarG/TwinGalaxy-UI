@@ -182,7 +182,7 @@ const TheWall = () => {
                     <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
                         <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6" />
                         <Buttons
-                            text="Submit a performance"
+                            text="Submit a Performance"
                             variant="primary"
                             className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
                         />

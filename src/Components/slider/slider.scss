@@ -1,4 +1,10 @@
 .homeSliderOne{
+    .slick-arrow{
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+        }
+    }
     .slick-prev {
         left: auto;
         right: 50px;
@@ -20,9 +26,10 @@
         display: block;
     }
     .slick-next:before{
-        content: '>';
+        content: url('../../assets/images/svg/arrow-right.svg');
+        
     }
     .slick-prev:before{
-        content: '<';
+        content: url('../../assets/images/svg/arrow-left.svg');
     }
 }

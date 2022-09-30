@@ -37,6 +37,7 @@ import Doubleuotes1 from '../../assets/images/svg/double-quotes-1.svg';
 import Doubleuotes2 from '../../assets/images/svg/double-quotes-2.svg';
 import VideoImg from '../../assets/images/video.png';
 import Verify1 from '../../assets/images/svg/verify1.svg';
+import FbPost from '../../assets/images/fbPosts.png';
 
 const Home = () => {
   return (
@@ -56,7 +57,7 @@ const Home = () => {
           <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
             <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6" />
             <Buttons
-              text="Submit a performance"
+              text="Submit a Performance"
               variant="primary"
               className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
             />
@@ -68,7 +69,7 @@ const Home = () => {
         </div>
 
         <Row className='mt-4 mb-3'>
-          <Col lg={12}>
+          <Col lg={8}>
 
             {/* <Tab/> */}
             <div className='contentWrap'>
@@ -86,57 +87,6 @@ const Home = () => {
               <div className='mb-3'>
                 <CardThree heading="RaGeNyc has just posted" imgSecond={ProfileImage} subHeadingFirst="Teens are rewriting what is possible in the world of competitive Tetris" />
               </div>
-              <div className='contentWrap mb-3'>
-                <Text text='Rules' className='fs-19 fw600 text-col1 mb-3' />
-                <ul className='ruleList'>
-                  <li>
-                    <Text text='Score taken from the "Total Event Kudos" displayed after the difficulty bonus is applied for the indicated event.' className='fs-14 fw500 text-col5' />
-
-                  </li>
-                  <li>
-                    <Text text='Difficulty (and therefore bonus) is the players choice. Event must be successfully completed to earn the bonus.' className='fs-14 fw500 text-col5' />
-                  </li>
-                  <li>
-                    <Text text='The "Previous Best" is not permitted as a measurement.' className='fs-14 fw500 text-col5' />
-                  </li>
-                </ul>
-                <InfoBlock heading='Submission Message' text='Achieved on 20110801. Attempt begins around 13:01. Only Chapter 11 in this footage. Chapter 11 can be confirmedaround 2:11, 22:46, 27:16 and 1:02:23.  - AP' img={Send} className='blockWrap red d-flex' />
-                <div className='d-flex  flex-wrap flex-md-nopwrap brdr-btm-2 pb-3 my-3'>
-                  <div className='videoWrap mb-3 mb-lg-0 mx-auto mx-lg-0'>
-                    <Image src={VideoImg} className="img-fluid" />
-                  </div>
-                  <div>
-
-                    <div className='submitWrap padInc d-flex align-items-center ms-3 flex-wrap flex-md-nopwrap justify-content-start justify-content-lg-between '>
-                      <Text text='Voting Poll: Is this Performance Claim Valid?' className="fs-25 fw600 text-col6 mb-3 mb-lg-0" />
-                      <div className='mb-3 mb-md-0'>
-                        <Image src={Like1} className="img-fuid mx-2" alt='Like' />
-                        <Image src={Dislike} className="img-fuid mx-2" />
-                      </div>
-
-                      <Buttons
-                        text="Vote Now"
-                        variant="primary"
-                        className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="d-flex flex-wrap flex-md-nopwrap align-items-center justify-content-between">
-                  <div className="d-flex align-items-center mb-3 mb-md-0">
-                    <Image className="img-fluid me-2" src={Like} />
-                    <Text text="You, Diana Prince and 10 others" className="text-col4 fs-18 fw600  me-3" />
-                  </div>
-                  <div className='d-flex'>
-                    <Image className="img-fluid me-3" src={Back} />
-                    <Image className="img-fluid me-3" src={Doubleuotes1} />
-                    <Image className="img-fluid me-3" src={Doubleuotes2} />
-                    <Image className="img-fluid me-3" src={Spam} />
-                    <Image className="img-fluid me-3" src={Envelop} />
-                  </div>
-                </div>
-              </div>
-
               <div className='mb-3'>
                 <CardOne heading="Crazymoose3k’s has been submitted a performance" bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage} />
               </div>
@@ -148,6 +98,14 @@ const Home = () => {
               </div>
             </div>
           </Col>
+          <Col lg={4}>
+              <div className='contentWrap'>
+                <div className='d-flex justify-content-center overflow-hiddenH'>
+                  <Image src={FbPost} className="img-fluid" />
+                </div>
+              
+              </div>
+            </Col>
         </Row>
 
       </Container>
