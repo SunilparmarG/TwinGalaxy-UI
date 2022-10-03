@@ -9,7 +9,7 @@ export default function SimpleSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.6,
+    slidesToShow: 3,
     slidesPerRow: 1,
     slidesToScroll: 1,
     initialSlide: 1,

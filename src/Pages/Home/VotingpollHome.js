@@ -117,7 +117,7 @@ const Home = () => {
             </div>
           </Col>
           <Col lg={4}>
-              <div className='contentWrap'>
+              <div className='contentWrap moboBottomSpace'>
                 <div className='d-flex justify-content-center overflow-hiddenH'>
                   <Image src={FbPost} className="img-fluid" />
                 </div>

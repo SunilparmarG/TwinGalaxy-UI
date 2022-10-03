@@ -109,7 +109,7 @@ const TheWall = () => {
 
                         </Col>
                         <Col xl={3} lg={4}>
-                            <div className="contentWrap">
+                            <div className="contentWrap ">
 
                                 <div className='d-flex justify-content-between brdr-btm-1 pb-2 mb-3'>
                                     <Text text='My Posts (20)' className='fs-18 fw600' />
