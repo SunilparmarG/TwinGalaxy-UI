@@ -22,7 +22,7 @@ const tab = ({ className, ...rest }) => {
 team showing off the final version of the Promised End." imgFirst={ProfileImage}/>
             </Tab>
             <Tab eventKey="Activity" title="Recent Activity">
-            <CardOne heading="Crazymoose3k’s has been submitted a performance" bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage}/>
+            <CardOne heading="’s has been submitted a performance" bottomText="Game: Hill Climb.." imgFirst={Image1} imgSecond={ProfileImage}/>
             </Tab>
             <Tab eventKey="performance" title="Performances">
               tab3

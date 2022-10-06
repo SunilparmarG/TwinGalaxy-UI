@@ -23,9 +23,9 @@ const TopBarOne = ({ profile, content, name, post, backgroundColor }) => {
             <Row>
               <Col xl={10}>
                 <div className='d-flex secondTopbar flex-wrap w-100 align-items-center flex-wrap flex-md-nopwrap justify-content-start position-relative pe-4'>
-                  <div className='d-flex align-items-center mb-3 mb-xl-0 flex-1'>
+                  <div className='d-flex align-items-center mb-3 mb-xl-0 flex-1 mobileViewHeader'>
                     <div className='profileWrap1 me-3'><Image src={profile} className="img-fluid" /></div>
-                    <div>
+                    <div className=''>
                       <Text className='text-col6 fw700 fs-16' text={name} />
                       <Text className='text-col6 fw400 fs-12' text={post} />
                     </div>

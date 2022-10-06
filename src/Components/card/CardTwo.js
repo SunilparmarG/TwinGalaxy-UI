@@ -15,12 +15,9 @@ import Like from '../../assets/images/svg/like.svg';
 const CardOne = (props) => {
   return (
     <div className="cardTwo">
-      <Card>
-        
-        <Card.Body>
-          
-          <div className="d-flex align-item-center flex-wrap flex-md-nowrap flex-lg-nowrap mb-2">
-            
+      <Card>        
+        <Card.Body>          
+          <div className="d-flex align-item-center flex-wrap flex-md-nowrap flex-lg-nowrap mb-2">            
               <div className="cardImageWrap mb-3 mb-md-0">
               <Image 
                 src={props.imgFirst}
@@ -39,14 +36,8 @@ const CardOne = (props) => {
                 <div className="d-flex">
                 <Button variant="borderDanger" text="Ignore" className="fs-12 me-3"/>
                 <Button variant="borderInfo" text="Follow" className="fs-12"/>
-                </div>
-                
+                </div>                
               </div>
-            
-            
-                
-              
-            
           </div>
           <div>
             <Heading 

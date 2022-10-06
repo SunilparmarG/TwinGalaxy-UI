@@ -6,8 +6,6 @@ import Card from "react-bootstrap/Card";
 import Image from "../image/Image";
 import Text from "../text/Text";
 import Heading from "../heading/Heading";
-import ImageTop from '../../assets/images/photo.jpg';
-import Buttons from '../buttons/Button';
 
 
 const CardOne = (props) => {
@@ -76,26 +74,19 @@ const CardOne = (props) => {
                 </li>
                 <li>
                   <Text text="Reply: " className="text-col5  fs-16 fw600 d-inline-block me-2"/>
-                  <Text text="0" className="text-col1 fs-16 fw600 d-inline-block"/>
-                  
-                </li>
-                
+                  <Text text="0" className="text-col1 fs-16 fw600 d-inline-block"/>                  
+                </li>                
               </ul>
               <div className="d-flex align-items-center">
                 <Image src={props.imgSecond} className="img-fluid   me-3"/>
                 <div>
                   <Text text="Submitted by " className="text-col5 fs-12 fw400 d-inline-block me-2"/>
-                  <Text text="Crazymoose3k" className="text-col1 fs-12 fw400 d-inline-block me-3"/>
-                  <Text text="|  At 06:31 PM, Aug 1, 2022" className="text-col2 fs-12 fw600 d-inline-block"/>
+                  <Text text="Crazymoose3k" className="text-col1 fs-12 fw600 d-inline-block me-3"/>
+                  <Text text="At 06:31 PM, Aug 1, 2022" className="text-col2 fs-12 fw600 d-inline-block"/>
                 </div>
               </div>
             </div>
-            
-
-            
-          </div>
-          
-         
+          </div>          
         </Card.Body>
       </Card>
       
