@@ -11,8 +11,9 @@ import Buttons from '../buttons/Button';
 
 
 const Cardbox = (props) => {
+  const names = 'matchesCard' + ' ' + (props.className || '');
   return (
-    <div className="matchesCard">
+    <div className={names}>
       <Card >
         <div className="bgImage"></div>
         <Card.Body className="linearBg">

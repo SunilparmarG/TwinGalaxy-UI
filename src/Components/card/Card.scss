@@ -88,6 +88,11 @@
         display: inline-block !important;
         white-space: nowrap;
     }
+    &.tabCard{
+        .card{
+            min-width: auto;
+        }
+    }
 }
 .cardOne{
     background: $col6;
