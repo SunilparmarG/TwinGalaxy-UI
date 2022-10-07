@@ -32,9 +32,6 @@ import Modal from '../../Components/Modal/Modal';
 const Performance = () => {  
     return (
       <div>
-        <Header/>
-        
-        
         {/* <Toast content="Join community, share achievements, meet new friends and more" backgroundColor="default"/> */}
         <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default"/>
         <div className='position-relative'>
@@ -47,8 +44,6 @@ const Performance = () => {
         {/* <Modal image={Settings} heading="Success!" subHeading="Your account has been created and verified successfully."/> */}
         <Modal/>
         </div>
-        
-        <Footer/>
       </div>
     )
   }
