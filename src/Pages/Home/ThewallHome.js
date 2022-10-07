@@ -63,9 +63,9 @@ const TheWall = () => {
 
 
                                 <div className='borderBox d-lg-inline-block text-col6 me-0 me-lg-4'>
-                                    <div className='d-flex'>
+                                    <div className='d-flex align-items-end'>
                                         <div>
-                                            <Text text='09' className="fs-55 fw600 lh1" />
+                                            <Text text='09' className="fs-55 fw600 lh-1" />
                                             <Text text='Open' className="fs-26 fw400" />
                                         </div>
                                         <div className='ms-4'>
@@ -84,9 +84,9 @@ const TheWall = () => {
 
                                 </div>
                                 <div className='borderBox d-lg-inline-block text-col6 me-0 mb-0 me-lg-4'>
-                                    <div className='d-flex'>
+                                    <div className='d-flex align-items-end'>
                                         <div>
-                                            <Text text='15' className="fs-55 fw600 lh1" />
+                                            <Text text='15' className="fs-55 fw600 lh-1" />
                                             <Text text='Open' className="fs-26 fw400" />
                                         </div>
                                         <div className='ms-4'>
