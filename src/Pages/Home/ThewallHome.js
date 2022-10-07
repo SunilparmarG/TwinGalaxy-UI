@@ -62,7 +62,7 @@ const TheWall = () => {
                                 </div>
 
 
-                                <div className='borderBox d-inline-block text-col6 me-4'>
+                                <div className='borderBox d-lg-inline-block text-col6 me-0 me-lg-4'>
                                     <div className='d-flex'>
                                         <div>
                                             <Text text='09' className="fs-55 fw600 lh1" />
@@ -83,7 +83,7 @@ const TheWall = () => {
                                     </div>
 
                                 </div>
-                                <div className='borderBox d-inline-block text-col6 me-4'>
+                                <div className='borderBox d-lg-inline-block text-col6 me-0 mb-0 me-lg-4'>
                                     <div className='d-flex'>
                                         <div>
                                             <Text text='15' className="fs-55 fw600 lh1" />
@@ -180,7 +180,7 @@ const TheWall = () => {
             <Container>
                 <div>
                     <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
-                        <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6" />
+                        <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6 mb-3 mb-lg-0" />
                         <Buttons
                             text="Submit a Performance"
                             variant="primary"

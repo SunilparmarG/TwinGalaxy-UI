@@ -14,9 +14,9 @@ const Badges = (props) => {
   return (
     <>
       <div className={name} {...rest}>
-        <span className="d-flex">
+        <span className="d-flex justify-content-center">
         {iconSrc ? (
-        <Image src={iconSrc} className="me-2 img-fluid" alt="img" />
+        <Image src={iconSrc} className="me-1 img-fluid" alt="img" />
       ) : (
         ''
       )}

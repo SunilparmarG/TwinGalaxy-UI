@@ -1,7 +1,14 @@
 @import "../../assets/scss/module/variables.scss";
 // Default Class
 // .text{color:black;display: block;}
-.text{display: block;}
+.text{
+    display: block;
+    
+}
+
+.inline.text{
+    display: initial;
+}
 
 // Font Size
 // .xSmall{font-size:$xSmall;}
