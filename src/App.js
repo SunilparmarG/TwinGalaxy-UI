@@ -9,6 +9,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import ThewallHome from './Pages/Home/ThewallHome'; 
 import VotingpollHome from './Pages/Home/VotingpollHome'
+import VottingPerformance from './Pages/VottingPerformance/VottingPerformance'
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path='thewallhome' element={<ThewallHome />}/>
       <Route path='login' element={<Login />}/>
       <Route path='register' element={<Register />}/>
+      <Route path ="vottingperformance" element={<VottingPerformance />} />
     </Routes>
     <Footer/>
     
