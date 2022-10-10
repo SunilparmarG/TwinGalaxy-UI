@@ -44,7 +44,7 @@ const VottingPerformance = () =>{
                                 <div className="pic">
                                     <Image src={Messi} alt="image name" className="img-fluid"/>
                                 </div>
-                                <Image className="verified-icon position-absolute" src="{verify}"  alt="verify" />
+                                <Image className="verified-icon position-absolute" src={Verify}  alt="verify" />
                             </div>
                         </div>
                         <button className="follow">Follow</button>
@@ -103,7 +103,7 @@ const VottingPerformance = () =>{
             </Col>
             <Col lg={8}>
             
-                <div className="card user-card mt-4 mt-lg-75">
+                <div className="card user-card game-card">
                     <div className="card-body">
                         <div className="game-details d-lg-flex">
                             <div className="position-relative video-box mb-4 mb-lg-0 me-lg-3">
@@ -251,16 +251,14 @@ const VottingPerformance = () =>{
                     </div>
                 </div>
                 <div className="voting-card mt-4">
-                    <div className="row align-items-center">
-                        <div className="col-lg-8">
+                    <Row className='align-items-center'>
+                        <Col xs={8}>
                             <h2>Verify your account to vote on performances</h2>
-                        </div>
-                        <div className="col-lg-4 ">
-                            <div className="w-100 d-flex justify-content-lg-end">
-                                <button className="btnType1 ms-auto">Verify Now</button>
-                            </div>
-                        </div>
-                    </div>
+                        </Col>
+                        <Col xs={4} className='d-flex justify-content-lg-end'>
+                            <button className="btnType1 ms-auto">Verify Now</button>
+                        </Col>
+                    </Row>
                 </div>
             </Col>
         

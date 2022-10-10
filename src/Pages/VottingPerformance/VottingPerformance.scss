@@ -350,6 +350,9 @@ button.btn-light-rounded {
     .input-group {
         .form-control {
             border-radius: 20px 0 0 20px;
+            padding: 0 15px;
+            font-size: 14px;
+            font-weight: 500;
         }
 
         .input-group-append {
@@ -689,6 +692,10 @@ button.btn-light-rounded {
     opacity: 1;
 }
 
+.game-card{
+    margin-top: 1.5rem;
+}
+
 @media (max-width:997px) {
     .game-details {
         .video-box {
@@ -762,7 +769,7 @@ button.btn-light-rounded {
 }
 
 @media (min-width:998px) {
-    .mt-lg-75 {
+    .game-card {
         margin-top: 75px !important;
     }
 
