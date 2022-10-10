@@ -69,7 +69,7 @@ $colours: (
       }
        //text-col1
       .text-#{nth($i, 1)}{
-          color:nth($i, 2);
+          color:nth($i, 2) !important;
       }
   }
 

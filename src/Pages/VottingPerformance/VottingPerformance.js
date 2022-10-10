@@ -4,7 +4,7 @@ import { Row, Col} from 'react-bootstrap';
 
 import Image from '../../Components/image/Image';
 import Text from '../../Components/text/Text';
-import Buttons from '../../Components/buttons/Button';
+import Heading from '../../Components/heading/Heading'
 
 
 // Image & icon
@@ -50,49 +50,62 @@ const VottingPerformance = () =>{
                         <button className="follow">Follow</button>
                         <div className="personal-details text-center mb-3 mt-2">
                             <h5 className="name mb-0">George Bosh</h5>
-                            <p className="city mb-0">New York</p>
-                            <span className="rating">★ 4.2</span>
+                            <p className="city mb-0"></p>
+                             <Text text='New York' className="city mb-0" />
+                             <Text text='★ 4.2' className="rating" />
+                            
                         </div>
                         <ul className="numbers list-unstyled d-flex justify-content-center mb-0">
                             <li>
-                                <span>Posts</span>
-                                <h6>18</h6>
+                                <Text text='Posts'/>
+                                 <Heading                                                                     
+                                    typeofHeading='h6'
+                                    text="18"
+                                    />                                
                             </li>
                             <li>
-                                <span>Follows</span>
-                                <h6>143</h6>
+                                <Text text='Follows'/>
+                                 <Heading                                                                     
+                                    typeofHeading='h6'
+                                    text="143"
+                                  />
                             </li>
                             <li>
-                                <span>Following</span>
-                                <h6>141</h6>
+                                <Text text='Following'/>
+                                 <Heading                                                                     
+                                    typeofHeading='h6'
+                                    text="144"
+                                  />                                
                             </li>
                         </ul>
                     </div>
                     <div className="card-body">
                         <ul className="list-unstyled details-list">
                             <li className="d-flex justify-content-between">
-                                <label>Join Date</label>
-                                <span>May 2020</span>
+                                <label>Join Date</label>                                
+                                <Text text='May 2020' />
+                               
                             </li>
                             <li className="d-flex justify-content-between">
-                                <label>Location</label>
-                                <span>Rome</span>
+                                <label>Join Date</label>                                
+                                <Text text='Rome' />
                             </li>
                             <li className="d-flex justify-content-between">
                                 <label>Credibility</label>
-                                <span>13,061</span>
+                                <Text text='13,061' />
                             </li>
                             <li className="d-flex justify-content-between">
                                 <label>Posts</label>
-                                <span>1,897</span>
+                                <Text text='1,897' />
+                                
                             </li>
                             <li className="d-flex justify-content-between">
                                 <label>Likes (Received)</label>
-                                <span>2778</span>
+                                 <Text text='2778' />
                             </li>
                             <li className="d-flex justify-content-between">
                                 <label>Blog Entries</label>
-                                <span>120</span>
+                                <Text text='120' />
                             </li>
                         </ul>
                         <div className="text-center">
@@ -134,42 +147,46 @@ const VottingPerformance = () =>{
                                   
                             </div>
                             <div className="game-info">
-                                <h5>Nintendo Switch gaming</h5>
-                                <span className="time">Yesterday, 01:09 PM</span>
+                                <Heading                                                                     
+                                    typeofHeading='h5'
+                                    text="Nintendo Switch gaming"
+                                  />     
+                                <Text text='Yesterday, 01:09 PM' className="time" />                                
                                 <ul className="list-unstyled d-lg-flex listStyle2 mb-3 ">
                                     <li>
                                         <label>Rank:</label>
-                                        <span className="points">1</span>
+                                        <Text text='1' className="points" />
+                                        
                                     </li>
                                     <li>
                                         <label>Points:</label>
-                                        <span className="points">57,606</span>
+                                        <Text text='57,606' className="points" />                                        
                                     </li>
                                     <li>
                                         <label>Views:</label>
-                                        <span className="points">12</span>
+                                        <Text text='12' className="points" />                                        
                                     </li>
                                     <li>
                                         <label>Replies:</label>
-                                        <span className="points">04</span>
+                                        <Text text='04' className="points" />                                        
                                     </li>
                                 </ul>
                                 <ul className="list-unstyled d-lg-flex listStyle3 mb-3">
                                     <li>
-                                        <label>Game:</label>
-                                        <a href="javascript:void">Hill Climb Racing</a>
+                                        <label>Game:</label>                                         
+                                         <Text text='Hill Climb Racing' className="text-col4 fs-16 fw600 d-inline-block ellipsis" />
                                     </li>
                                     <li>
                                         <label>Track:</label>
-                                        <a href="javascript:void">Spirit Battles</a>
+                                         <Text text='Spirit Battles' className="text-col4 fs-16 fw600 d-inline-block ellipsis" />                                        
                                     </li>
                                     <li>
                                         <label>Platform:</label>
-                                        <a href="javascript:void">Android</a>
+                                         <Text text='Android' className="text-col4 fs-16 fw600 d-inline-block ellipsis" />                                        
                                     </li>
                                     <li>
                                         <label>Potential Rank:</label>
-                                        <a href="javascript:void">30</a>
+                                        <Text text='30' className="text-col4 fs-16 fw600 d-inline-block ellipsis" />  
                                     </li>
                                 </ul>
                                 <ul className="list-unstyled d-lg-flex listStyle3">
@@ -180,27 +197,36 @@ const VottingPerformance = () =>{
                                 </ul>
                                 <button className="btnType5 tab-user-btn mt-3 mb-4 mt-lg-0 mb-lg-0">
                                     <div className="d-flex align-items-center justify-content-center">
-                                        <Image src={Tag} className="img-fluid" alt="tag"/>
-                                        <span>tag user</span>
+                                        <Image src={Tag} className="img-fluid" alt="tag"/>                                        
+                                        <Text text='tag user'/>  
                                     </div>
                                 </button>
                             </div>
                         </div>
                         <div className="rules">
-                            <h5 className="section-heading mb-4">Rules</h5>
+                            <Heading                                                                     
+                                    typeofHeading='h5'
+                                    text="Rules"
+                                    className="section-heading mb-4"
+                                  />   
+                            
                             <ul className="list-unstyled listStyle1">
-                                <li>Score taken from the "Total Event Kudos" displayed after the difficulty bonus is applied for the indicated event.</li>
+                                <li> <Text text='Score taken from the "Total Event Kudos" displayed after the difficulty bonus is applied for the indicated event.'/>  </li>
                                 <li>Difficulty (and therefore bonus) is the player's choice. Event must be successfully completed to earn the bonus.</li>
-                                <li>The "Previous Best" is not permitted as a measurement.</li>
+                                <li><Text text='The "Previous Best" is not permitted as a measurement.'/> </li>
                             </ul>
                         </div>
                         <div className="alert alert-danger">
                             <div className="d-flex align-items-center">
                                 <Image src={Email} className="img-fluid me-3" alt="Email"/>                                
                                 <div className="alert-content">
-                                    <h5>Submission Message</h5>
-                                    <p className="mb-0">Achieved on 20110801. Attempt begins around 13:01. Only Chapter 11 in this footage. Chapter 11 can be confirmed around 2:11, 22:46, 27:16 and 1:02:23.
-                                        -- AP</p>
+                                    <Heading                                                                     
+                                        typeofHeading='h5'
+                                        text="Submission Message"
+                                        className="section-heading"
+                                    /> 
+                                    <Text text='Achieved on 20110801. Attempt begins around 13:01. Only Chapter 11 in this footage. Chapter 11 can be confirmed around 2:11, 22:46, 27:16 and 1:02:23.
+                                        -- AP'/> 
                                 </div>
                             </div>
                         </div>
@@ -209,17 +235,15 @@ const VottingPerformance = () =>{
                             <ul className="activity-list list-unstyled mb-0 d-flex justify-content-center mb-3 mb-lg-0">
                                 <li className="text-center">
                                     <a href="javascript:void(0)">
-                                        <Image src={Thumbs} className="img-fluid" alt="Like"/>
-                                        
+                                        <Image src={Thumbs} className="img-fluid" alt="Like"/>                                        
                                     </a>
-                                    <span>You, Diana Prince and 10 others</span>
+                                    <Text text='You, Diana Prince and 10 others '/> 
                                 </li>
                             </ul>
                             <ul className="action-list list-unstyled mb-0 d-flex justify-content-center">
                                 <li>
                                     <a href="javascript:void(0)">
-                                        <Image src={ArrowLeft} className="img-fluid" alt="arrow"/>
-                                        
+                                        <Image src={ArrowLeft} className="img-fluid" alt="arrow"/>                                        
                                     </a>
                                 </li>
                                 <li>
@@ -230,8 +254,7 @@ const VottingPerformance = () =>{
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">
-                                        <Image src={AddBookmark} className="img-fluid" alt="AddBookmark"/>
-                                        
+                                        <Image src={AddBookmark} className="img-fluid" alt="AddBookmark"/>                                        
                                     </a>
                                 </li>
                                 <li>
@@ -253,7 +276,12 @@ const VottingPerformance = () =>{
                 <div className="voting-card mt-4">
                     <Row className='align-items-center'>
                         <Col xs={8}>
-                            <h2>Verify your account to vote on performances</h2>
+                            <Heading                                                                     
+                              typeofHeading='h5'
+                              text="Verify your account to vote on performances"
+                               className="section-heading"
+                               /> 
+                            
                         </Col>
                         <Col xs={4} className='d-flex justify-content-lg-end'>
                             <button className="btnType1 ms-auto">Verify Now</button>
@@ -345,27 +373,23 @@ const VottingPerformance = () =>{
                     <p>Etiam faucibus scelerisque sed sagittis enim sit elit. Turpis in odio eu egestas odio at. Amet suspendisse viverra tincidunt sagittis massa elit aliquam diam. Nascetur Etiam faucibus scelerisque sed sagittis enim sit elit. Turpis in odio eu egestas odio at. </p>
                     <div className="d-flex justify-content-between align-items-center">
                         <ul className="activity-list list-unstyled mb-0 d-flex">
-                            <li>
+                            <li className='d-inline-flex'>
                                 <a href="javascript:void(0)">
                                     <Image src={Alarm} alt="alarm" />
-
-                                </a>
-                                <span>5 mins ago</span>
+                                </a>                                
+                                 <Text text='5 mins ago'/>
                             </li>
-
-                            <li>
-                                <a href="javascript:void(0)">
-                                    
+                            <li className='d-inline-flex'>
+                                <a href="javascript:void(0)">                                    
                                     <Image src={Thumbs} alt="" />
                                 </a>
-                                <span>5</span>
+                                <Text text='5'/>
                             </li>
-
-                            <li>
+                            <li className='d-inline-flex'>
                                 <a href="javascript:void(0)">
                                     <Image src={ThumbsDown} alt="" />
                                 </a>
-                                <span>5</span>
+                                <Text text='5'/>
                             </li>
                         </ul>
                         <ul className="action-list list-unstyled mb-0 d-flex">
@@ -376,14 +400,12 @@ const VottingPerformance = () =>{
                             </li>
                             <li>
                                 <a href="javascript:void(0)">
-
                                     <Image src={ArrowLeft} alt="arrow left" />
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)">
-                                    <Image src={Share} alt="share" />
-                                    
+                                    <Image src={Share} alt="share" />                                    
                                 </a>
                             </li>
                         </ul>
