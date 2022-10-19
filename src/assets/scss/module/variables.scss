@@ -24,12 +24,12 @@ $col20: #9919D5;
 $col21: #470466;
 $col22: #0038FF;
 $col23: #595757;
-$col24:  #FFEDF9;
+$col24: #FFEDF9;
 $col25: #DCDCDC; 
 $col26: #d535b6;
 $col27: #fc2020;
 $col28: #F2F4FF;
-
+$col29: #1877F2;
 // color classes
 $colours: (
   "col1" $col1,
@@ -58,7 +58,8 @@ $colours: (
   "col25" $col25,
   "col26" $col26
   "col27" $col27,
-  "$col28" $col28,
+  "col28" $col28,
+  "col29" $col29,
 );
 
 // Color Function

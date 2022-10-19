@@ -178,15 +178,13 @@ const TheWall = () => {
 
             </div>
             <Container>
-                <div>
-                    <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
-                        <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6 mb-3 mb-lg-0" />
-                        <Buttons
-                            text="Submit a Performance"
-                            variant="primary"
-                            className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
-                        />
-                    </div>
+                <div className='submitWrap d-flex align-items-center  flex-wrap flex-md-nopwrap justify-content-start justify-content-md-between my-4'>
+                    <Text text='Submit your own Performance for the community to evaluate' className="fs-25 fw600 text-col6 mb-3 mb-lg-0" />
+                    <Buttons
+                        text="Submit a Performance"
+                        variant="primary"
+                        className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
+                    />
                 </div>
                 <Row className='mt-4 mb-3'>  
                     <Col lg={12}>

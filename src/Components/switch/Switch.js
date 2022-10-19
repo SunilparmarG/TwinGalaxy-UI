@@ -16,10 +16,10 @@ const Switch = ({
 
   return (
 
-    <label class="switch btn-color-mode-switch">
+    <span class="switch btn-color-mode-switch">
       <input type="checkbox" name={id} id={id} value="1" />
       <label for={id} data-on="Light" data-off="Dark" class="btn-color-mode-switch-inner"></label>
-    </label>
+    </span>
   );
 };
 

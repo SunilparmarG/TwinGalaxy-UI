@@ -6,6 +6,7 @@ import CardOne from '../../Components/card/CardOne';
 import Image1 from '../../assets/images/photo.jpg';
 import ProfileImage from '../../assets/images/avatar_sml.png';
 import Card from './../card/Card';
+import PostCard from './../card/PostCard';
 
 const tab = ({ className, ...rest }) => {
   // const 
@@ -40,7 +41,17 @@ team showing off the final version of the Promised End." imgFirst={ProfileImage}
             </Row>
           </Tab>
           <Tab eventKey="Post" title="Facobook Post">
-            tab4
+            <Row>
+                <Col lg={4}>
+                  <PostCard/>
+                </Col>
+                <Col lg={4}>
+                  <PostCard/>
+                </Col>
+                <Col lg={4}>
+                  <PostCard/>
+                </Col>
+            </Row>
           </Tab>
 
         </Tabs>

@@ -1,10 +1,11 @@
 import './VottingPerformance.scss'
 
-import { Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 
 import Image from '../../Components/image/Image';
 import Text from '../../Components/text/Text';
 import Heading from '../../Components/heading/Heading'
+import ProductSlider from '../../Components/productSlider/producSlider'
 
 
 // Image & icon
@@ -33,7 +34,6 @@ import Slide3 from '../../assets/images/slider/slide3.webp'
 
 const VottingPerformance = () =>{
     return(
-        
         <Container>
             <Row className='mb-4'>        
                 <Col lg={4}>
@@ -120,7 +120,10 @@ const VottingPerformance = () =>{
                         <div className="card-body">
                             <div className="game-details d-lg-flex">
                                 <div className="position-relative video-box mb-4 mb-lg-0 me-lg-3">
-                                        <div className="mySlides">
+                                    <div className='produtSlider'>
+                                        <ProductSlider />
+                                    </div>
+                                    <div className="mySlides">
                                         <Image className="rounded img-fluid" src={Slide1}  alt="Slider Image" />
                                         </div>
                                     
@@ -130,10 +133,9 @@ const VottingPerformance = () =>{
                                     
                                         <div className="mySlides">
                                         <Image className="rounded img-fluid" src={Slide3}  alt="Slider Image"/>
-                                        </div>
+                                        </div>                                   
                                         
-                                        
-                                        <div className="d-flex mt-3">
+                                        {/* <div className="d-flex mt-3">
                                         <div className="column me-2">
                                         <Image className="rounded img-fluid" src={Slide1}  alt="Slider Image"/>
                                         </div>
@@ -143,7 +145,7 @@ const VottingPerformance = () =>{
                                         <div className="column">
                                             <Image className="rounded img-fluid" src={Slide3} alt="Slider Image"/>
                                         </div>
-                                        </div>
+                                        </div> */}
                                     
                                 </div>
                                 <div className="game-info">
@@ -233,7 +235,7 @@ const VottingPerformance = () =>{
                             <hr />
                             <div className="action-center d-lg-flex justify-content-lg-between  align-items-center">
                                 <ul className="activity-list list-unstyled mb-0 d-flex justify-content-center mb-3 mb-lg-0">
-                                    <li className="text-center">
+                                    <li className="text-center d-inline-flex">
                                         <a href="javascript:void(0)">
                                             <Image src={Thumbs} className="img-fluid" alt="Like"/>                                        
                                         </a>
@@ -279,7 +281,7 @@ const VottingPerformance = () =>{
                                 <Heading                                                                     
                                 typeofHeading='h5'
                                 text="Verify your account to vote on performances"
-                                className="section-heading"
+                                className="section-heading  text-col6"
                                 /> 
                                 
                             </Col>
@@ -412,9 +414,8 @@ const VottingPerformance = () =>{
                         </div>
                     </div>               
                 </div>
-            </div>
-        </Container>
-            
+            </div>        
+       </Container>
     )
 }
 

@@ -15,7 +15,7 @@ import Emails from '../../assets/images/svg/emails.svg';
 const Footer = () => {
   return (
     <footer className="footer-mj text-center">
-      <img src={LogoImg} />
+      <img src={LogoImg} alt='twingalaxy logo' />
       <ul className="footer-links w-100">
         <li>
           <NavLink to=''>Contact Us 132</NavLink>
