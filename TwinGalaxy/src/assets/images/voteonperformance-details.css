@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.mt-75{
+    margin-top: 75px;
+}
+
+.alert-danger{
+    background: #FFEDF9;
+    border-color: #FFEDF9;
+}
+
+.user-card{
+    background: #FFFFFF;
+    border: 0.5px solid #DCDCDC;
+    box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 9.91913px;
+}
+
+.user-card .card-header {
+    background-color: #F2F4FF;
+    border-radius: 9.91913px 9.91913px 0 0;
+}
+
+.user-card .card-header .user-pic{
+    margin-top: -65px;
+}
+
+.user-card .card-header .user-avatar .pic,
+.comment .user-details .user-avatar .pic{
+    width: 103.32px;
+    height: 103.32px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.user-card .card-header .user-avatar .pic img,
+.comment .user-details .user-avatar .pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.user-card .card-header .user-avatar .verified-icon {
+    right: 10px;
+    bottom: 0;
+}
+
+.user-card .card-header .follow,
+.comment .user-details .follow{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    border: 1px solid #C4C4C4;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #888888;
+    cursor: pointer;
+}
+.user-card .card-header .follow:focus,
+.comment .user-details .follow:focus{
+    outline: 0;
+}
+
+.personal-details .name,
+.comment .user-details .name{
+    font-weight: 600;
+    font-size: 21.4914px;
+    line-height: 26px;
+    color: #222222;
+}
+
+.personal-details .city,
+.comment .user-details .city{
+    font-weight: 600;
+    font-size: 14.8787px;
+    line-height: 18px;
+    color: #888888;
+}
+
+.personal-details .rating,
+.comment .user-details .rating {
+    font-weight: 600;
+    font-size: 14.8787px;
+    line-height: 18px;
+    color: #D5251E;
+}
+
+.details-list li{
+    padding: 16px 0;
+    border-bottom: 0.8px solid #C4C4C4;
+}
+
+.details-list li:first-child{
+    padding-top: 0;
+}
+
+.details-list li:last-child{
+    border-bottom:0 ;
+}
+
+.details-list li span {
+    font-weight: 700;
+    font-size: 14.8787px;
+    line-height: 18px;
+    text-align: right;
+    color: #222222;
+}
+.details-list li label {
+    font-weight: 600;
+    font-size: 14.8787px;
+    line-height: 18px;
+    text-align: center;
+    color: #888888;
+}
+
+button.btn-light-rounded {
+    background: #FFFFFF;
+    box-shadow: 0px 21.9345px 98.7053px rgb(0 0 0 / 25%);
+    border-radius: 39.5698px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(92.14deg, #F8212B -9.5%, #D734AE 103.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 6px 10px;
+    border: 1px solid #D734AE;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+button.btn-light-rounded:focus{
+    outline: 0;
+}
+
+.user-card .card-header ul.numbers li {
+    border-right: 1px solid rgba(136, 136, 136, 0.4);
+    text-align: left;
+    padding: 0 33px;
+}
+
+.user-card .card-header ul.numbers li:last-child{
+    border: 0;
+}
+
+.user-card .card-header  ul.numbers li h6 {
+    font-weight: 700;
+    font-size: 23.1446px;
+    line-height: 28px;
+    color: #222222;
+}
+
+.user-card .card-header  ul.numbers li span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.8787px;
+    line-height: 18px;
+    text-align: center;
+    color: #888888;
+}
+
+/* for comment card */
+    .comment{
+        background: #FFFFFF;
+        border: 0.826594px solid #DCDCDC;
+        box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 9.91913px;
+        padding: 20px;
+    }
+    .comment .user-details .user-details-box{
+        min-width: 220px;
+    }
+    .comment .user-details .user-details-box .user-avatar .pic{
+        width: 70px;
+        height: 70px;
+    }
+
+    .comment .user-details .user-details-box .user-avatar .verified-icon{
+        width: 18px;
+        right: 0;
+        bottom: 5px;
+    }
+    .comment .user-details .follow {
+        position: unset;
+        padding: 2px 10px;
+    }
+
+    .comment .user-content p{
+        font-weight: 500;
+        font-size: 18.1851px;
+        line-height: 22px;
+        color: #555555;
+    }
+
+    .comment .user-content .activity-list li a,
+    .comment .user-content .action-list li a{
+        text-decoration: none;
+    }
+
+    .comment .user-content .activity-list li span{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #888888;
+        margin-right: 25px;
+    }
+
+    .comment .user-content .activity-list li:last-child span{
+        margin-right: 0;
+    }
+
+    .comment .user-content .action-list li{
+        margin-right: 25px;
+    }
+
+    .comment .user-content .action-list li:last-child{
+        margin-right: 0;
+    }
+/* comment end */
+
+/* section heading */
+.section-heading{
+    font-weight: 600;
+    font-size: 24.7978px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #222222;
+}
+
+.section-heading .count{
+    font-weight: 400;
+    color: #888888;
+}
+/* section heading end */
+
+/* edit comment css */
+.top-filters .input-group .form-control {
+    border-radius: 20px 0 0 20px;
+}
+
+.top-filters .input-group .input-group-append .input-group-text {
+    background: #5179EF;
+    border-radius: 0 20px 20px 0;
+    border-color: #5179EF;
+}
+
+.comment-box .comment-pic {
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+}
+
+.comment-box .comment-pic  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+.comment-box textarea {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+    border: 0;
+    border-bottom: 1.65319px solid rgba(112, 112, 112, 0.18);
+    border-radius: 0;
+}
+
+.comment-box textarea:focus{
+    outline: 0;
+}
+/* edit comment css end */
+
+/* for comment card end */
+
+/* buttons styke */
+.btnType1{
+    background: linear-gradient(90deg, #FC2020 0%, #D535B6 100%);
+    box-shadow: 0px 23.2012px 104.406px rgb(0 0 0 / 25%);
+    border-radius: 58.0031px;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btnType1:hover{
+    background: linear-gradient(-90deg, #FC2020 0%, #D535B6 100%) !important;
+}
+
+.btnType2{
+    border: 1px solid #C4C4C4;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #888888;
+    cursor: pointer;
+}
+.btnType3{
+    font-weight: 600;
+    font-size: 14.8787px;
+    line-height: 18px;
+    text-align: center;
+    color: #888888;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.btnType4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #555555;
+    background: linear-gradient(90deg, #6A6A6A 0%, #757575 100%);
+    border: 1.26035px solid #555555;
+    box-shadow: 0px 25.207px 113.431px rgba(0, 0, 0, 0.25);
+    border-radius: 63.0174px;
+    cursor: pointer;
+}
+
+.btnType5{
+    box-shadow: 0px 21.9345px 98.7053px rgb(0 0 0 / 25%);
+    border-radius: 39.5698px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(92.14deg, #F8212B -9.5%, #D734AE 103.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding: 6px 10px;
+    border: 1px solid #D734AE;
+    cursor: pointer;
+}
+
+.btnType1:focus,
+.btnType2:focus,
+.btnType3:focus,
+.btnType4:focus,
+.btnType5:focus{
+    outline: 0;
+}
+/* buttons style end */
+
+
+
+/* alert box */
+.alert h5{
+    font-weight: 600;
+    font-size: 14.8787px;
+    line-height: 18px;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.alert p{
+    font-weight: 500;
+    font-size: 13.2255px;
+    line-height: 16px;
+    color: #888888;
+}
+/* alert box end */
+
+/* action center */
+.user-card .action-center .activity-list li{
+    font-weight: 600;
+    font-size: 17.7159px;
+    line-height: 21px;
+    color: #D5251E;
+}
+
+.user-card .action-center .action-list li{
+    margin-right: 15px;
+}
+
+.user-card .action-center .action-list li:last-child{
+    margin-right: 0;
+}
+
+.game-details .video-box{
+    width: 180px;
+}
+.game-details .game-info h5{
+    font-weight: 600;
+    font-size: 18.1851px;
+    line-height: 22px;
+    color: #222222;
+    margin-bottom: 3px;
+}
+
+.game-details .game-info .time{
+    font-weight: 500;
+    font-size: 14.8787px;
+    line-height: 18px;
+    color: #888888;
+    margin-bottom: 20px;
+    display: block;
+}
+/* action center end */
+
+/* listStyle */
+.listStyle1 li{
+    font-weight: 500;
+    font-size: 13.2255px;
+    line-height: 16px;
+    color: #555555;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 18px;
+}
+
+.listStyle1 li:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background-image: url(./tick-pink.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.listStyle2 li{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 0.419782px solid #C4C4C4;
+}
+
+.listStyle2 li label{
+    margin-bottom: 0;
+}
+
+.listStyle2 li span{
+    color:#222222;
+}
+
+.listStyle2 li:last-child{
+    padding-right: 0;
+    margin-right: 0;
+    border: 0;
+}
+
+.listStyle3{
+    margin-bottom: 0;
+}
+
+.listStyle3 li{
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 0.419782px solid #C4C4C4;
+}
+
+.listStyle3 li:last-child{
+    padding-right: 0;
+    margin-right: 0;
+    border: 0;
+}
+
+.listStyle3 li label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #222222;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.listStyle3 li a{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D5251E;
+    display: block;
+    word-break: break-all;
+}
+/* listStyle end */
+
+/* voting css */
+.voting-card{
+    background-image: url(./vote-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 12px;
+}
+.voting-card h2{
+    font-weight: 600;
+    font-size: 19px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+/* voting css end */
+
+/* slider css */
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+/* slider css end */
+
+@media(max-width:997px){
+    .game-details .video-box {
+        width: 100%;
+    }
+
+    .listStyle2 li{
+        margin-bottom: 5px;
+        border-right: 0;
+    }
+
+    .listStyle3 li{
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        border-right: 0;
+        border-bottom: 0.419782px solid #C4C4C4;
+    }
+
+    .listStyle3 li:last-child{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0
+    }
+    
+    .user-card .card-header ul.numbers li{
+        padding: 0 20px;
+    }
+    .comment .user-details {
+        position: relative;
+    }
+    .comment .user-details .follow {
+        position: absolute;
+        right: 0;
+        top: 0;    
+    }
+    .comment .user-content p{
+        font-size: 16px;
+    }
+    .comment .user-content .action-list li, 
+    .comment .user-content .activity-list li span{
+        margin-right: 15px;
+    }
+}
+
+@media (min-width:998px) {
+    .mt-lg-75{
+        margin-top: 75px !important;
+    }
+    .tab-user-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}

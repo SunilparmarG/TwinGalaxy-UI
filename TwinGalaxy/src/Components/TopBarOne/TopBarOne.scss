@@ -1,0 +1,71 @@
+@import '../../assets/scss/module/variables.scss';
+
+// .toast1 {
+//     min-height: 70px;
+// }
+
+.toast2 {
+    width: 100%;
+
+    &.success {
+        background-color: $col9;
+    }
+
+    &.default {
+        background-color: $col3;
+    }
+
+    padding: 15px 40px;
+
+    @media (max-width:991px) {
+        padding: 20px 25px;
+    }
+}
+
+.profileWrap1 {
+    max-width: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    max-height: 38px;
+    border: 2px solid $col4;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        max-height: 38px;
+        min-height: 38px;
+    }
+}
+
+.verticalSeperator {
+    width: 35px;
+    height: 2px;
+    background-color: $col6;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.secondTopbar {
+    @media (max-width: 1199px) {
+        .flex-1 {
+            width: 100%;
+            flex-basis: 100%; 
+        }
+        hr {
+            display: none; 
+        }
+    }
+}
+@media(max-width:767px){
+    .mobileViewHeader{
+        flex-direction: column;        
+        .badges{
+            margin-top: 15px;
+            margin-left: 0 !important;
+        }
+    }
+}

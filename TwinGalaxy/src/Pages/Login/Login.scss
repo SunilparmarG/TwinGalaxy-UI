@@ -1,0 +1,35 @@
+@import '../../assets/scss/module/variables.scss';
+@import '../../assets/scss/module/mixin.scss'; 
+
+.userLayout {
+    box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 0.5px solid $col25; 
+    background-color: $col6;  
+    .innerLayout { 
+        padding: 50px 65px 65px;
+        min-height: 599px;
+        @include mq(lg) {        
+            padding: 20px 16px 10px;
+            min-height: inherit; 
+            .fs-36 {
+                font-size: 30px;
+            }
+            .fs-20 {
+                font-size: 16px;
+            }
+        }
+    }
+    .userRight { 
+        right: 0;  
+        @include mq(lg) {        
+            display: none; 
+        }
+    }
+}
+@include mqm(sm) {         
+    .fs-24 {
+        font-size: 24px !important;
+        font-weight: 600 !important;  
+    }
+}
