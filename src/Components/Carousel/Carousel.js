@@ -5,7 +5,7 @@ import Banner from '../../assets/images/banner.png';
 import Banner1 from '../../assets/images/banner2.png';
 import Banner2 from '../../assets/images/banner3.png';
 import Heading from '../heading/Heading';
-import Button from '../buttons/Button';
+import Button from '../Buttons/Button';
 import './Carousel.scss';
 import Switch from '../switch/Switch';
 

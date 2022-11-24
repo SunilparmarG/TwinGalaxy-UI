@@ -7,7 +7,7 @@ import Image from "../image/Image";
 import Text from "../text/Text";
 import Heading from "../heading/Heading";
 import Profile2 from '../../assets/images/profile1.jpg';
-import Buttons from '../buttons/Button';
+import Buttons from '../Buttons/Button';
 
 
 const Cardbox = (props) => {

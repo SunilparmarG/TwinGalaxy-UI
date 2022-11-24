@@ -15,7 +15,7 @@ import Tab from '../../Components/Tab/tab';
 import Text from '../../Components/text/Text';
 import Slider from '../../Components/slider/slider';
 import Switch from '../../Components/switch/Switch';
-import Buttons from '../../Components/buttons/Button';
+import Buttons from '../../Components/Buttons/Button';
 import TopBarOne from '../../Components/TopBarOne/TopBarOne';
 import Image1 from '../../assets/images/photo.jpg';
 import ProfileImage from '../../assets/images/avatar_sml.png';

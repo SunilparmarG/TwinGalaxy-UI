@@ -13,7 +13,7 @@ import Image from '../../Components/image/Image';
 import Text from '../../Components/text/Text';
 import Slider from '../../Components/slider/slider';
 import Switch from '../../Components/switch/Switch';
-import Buttons from '../../Components/buttons/Button'; 
+import Buttons from '../../Components/Buttons/Button'; 
 
 // Badge component
 import Badges from '../../Components/Badges/Badges';

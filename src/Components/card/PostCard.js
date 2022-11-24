@@ -7,7 +7,7 @@ import './Card.scss'
 // components
 import Image from '../../Components/image/Image';
 import Text from '../../Components/text/Text';
-import Buttons from '../../Components/buttons/Button';
+import Buttons from '../../Components/Buttons/Button';
 import Heading from '../../Components/heading/Heading';
 
 // images

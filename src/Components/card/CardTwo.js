@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Image from "../image/Image";
 import Text from "../text/Text";
 import Heading from "../heading/Heading";
-import Button from '../buttons/Button';
+import Button from '../Buttons/Button';
 import Clock from '../../assets/images/svg/clock.svg';
 import Comment from '../../assets/images/svg/chat.svg';
 import Like from '../../assets/images/svg/like.svg';

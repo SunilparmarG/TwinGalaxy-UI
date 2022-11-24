@@ -5,7 +5,7 @@ import Heading from '../../Components/heading/Heading';
 import Text from '../../Components/text/Text';
 import Input from '../../Components/Input/InputFloat';
 import Checkbox from '../../Components/checkbox/Checkbox';
-import Button from '../../Components/buttons/Button';
+import Button from '../../Components/Buttons/Button';
 import Image from '../../Components/image/Image';
 import LoginUser from '../../assets/images/loginUser.png'
 import Facebook from '../../assets/images/svg/facebook.svg';

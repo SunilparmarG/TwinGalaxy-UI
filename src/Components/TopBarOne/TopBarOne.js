@@ -1,7 +1,7 @@
 
 // import Image from '../image/Image';
 import Text from '../text/Text';
-import Button from '../buttons/Button';
+import Button from '../Buttons/Button';
 import Image from '../image/Image';
 import './TopBarOne.scss';
 import Customize from '../../assets/images/svg/customize.svg';

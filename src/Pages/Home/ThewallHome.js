@@ -9,7 +9,7 @@ import Image from '../../Components/image/Image';
 import Tab from '../../Components/Tab/tab';
 import Text from '../../Components/text/Text';
 import Switch from '../../Components/switch/Switch';
-import Buttons from '../../Components/buttons/Button';
+import Buttons from '../../Components/Buttons/Button';
 import TopBarOne from '../../Components/TopBarOne/TopBarOne';   
 
 // images and icons 

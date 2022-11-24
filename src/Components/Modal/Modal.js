@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '../buttons/Button';
+import Button from '../Buttons/Button';
 import Text from '../text/Text';
 import Image from '../image/Image';
 import Modal from 'react-bootstrap/Modal';
