@@ -1,0 +1,42 @@
+@import "../../assets/scss/module/variables.scss";
+// Default Class
+// .text{color:black;display: block;}
+.text{
+    display: block;
+    
+}
+
+.inline.text{
+    display: initial;
+}
+
+// Font Size
+// .xSmall{font-size:$xSmall;}
+// .body{font-size: $body;}
+// .smRegular{font-size: $smRegular;}
+// .regular{font-size:$regular;}
+// .medium{font-size:$medium;}
+// .large{font-size:$large;}
+// .xlarge{font-size:$xLarge}
+// .title{font-size:$title}
+// .xxlarge{font-size:$xxlarge}
+// .xxxLarge{font-size: $xxxLarge;}
+// .lineHt{font-size: $lineHt;}
+// .smLarge{font-size: $smLarge;}
+
+// Font color 
+// .primaryColor{color:$primaryColor;}
+// .secondryColor{color:$secondryColor;}
+// .dangerText{ color:$dangerousColor;}
+// .successColor{color:$successColor;}
+// .white{color:$white;}
+// .black{color:$black;}
+// .lightgray{color:$lightGray;}
+// .lightGrayBlue {color: $lightGrayBlue;}
+// .lightBorder {color: $lightBorder;}
+// .grayBlueShade {color: $grayBlueShade;}
+// .col21{color:$col21;}
+// Font Weight
+.semibold{font-weight: 400;}
+.smbold{font-weight: 500 !important;}
+.bold{font-weight:600;}
