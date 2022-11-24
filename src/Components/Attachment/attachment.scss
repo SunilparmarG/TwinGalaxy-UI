@@ -1,0 +1,27 @@
+@import "../../assets/scss/module/variables.scss";
+
+.upload-style1{
+  border: 1px solid;
+    //border-image-source: url(../../assets/images/border.png);
+    border-image-slice: 1 fill;
+    border-image-repeat: round;
+    border-radius: 5px;
+    background-color: #ECF7FF;
+    label{
+      margin-bottom: .5rem;
+      input{
+        display: none;
+      }
+      span{
+        border: 1px solid $col13;
+        border-radius: 20px;
+        color: $col13;
+        font-weight: 600;
+        display: inline-block;
+        padding: 4px 10px;
+        cursor: pointer;
+      }
+    }
+   
+  
+}

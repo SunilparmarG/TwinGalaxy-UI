@@ -4,7 +4,7 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 
 const SelectComponent = ({ id, defaultOption, labelValue, className, options, ...rest }) => {
     const name =
-      "form-select " + "form-control" + 
+      "form-select " + "form-control " + 
       (className || "");
     return (
       <>
