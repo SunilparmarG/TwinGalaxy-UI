@@ -43,7 +43,9 @@
     width: auto !important;
     background-color: $col6;
     top: 50% !important;
-    transform: translate(15px, -50%);
+    transform: translate(15px, -50%)!important;
+    transition: 0.2s all ease-in-out !important;
+    font-weight: 500;font-size: 18px;
 
   }
   &>.form-control, &>.form-select{
