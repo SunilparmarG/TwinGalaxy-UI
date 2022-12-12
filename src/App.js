@@ -3,37 +3,33 @@ import Home from './Pages/Home/Home';
 import Performance from './Pages/Performance/Performance';
 import Header from './Layout/Header/Header';
 import Footer from './Layout/Footer/Footer';
+import ContactUs from './Pages/ContactUs';
+import MyProfile from './Pages/MyProfile/MyProfile'; 
 
 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
-import ThewallHome from './Pages/Home/ThewallHome'; 
-import VotingpollHome from './Pages/Home/VotingpollHome'
-import VottingPerformance from './Pages/VottingPerformance/VottingPerformance'
+import ThewallHome from './Pages/Home/ThewallHome';
+import VotingpollHome from './Pages/Home/VotingpollHome';
+import VottingPerformance from './Pages/VottingPerformance/VottingPerformance';
 
-
-
-import "../src/assets/scss/style.scss";
-
-
-
-
+import "../src/assets/scss/style.scss"; 
 
 function App() {
   return (
-    <div className="App">  
+    <div className="App">
       <Header />
-    <Routes>
-      <Route path='/' element={<VotingpollHome />} />
-      <Route path='performance' element={<Performance />}/>
-      <Route path='thewallhome' element={<ThewallHome />}/>
-      <Route path='login' element={<Login />}/>
-      <Route path='register' element={<Register />}/>
-      <Route path ="vottingperformance" element={<VottingPerformance />} />
-    </Routes>
-    <Footer/>
-    
-
+      <Routes>
+        <Route path='/' element={<VotingpollHome />} />
+        <Route path='performance' element={<Performance />} />
+        <Route path='thewallhome' element={<ThewallHome />} />
+        <Route path='login' element={<Login />} />
+        <Route path='register' element={<Register />} />
+        <Route path="vottingperformance" element={<VottingPerformance />} />
+        <Route path="contactus" element={<ContactUs />} />
+        <Route path="myprofile" element={<MyProfile />} />
+      </Routes>
+      <Footer />  
     </div>
 
   );
