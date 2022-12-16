@@ -1,0 +1,29 @@
+@import '../../assets/scss/module/variables.scss';  
+.status-chip {  
+  // color: #219653; 
+  // border-radius: 25px; 
+  // padding: 4px 15px;
+  // min-height: 40px; 
+  // display: inline-flex;
+  // justify-content: center; 
+  // align-items: center;
+  // font-weight: 400;
+  // text-transform: capitalize;
+  // line-height: 28px;
+  &.default {    
+    display: inline-block;
+    background: $col6;
+    border: 1px solid $col2; 
+    color: $col2;  
+    box-shadow: 0px 15.8279px 71.2257px rgba(0, 0, 0, 0.1);
+    border-radius: 40px; 
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 30px; 
+    margin: 10px; 
+    text-transform: capitalize;  
+    @media (max-width:767px) {  
+      padding: 8px 17px;  
+    } 
+  }
+}

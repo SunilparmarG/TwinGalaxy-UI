@@ -11,8 +11,7 @@ const SelectComponent = ({ id, defaultOption, labelValue, className, options, ..
        <FloatingLabel controlId={id} label={labelValue} >
         <Form.Select aria-label="Floating label select example" className={name} >
           <option>{defaultOption}</option>
-          <option>One</option>
-          
+          <option>One</option> 
         </Form.Select>
       </FloatingLabel>
       </>

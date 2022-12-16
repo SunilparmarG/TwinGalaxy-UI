@@ -5,9 +5,9 @@ const Checkbox = ({ props, label, id }) => {
     return (
         <>
             {/* <Form.Check type="radio" aria-label="radio 1" /> */}
-            <div className="radioWrap">
-                <input id={id} type="radio" name="radio-group" checked /> 
-                <label for={id}>{label}</label> 
+            <div className="checkboxWrap form-check">  
+                <input id={id} type="checkbox" name="checkbox-group" className="form-check-input" /> 
+                <label for={id}>{label}</label>  
             </div>
         </>
     );

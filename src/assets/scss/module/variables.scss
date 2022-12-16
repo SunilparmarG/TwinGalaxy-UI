@@ -32,6 +32,10 @@ $col28: #F2F4FF;
 $col29: #1877F2;
 $col30: #1D8ADB;
 $col31: #FEF4F4; 
+$col32: #FFF6F6; 
+$col33: #FAFAFA;
+$col34: #ECF7FF; 
+$col35: #D4EDFF; 
 // color classes
 $colours: (
   "col1" $col1,
@@ -63,7 +67,11 @@ $colours: (
   "col28" $col28,
   "col29" $col29,
   "col30" $col30,
-  "col31" $col31
+  "col31" $col31,
+  "col32" $col32,
+  "col33" $col33,
+  "col34" $col34,
+  "col35" $col35    
 );
 
 // Color Function

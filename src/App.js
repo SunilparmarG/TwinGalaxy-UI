@@ -25,7 +25,7 @@ function App() {
         <Route path='thewallhome' element={<ThewallHome />} />
         <Route path='login' element={<Login />} />
         <Route path='register' element={<Register />} />
-        <Route path="vottingperformance" element={<VottingPerformance />} />
+        <Route path="vottingperformance" element={<VottingPerformance />} />  
         <Route path="contactus" element={<ContactUs />} />
         <Route path="myprofile" element={<MyProfile />} />
       </Routes>

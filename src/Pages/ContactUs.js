@@ -71,11 +71,11 @@ const ContactUs = () => {
                                 <Col md={12}>
                                     <div className='d-flex justify-content-between mt-3'>
                                         <Button
-                                            className="btn-primary bgTrans fs-16 text-col5 fw600"
+                                            className="btn-primary btn-trans fs-16 text-col5 fw600"
                                             text="Reset Fields"
                                         />
                                         <Button
-                                            className="btn-primary bgSend fs-16 text-col6 fw600"
+                                            className="btn-primary btn-send fs-16 text-col6 fw600"
                                             text="Send"
                                         />
                                     </div>

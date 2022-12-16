@@ -1,0 +1,68 @@
+@import '../../assets/scss/module/variables.scss'; 
+.custom-upload {
+  border: 1px dashed $col13; 
+  background-color: $col34;   
+  border-radius: 7px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 94px; 
+
+  input {
+    display: none;
+  }
+
+  .file-user-upload {  
+    position: relative; 
+    .file-upload-btn {
+      color: $col13;
+      font-size: 16px;
+      font-weight: 600;
+      border: solid 1px $col13;
+      display: inline-block;
+      padding: 4px 20px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -88%);  
+      @media (max-width:576px) {
+        transform: translate(-50%, -105%);  
+      } 
+    }
+    img {
+      &.upload-img {
+        position: absolute;
+        top: 10px;
+        left: 46%;
+      }
+    }
+    label {
+      flex-direction: column;
+      height: auto;
+      border: none;
+      background-color: transparent !important; 
+      margin-top: 15px;
+      svg {
+        visibility: hidden; 
+      }
+      div {
+        &>span {
+          font-size: 13px;
+          font-weight: 500; 
+          color: $col5;  
+          &>span {
+            text-decoration: none; 
+          }
+        }
+        @media (max-width:576px) {
+          flex-direction: column;    
+          align-items: center;
+        }
+      }
+    }
+  }
+}

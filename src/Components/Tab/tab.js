@@ -8,11 +8,10 @@ import ProfileImage from '../../assets/images/avatar_sml.png';
 import Card from './../card/Card';
 import PostCard from './../card/PostCard';
 
-const tab = ({ className, ...rest }) => {
+const tab = ({ className, ...rest }) => {  
   // const 
   return (
     <div className="wrapper">
-
       <div className="mt-36 mb-lg-5 pb-lg-5 mb-3 tabs-style" {...rest}>
         <Tabs id="controlled-tab-example" className="">
           <Tab
@@ -52,8 +51,7 @@ team showing off the final version of the Promised End." imgFirst={ProfileImage}
                   <PostCard/>
                 </Col>
             </Row>
-          </Tab>
-
+          </Tab> 
         </Tabs>
       </div>
 

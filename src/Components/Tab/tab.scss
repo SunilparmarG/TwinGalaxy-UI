@@ -1,15 +1,18 @@
-@import './../../assets/scss/module/variables.scss';   
+@import './../../assets/scss/module/variables.scss';
+
 .settingWrap {
     background-color: $col3;
     padding: 22px 50px;
-    @media (max-width:767px){
-        .btn-type1{
+
+    @media (max-width:767px) {
+        .btn-type1 {
             width: 100%;
             margin-bottom: 20px;
         }
     }
-    
+
 }
+
 .tabs-style {
     .nav-tabs {
         border: 0;
@@ -22,6 +25,7 @@
                 border-bottom: 0;
             }
         }
+
         .nav-link {
             font-size: 22px;
             font-weight: 600;
@@ -33,18 +37,21 @@
             margin-right: 10px;
             min-height: 70px;
             background-color: $col6;
-            @media (max-width:1200px){
+
+            @media (max-width:1200px) {
                 font-size: 20px;
                 padding: 0 18px;
                 min-height: 66px;
             }
-            @media (max-width:991px){
-                
+
+            @media (max-width:991px) {
+
                 font-size: 16px;
                 padding: 0 12px;
                 margin-right: 5px;
                 min-height: 60px;
             }
+
             @media (max-width:767px) {
                 display: inline-block;
                 margin-right: 0;
@@ -62,31 +69,34 @@
 
         }
     }
+
     .tab-content {
         padding: 35px 20px;
         border-radius: 0px 12px 12px 12px;
         background-color: $col6;
-        @media (max-width:767px){
+
+        @media (max-width:767px) {
             border-radius: 0;
         }
     }
 }
 
-.tabs-style1{
-    .nav{
+.tabs-style1 {
+    .nav {
         background: $col28;
         border: 0.5px solid $col25;
         border-radius: 10px 10px 0px 0px;
         padding: 15px;
     }
-    li{
-        @media (max-width:992px){
+
+    li {
+        @media (max-width:992px) {
             width: 95%;
         }
     }
-    .nav-item{
-        
-        button{
+
+    .nav-item {
+        button {
             text-align: left;
             box-shadow: none;
             border-radius: 6px;
@@ -97,22 +107,27 @@
             font-weight: $fw600;
             color: $col1;
             position: relative;
-            @media(min-width:1400px){
+
+            @media(min-width:1400px) {
                 min-width: 340px;
             }
-            @media(min-width:1200px){
+
+            @media(min-width:1200px) {
                 min-width: 310px;
             }
-            &.active{
+
+            &.active {
                 background: linear-gradient(90deg, $col27 0%, $col26 100%);
                 color: $col6;
-                &::after{
+
+                &::after {
                     content: '';
                     border-left: 22px solid $col26;
                 }
-                
+
             }
-            &:after{
+
+            &:after {
                 content: " ";
                 display: block;
                 width: 0;
@@ -127,7 +142,8 @@
                 left: 100%;
                 z-index: 1;
             }
-            &::before{
+
+            &::before {
                 content: " ";
                 display: block;
                 width: 0;
@@ -142,31 +158,36 @@
                 margin-left: -1px;
                 z-index: 1;
             }
-            
+
         }
-        &:first-child{
-            button{
-                &::before{
+
+        &:first-child {
+            button {
+                &::before {
                     content: '';
                     display: none;
                 }
             }
-            
+
         }
-        @media (max-width:992px){
+
+        @media (max-width:992px) {
             width: 100%;
             margin-bottom: 15px;
-            button{
+
+            button {
                 width: 95%;
-                &::before{
+
+                &::before {
                     display: none;
 
                 }
             }
         }
-        
+
     }
-    .tab-content{
+
+    .tab-content {
         padding: 30px 55px;
         background: $col6;
         border: 0.5px solid $col25;
@@ -175,5 +196,117 @@
         box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
         border-radius: 0px 0px 10px 10px;
 
+    }
+}
+
+.vertical-tab {
+    .nav {
+        .nav-item {
+            margin-bottom: 40px;
+
+            a.nav-link {
+                background-color: $col6;
+                color: $col2;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 0 0;
+                position: relative;
+                cursor: pointer;
+
+                &:hover {
+                    color: $col4;
+
+                    &::after {
+                        content: "";
+                        background-color: $col4;
+                        width: 30px;
+                        height: 3px;
+                        position: absolute;
+                        left: 0;
+                        bottom: -8px;
+                    }
+                }
+
+                &.active {
+                    color: $col4;
+
+                    &::after {
+                        content: "";
+                        background-color: $col4;
+                        width: 30px;
+                        height: 3px;
+                        position: absolute;
+                        left: 0;
+                        bottom: -8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 0 0;
+
+        .card {
+            border-radius: 12px; 
+            border: 1px solid $col25; 
+            .card-header {
+                padding-left: 20px;
+                padding-right: 20px; 
+                background: $col32; 
+                border-radius: 12px 12px 0px 0px;   
+                min-height: 56px; 
+                display: flex;
+                align-items: center;
+            }
+            .card-body {
+                background: $col33;  
+                padding: 20px 20px; 
+            }
+        }
+        .border-right-dashed {
+            @media (min-width: 992px) {
+                border-right: 1px dashed $col12;  
+            }
+        }
+        .border-bottom-dashed {
+            border-bottom: 1px dashed $col12;  
+        }
+        .border-bottom-solid { 
+            border-bottom: 1px solid $col12;  
+        }
+        .accordian-form {
+            .accordion {
+                .accordion-item {
+                    background-color: $col33;  
+                    border: none; 
+                    .accordion-header {
+                        button {
+                            background-color: transparent;  
+                            box-shadow: none; 
+                            border: none;
+                            padding: 0 0; 
+                            color: $col5; 
+                            font-size: 18px; 
+                            font-weight: 600; 
+                            &:hover, &:focus {
+                                box-shadow: none; 
+                            }
+                        }
+                    }
+                }
+                .accordion-body {
+                    padding: 0 0;  
+                    padding-top: 30px; 
+                    .checkbox-types {
+                        .radioWrap {
+                            &:last-child {
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
