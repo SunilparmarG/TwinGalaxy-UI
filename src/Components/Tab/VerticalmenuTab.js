@@ -12,15 +12,19 @@ import UploadButton from "../UploadButton/UploadButton";
 import Chips from "../Chips/ChipsComponent";
 import CheckboxNew from "../checkbox/CheckboxNew";
 import ProfileModal from "../Modal/ProfileModal";
+import Image from "../image/Image";
 
 // images and scss
 import "./tab.scss";
+import EyeSvgrepo from '../../assets/images/svg/eye-svgrepo.svg';
+import EyeSlace from '../../assets/images/svg/eye-slash.svg';
+import FacebookIcon from '../../assets/images/svg/facebook-icon.svg';
 
 const VerticalTab = ({ className, ...rest }) => {
   // const 
   return (
     <section className="vertical-tab" aria-label="Vertical Tab Section">
-      <Tab.Container id="left-tabs-example" defaultActiveKey="editsignature">
+      <Tab.Container id="left-tabs-example" defaultActiveKey="reverify">
         <Row>
           <Col md={3}>
             <Nav variant="pills" className="flex-column">
@@ -35,6 +39,18 @@ const VerticalTab = ({ className, ...rest }) => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="claimusername">Claim Username</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="emailpassword">Edit Email & Password</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="editconnections">Edit Connections</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="editignorelist">Edit Ignore List</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="reverify">Re Verify</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
@@ -733,11 +749,385 @@ const VerticalTab = ({ className, ...rest }) => {
                       fontWeight='fw600'
                       className='fs-20 w-100 mb-0'
                       typeofHeading='h2'
-                      text='Claim Username'  
+                      text='Claim Username'
                     />
                   </Card.Header>
                   <Card.Body>
-                      <ProfileModal />  
+                    <ProfileModal />
+                  </Card.Body>
+                </Card>
+              </Tab.Pane>
+              <Tab.Pane eventKey="emailpassword">
+                <Card>
+                  <Card.Header>
+                    <Heading
+                      color='text-col1'
+                      fontWeight='fw600'
+                      className='fs-20 w-100 mb-0'
+                      typeofHeading='h2'
+                      text='Claim Username'
+                    />
+                  </Card.Header>
+                  <Card.Body>
+                    <Row>
+                      <Col md={12} className="position-relative">
+                        <div className="mb-4">
+                          <InputComponent
+                            type='password'
+                            placeholder="Password"
+                            name="password"
+                            required="true"
+                            className="paddingRight"
+                          />
+                          <Text
+                            text="You must enter your current password if you wish to change your password or email address."
+                            color="text-col2"
+                            className="fs-12 fw500 mb-2 text-align"
+                          />
+                          <div className='showPass'>
+                            <Image src={EyeSlace} className="img-fluid disabledImg" />
+                            <Image src={EyeSvgrepo} className="img-fluid enableImg" />
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md={12}>
+                        <div className="d-flex mb-2">
+                          <Text
+                            text="Edit Password"
+                            color="text-col5"
+                            className="fs-16 fw600"
+                          />
+                          <Text
+                            text="(Optional)"
+                            color="text-col2"
+                            className="fs-16 fw500 italic ms-1"
+                          />
+                        </div>
+                      </Col>
+                      <Col md={6} className="position-relative">
+                        <div className="mb-4">
+                          <InputComponent
+                            type='password'
+                            placeholder="New Password"
+                            name="newpassword"
+                            required="true"
+                            className="paddingRight"
+                          />
+                          <ul className="w-100 listing-validtext m-0 p-0">
+                            <li>
+                              <span className="list-circle"></span>
+                              <Text
+                                text="Must be at least 8 characters"
+                                color="text-col2"
+                                className="fs-12 fw500 text-align"
+                              />
+                            </li>
+                            <li>
+                              <span className="list-circle"></span>
+                              <Text
+                                text="Must contain lower-case characters"
+                                color="text-col2"
+                                className="fs-12 fw500 text-align"
+                              />
+                            </li>
+                            <li>
+                              <span className="list-circle"></span>
+                              <Text
+                                text="Must contain upper-case characters"
+                                color="text-col2"
+                                className="fs-12 fw500 text-align"
+                              />
+                            </li>
+                            <li>
+                              <span className="list-circle"></span>
+                              <Text
+                                text="Must contain numbers"
+                                color="text-col2"
+                                className="fs-12 fw500 text-align"
+                              />
+                            </li>
+                          </ul>
+                          <div className='showPass'>
+                            <Image src={EyeSlace} className="img-fluid disabledImg" />
+                            <Image src={EyeSvgrepo} className="img-fluid enableImg" />
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md={6} className="position-relative">
+                        <div className="mb-4">
+                          <InputComponent
+                            type='password'
+                            placeholder="Confirm New Password"
+                            name="confirmpassword"
+                            required="true"
+                            className="paddingRight"
+                          />
+                          <Text
+                            text="Enter a new password for your user account. Note that passwords are
+                          case-sensitive"
+                            color="text-col2"
+                            className="fs-12 fw500 mb-2 text-align"
+                          />
+                          <div className='showPass'>
+                            <Image src={EyeSlace} className="img-fluid disabledImg" />
+                            <Image src={EyeSvgrepo} className="img-fluid enableImg" />
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col md={12}>
+                        <div className="d-flex mb-2">
+                          <Text
+                            text="Edit Email Address"
+                            color="text-col5"
+                            className="fs-16 fw600"
+                          />
+                          <Text
+                            text="(Optional)"
+                            color="text-col2"
+                            className="fs-16 fw500 italic ms-1"
+                          />
+                        </div>
+                      </Col>
+                      <Col md={6}>
+                        <div className="mb-4">
+                          <InputComponent
+                            type='email'
+                            placeholder="New Email Address"
+                            name="email"
+                            required="true"
+                          />
+                        </div>
+                      </Col>
+                      <Col md={6}>
+                        <div className="mb-4">
+                          <InputComponent
+                            type='email'
+                            placeholder="Confirm New Email Address"
+                            name="confirmemail"
+                            required="true"
+                          />
+                          <Text
+                            text="Enter your new email address here. You must be able to receive email
+                            sent to this address."
+                            color="text-col2"
+                            className="fs-12 fw500 mb-2 text-align"
+                          />
+                        </div>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col sm={3}>
+                        <Buttons
+                          text="Cancel"
+                          variant="primary"
+                          className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
+                        />
+                      </Col>
+                      <Col sm={9}>
+                        <div className="text-start mt-3 mt-sm-0 text-sm-end">
+                          <Buttons
+                            text="Save Changes"
+                            variant="primary"
+                            className="primary pad1 fs-14 me-3 mb-3 mb-sm-0 fw600"
+                          />
+                          <Buttons
+                            text="Reset Fields"
+                            variant="primary"
+                            className="btn-primary btn-reset pad1 fs-14 fw600"
+                          />
+                        </div>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </Tab.Pane>
+              <Tab.Pane eventKey="editconnections">
+                <Card>
+                  <Card.Header>
+                    <Heading
+                      color='text-col1'
+                      fontWeight='fw600'
+                      className='fs-20 w-100 mb-0'
+                      typeofHeading='h2'
+                      text='Edit Connections'
+                    />
+                  </Card.Header>
+                  <Card.Body>
+                    <Text
+                      text="The Facebook Platform"
+                      color="text-col5"
+                      className="fs-18 fw600 mb-3"
+                    />
+                    <div className="border-bottom-platform mb-3"></div>
+                    <Text
+                      text="Get Connected with Facebook"
+                      color="text-col5"
+                      className="fs-16 fw600 mb-3"
+                    />
+                    <div>
+                      <Image src={FacebookIcon} name="Icon" className="img-fluid pointer" />
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Tab.Pane>
+              <Tab.Pane eventKey="editignorelist">
+                <Card>
+                  <Card.Header>
+                    <Heading
+                      color='text-col1'
+                      fontWeight='fw600'
+                      className='fs-20 w-100 mb-0'
+                      typeofHeading='h2'
+                      text='Edit Ignore List'
+                    />
+                  </Card.Header>
+                  <Card.Body>
+                    Edit Ignore List
+                  </Card.Body>
+                </Card>
+              </Tab.Pane>
+              <Tab.Pane eventKey="reverify">
+                <Card className="mb-4">
+                  <Card.Header>
+                    <Heading
+                      color='text-col1'
+                      fontWeight='fw600'
+                      className='fs-20 w-100 mb-0'
+                      typeofHeading='h2'
+                      text='Private and Confidential'
+                    />
+                  </Card.Header>
+                  <Card.Body>
+                    <Text
+                      text="Welocome to the Twin Galaxies user verification process!"
+                      color="text-col5"
+                      className="fs-18 fw600 mb-2"
+                    />
+                    <Text
+                      text="Twin Galaxies’ mandate is to provide a consistent, data-driven, bankable foundation that professional leagues, team organizations, sponsors, media, communities and competitors can reference and trust."
+                      color="text-col5"
+                      className="fs-16 fw500 mb-2"
+                    />
+                    <Text
+                      text="This foundation is focused on recognizing electronic gaming competitor achievement and is the ongoing basis of direct economic and promotional opportunities for video game players and eSports competitors.andate is to provide a consistent, data-driven, bankable foundation that professional leagues, team organizations, sponsors,media, communities and competitors can reference and trust."
+                      color="text-col5"
+                      className="fs-16 fw500 mb-2"
+                    />
+                    <Text
+                      text="Once you are VERIFIED here are just some of the things you will be able to do:"
+                      color="text-col5"
+                      className="fs-16 fw500 mb-2"
+                    />
+                    <Text
+                      text="Becoming “VERIFIED” means you have proven that you are non-anonymous and are personally accountable for your score performances. Your information will be kept private."
+                      color="text-col5"
+                      className="fs-16 fw500 mb-2"
+                    />
+                    <Text
+                      text="Twin Galaxies does not charge any fees to become VERIFIED."
+                      color="text-col5"
+                      className="fs-16 fw500 mb-2"
+                    />
+                    <Text
+                      text="Non-verified users have limited access to the site and cannot submit or adjudicate scores."
+                      color="text-col5"
+                      className="fs-16 fw500 mb-2"
+                    />
+                    <Text
+                      text="To become VERIFIED, please enter the information in the fields below. All information is required and it must be current and accurate.If at any time your identification information becomes invalid, you will lose verified status."
+                      color="text-col5"
+                      className="fs-16 fw500 mb-4"
+                    />
+                    <div className="verify-box">
+                      <Text
+                        text="If you already have a record stored in the Twin Galaxies database, and you wish to claim and assign that record to your Twin Galaxies user account, make sure that your FULL NAME exactly matches your name in the record database."
+                        color="text-col5"
+                        className="fs-18 fw500"
+                      />
+                    </div>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Body>
+                    <Heading
+                      color='text-col1'
+                      fontWeight='fw600'
+                      className='fs-20 w-100 mb-4'
+                      typeofHeading='h2'
+                      text='Re-Verify'
+                    />
+                    <Row>
+                      <Col md={12}>
+                        <div className="mb-4">
+                          <InputComponent
+                            type="text"
+                            name="fullname"
+                            placeholder="Full Name"
+                          />
+                        </div>
+                      </Col>
+                      <Col md={4}>
+                        <div className='mb-4'>
+                          <SelectComponent defaultOption="India" />
+                        </div>
+                      </Col>
+                      <Col md={4}>
+                        <div className='mb-4'>
+                          <SelectComponent defaultOption="MP" />
+                        </div>
+                      </Col>
+                      <Col md={4}>
+                        <div className='mb-4'>
+                          <SelectComponent defaultOption="Indore" />
+                        </div>
+                      </Col>
+                      <Col md={12}>
+                        <div className='mb-4'>
+                          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" placeholder="Street Address" rows={6} />
+                          </Form.Group>
+                        </div>
+                      </Col>
+                      <Col md={6}>
+                        <div className="mb-4">
+                          <InputComponent
+                            type="text"
+                            name="fullname"
+                            placeholder="Postal Code"
+                          />
+                        </div>
+                      </Col>
+                      <Col md={6}>
+                        <div className="d-flex mb-4">
+                          <div className="min72">
+                            <SelectComponent defaultOption="91" />
+                          </div>
+                          <div className="ms-3 w-100">
+                            <InputComponent
+                              type="text"
+                              name="fullname"
+                              placeholder="Phone Number"
+                            />
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md={12}>
+                        <div className="d-flex justify-content-between">
+                          <Buttons
+                            text="Cancel"
+                            variant="primary"
+                            className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
+                          />
+                          <Buttons
+                            text="Next"
+                            variant="primary"
+                            className="primary pad1 fs-14 me-3 mb-3 mb-sm-0 fw600"
+                          />
+                        </div>  
+                      </Col>
+                    </Row>
                   </Card.Body>
                 </Card>
               </Tab.Pane>
@@ -745,7 +1135,7 @@ const VerticalTab = ({ className, ...rest }) => {
           </Col>
         </Row>
       </Tab.Container>
-    </section>
+    </section >
   );
 };
 

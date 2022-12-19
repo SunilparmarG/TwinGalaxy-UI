@@ -5,6 +5,7 @@ import Text from '../text/Text';
 import Image from '../image/Image';
 import Modal from 'react-bootstrap/Modal';
 import Settings from '../../assets/images/svg/claim-icon.svg';
+import CrossIcon from '../../assets/images/svg/cross-icon.svg';
 
 import './Modal.scss';
 
@@ -16,15 +17,17 @@ function MyModal(props) {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        className='tgModal'
+        className='tgModal claim-modal'
       >
-
+        <Modal.Header>
+          <Image src={CrossIcon} name="CrossIcon" className="img-fluid mb-3 pointer" onClick={props.onHide} />     
+        </Modal.Header>
         <Modal.Body className='text-center mxWdth2 mx-auto'>
-          <Image src={Settings} className="img-fluid mb-3" />
+          <Image src={Settings} name="Settings" className="img-fluid mb-3" />
           <Text text='Redirecting...' className="fs-30 fw600 text-col1 mb-3" />
           <Text text='You have already claimed a database name entry' className="fs-22 fw500 text-col5 mb-3" />
-          <div className='bg-col35 mb-5 click-text d-inline-block'> 
-            <Text text='You have already claimed a database name entry' className="fs-18 fw600 text-col13 pointer" />  
+          <div className='bg-col35 mb-5 click-text d-inline-block'>
+            <Text text='You have already claimed a database name entry' className="fs-18 fw600 text-col13 pointer" />
           </div>
           <Button text='Ok' variant='primary' className='minWdth' onClick={props.onHide} />
         </Modal.Body>
