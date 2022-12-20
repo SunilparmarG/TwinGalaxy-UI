@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { Tabs, Tab, Container, Row, Col } from "react-bootstrap";
 import "./tab.scss";
 import VerticalmenuTab from "./VerticalmenuTab"; 
+import MyNetworkTab from "./MyNetworkTab";
 
 const tab = ({ className, ...rest }) => { 
   // const 
@@ -16,10 +17,10 @@ const tab = ({ className, ...rest }) => {
               mountOnEnter
               unmountOnExit={false}
             >
-               <VerticalmenuTab />
+               <VerticalmenuTab /> 
             </Tab>
-            <Tab eventKey="Activity" title="My Network">
-              My Network
+            <Tab eventKey="Activity" title="My Network">  
+              <MyNetworkTab />
             </Tab>
             <Tab eventKey="Achivements" title="Records &  Achivements">
               <Row>

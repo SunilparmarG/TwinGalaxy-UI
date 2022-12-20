@@ -46,7 +46,10 @@
 .userPost {
     .row {
         .colBorder {
-            border-right: solid 1px rgba(136, 136, 136, 0.4);
+            border-right: solid 1px rgba(136, 136, 136, 0.4); 
+            @media (max-width: 575px) {
+                border-right: none; 
+            }
         }
 
         .col {

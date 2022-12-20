@@ -20,7 +20,7 @@ import ActivePro from '../../assets/images/svg/rightsign.svg';
 
 const TopProfile = () => {
     return (
-        <main>
+        <main> 
             <section className='position-relative overflow-hidden' aria-label="User Profile Section">
                 <Container className='mt-5 mb-5'>
                     <div className='profileLayout'>
@@ -88,35 +88,35 @@ const TopProfile = () => {
                             <Row className='align-items-center'>
                                 <Col md={8}>
                                     <Row className='mb-4 md-mb-0'>
-                                        <Col xs={6} sm={6} md={6} lg={3}>
+                                        <Col xs={12} sm={6} md={6} lg={3}>
                                             <div className='colBorder d-flex flex-column mb-3 mb-lg-0'>
                                                 <Text text="Posts" className="fs-18 fw600 text-col2" />
                                                 <Text text="05" className="fs-22 fw700 text-col1" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} sm={6} md={6} lg={3} className='ps-lg-4'>
+                                        <Col xs={12} sm={6} md={6} lg={3} className='ps-lg-4'>
                                             <div className='colBorder d-flex flex-column mb-3 mb-lg-0'>
                                                 <Text text="Friends" className="fs-18 fw600 text-col2" />
                                                 <Text text="07" className="fs-22 fw700 text-col1" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} sm={6} md={6} lg={3} className='ps-lg-4'>
+                                        <Col xs={12} sm={6} md={6} lg={3} className='ps-lg-4'>
                                             <div className='colBorder d-flex flex-column mb-3 mb-lg-0'>
                                                 <Text text="Submissions" className="fs-18 fw600 text-col2" />
                                                 <Text text="04" className="fs-22 fw700 text-col1" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} sm={6} md={6} lg={3} className='ps-lg-4 mb-3 mb-md-0'>
+                                        <Col xs={12} sm={6} md={6} lg={3} className='ps-lg-4 mb-3 mb-md-0'>
                                             <div className='colBorder d-flex flex-column'>
                                                 <Text text="Subscriptions" className="fs-18 fw600 text-col2" />
                                                 <Text text="15" className="fs-22 fw700 text-col1" />
-                                            </div>
+                                            </div>    
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col md={4}>
-                                    <div className='text-end socialLinks'>  
-                                        <ul>
+                                    <div className='text-sm-end text-center socialLinks'>  
+                                        <ul className='justify-content-center justify-content-sm-end'>
                                             <li>
                                                 <a href="#">
                                                     <Image src={FacebookIcon} name="Facebook Icon" className="img-fluid" />

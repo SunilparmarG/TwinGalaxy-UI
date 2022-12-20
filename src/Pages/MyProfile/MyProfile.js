@@ -6,8 +6,8 @@ import MyprofileTab from '../../Components/Tab/MyprofileTab';
 const MyProfile = () => {
     return (
         <main>
-             <TopProfile />   
-             <MyprofileTab />         
+             <TopProfile />    
+             <MyprofileTab />            
         </main>
     )
 }

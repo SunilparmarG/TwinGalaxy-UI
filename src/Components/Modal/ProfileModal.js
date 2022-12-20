@@ -20,8 +20,8 @@ function MyModal(props) {
         className='tgModal claim-modal'
       >
         <Modal.Header>
-          <Image src={CrossIcon} name="CrossIcon" className="img-fluid mb-3 pointer" onClick={props.onHide} />     
-        </Modal.Header>
+          <Image src={CrossIcon} name="CrossIcon" className="img-fluid mb-3 pointer" onClick={props.onHide} />    
+        </Modal.Header>  
         <Modal.Body className='text-center mxWdth2 mx-auto'>
           <Image src={Settings} name="Settings" className="img-fluid mb-3" />
           <Text text='Redirecting...' className="fs-30 fw600 text-col1 mb-3" />

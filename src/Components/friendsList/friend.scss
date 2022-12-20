@@ -1,0 +1,73 @@
+@import '../../assets/scss/module/variables.scss';
+
+.friend-list {
+    .user-info {
+        .user-box {
+            width: 54px;
+            min-width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            &>img {
+                height: auto;
+            }
+        }
+    }
+
+    .status {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid $col6;
+        position: absolute;
+        right: -4px;
+        top: 32px;
+
+        &.online {
+            background-color: $col39;
+        }
+
+        &.yellow {
+            background-color: $col8;
+        }
+
+        &.offline {
+            background-color: $col27;
+        }
+    }
+
+    .status-default {
+        padding: 6px 18px;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        min-width: 98px;
+        font-weight: 600;
+        font-size: 16px;  
+        display: inline-block; 
+        text-align: center; 
+        &.pending {
+            background: rgba(201, 205, 205, 0.5);
+            border: 1px solid rgba(201, 205, 205, 0.5); 
+            color: #898989; 
+        }
+        &.accept { 
+            background: #C5FFCE;
+            border: 1px solid #0CC129;
+            color: #0CC129; 
+        }
+        &.follow {  
+            background: #E5E9FF;
+            border: 1px solid #2843D6;
+            color: #2843D6; 
+        }
+        &.unfollow {  
+            background: #FFD5D5; 
+            border: 1px solid #D5251E;
+            color: #D5251E; 
+        }
+    }
+
+}

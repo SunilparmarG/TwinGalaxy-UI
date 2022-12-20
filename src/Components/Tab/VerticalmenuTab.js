@@ -12,6 +12,7 @@ import UploadButton from "../UploadButton/UploadButton";
 import Chips from "../Chips/ChipsComponent";
 import CheckboxNew from "../checkbox/CheckboxNew";
 import ProfileModal from "../Modal/ProfileModal";
+import ConfirmModal from "../Modal/ConfirmModal";
 import Image from "../image/Image";
 
 // images and scss
@@ -19,12 +20,14 @@ import "./tab.scss";
 import EyeSvgrepo from '../../assets/images/svg/eye-svgrepo.svg';
 import EyeSlace from '../../assets/images/svg/eye-slash.svg';
 import FacebookIcon from '../../assets/images/svg/facebook-icon.svg';
+import UserPostOne from '../../assets/images/user-post.svg';
+import UserPostTwo from '../../assets/images/user-post-two.svg';
 
 const VerticalTab = ({ className, ...rest }) => {
   // const 
   return (
     <section className="vertical-tab" aria-label="Vertical Tab Section">
-      <Tab.Container id="left-tabs-example" defaultActiveKey="reverify">
+      <Tab.Container id="left-tabs-example" defaultActiveKey="myprofile">  
         <Row>
           <Col md={3}>
             <Nav variant="pills" className="flex-column">
@@ -73,7 +76,7 @@ const VerticalTab = ({ className, ...rest }) => {
                         <Row>
                           <Col md={12} lg={5}>
                             <div className="border-right-dashed pe-md-4 mb-4 mb-lg-0">
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="User Name:"
                                   color="text-col5"
@@ -82,10 +85,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="Jonathan_D"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Email ID:"
                                   color="text-col5"
@@ -94,10 +97,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="jonathan@gmail.com"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Date of Birth:"
                                   color="text-col5"
@@ -106,10 +109,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="24 June, 1987"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Location:"
                                   color="text-col5"
@@ -118,10 +121,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="NewYork"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Interests:"
                                   color="text-col5"
@@ -130,14 +133,14 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="Gaming, Internet Surfing"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
                             </div>
                           </Col>
                           <Col md={12} lg={7}>
                             <div className="ps-lg-4">
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Occupation:"
                                   color="text-col5"
@@ -146,10 +149,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="Freelancer"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="TG Live Feed:"
                                   color="text-col5"
@@ -158,10 +161,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="ON"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Privacy:"
                                   color="text-col5"
@@ -170,10 +173,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="Display only age"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Status:"
                                   color="text-col5"
@@ -182,10 +185,10 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="Free Agent"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
-                              <div className="d-flex mb-2">
+                              <div className="d-flex flex-column flex-sm-row mb-2">
                                 <Text
                                   text="Home Page URL:"
                                   color="text-col5"
@@ -194,14 +197,14 @@ const VerticalTab = ({ className, ...rest }) => {
                                 <Text
                                   text="http://www.jonathan.com"
                                   color="text-col1"
-                                  className="fs-18 fw500 ms-2"
+                                  className="fs-18 fw500 ms-sm-2"
                                 />
                               </div>
                             </div>
                           </Col>
                         </Row>
                       </div>
-                      <div className="mb-5">
+                      <div className="mb-2 mb-md-5">
                         <Text
                           text="About"
                           color="text-col5"
@@ -593,24 +596,24 @@ const VerticalTab = ({ className, ...rest }) => {
                         </Accordion>
                       </div>
                       <Row className="mt-4">
-                        <Col md={4} lg={4} sm={4}>
+                        <Col md={4} lg={4} sm={3} xs={12}>
                           <Buttons
                             text="Cancel"
                             variant="primary"
                             className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
                           />
                         </Col>
-                        <Col md={8} lg={8} sm={8}>
+                        <Col md={8} lg={8} sm={8} xs={12}>
                           <div className="text-start text-sm-end mt-3 mt-sm-0">
                             <Buttons
                               text="Save Changes"
                               variant="primary"
-                              className="primary pad1 fs-14 fw600"
+                              className="primary pad1 fs-14 fw600 me-4 me-sm-0"
                             />
                             <Buttons
                               text="Reset Fields"
                               variant="primary"
-                              className="btn-primary btn-reset pad1 fs-14 fw600 ms-3 ms-sm-3"
+                              className="btn-primary btn-reset pad1 fs-14 fw600 ms-0 mt-3 mt-sm-0 ms-sm-3"
                             />
                           </div>
                         </Col>
@@ -973,18 +976,143 @@ const VerticalTab = ({ className, ...rest }) => {
                 </Card>
               </Tab.Pane>
               <Tab.Pane eventKey="editignorelist">
-                <Card>
+                <Card className="mb-4">
                   <Card.Header>
                     <Heading
                       color='text-col1'
                       fontWeight='fw600'
                       className='fs-20 w-100 mb-0'
                       typeofHeading='h2'
-                      text='Edit Ignore List'
+                      text='Ignore List'
                     />
                   </Card.Header>
                   <Card.Body>
-                    Edit Ignore List
+                    <Row>
+                      <Col md={12}>
+                        <div className="mb-3 mb-md-0">
+                          <Text text="Add me to H1PL Qualifed list"
+                            color="text-col5"
+                            className="fs-14 fw500 mb-2" />
+                          <div className="d-flex checkbox-types mb-3">
+                            <CheckboxNew label="Check / Uncheck All" />
+                          </div>
+                        </div>
+                        <div className="user-list">
+                          <div className="user-info d-flex">
+                            <div className="user-post d-flex align-items-center">
+                              <div className="d-flex checkbox-types align-items-center">
+                                <CheckboxNew />
+                                <div className="user-box">
+                                  <Image src={UserPostOne} name="user post" className="img-fluid" />
+                                </div>
+                              </div>
+                              <div className="ms-3">  
+                                <Heading
+                                  color='text-col1'
+                                  fontWeight='fw600'
+                                  className='fs-18 text-black w-100 mb-0'
+                                  typeofHeading='h2'
+                                  text='Datalog'
+                                />
+                                <Text text="Friend"
+                                  color="text-col2"
+                                  className="fs-14 fw600" />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="user-info d-flex">
+                            <div className="user-post d-flex align-items-center">
+                              <div className="d-flex checkbox-types align-items-center">
+                                <CheckboxNew />
+                                <div className="user-box">
+                                  <Image src={UserPostOne} name="user post" className="img-fluid" />
+                                </div>
+                              </div>
+                              <div className="ms-3">
+                                <Heading
+                                  color='text-col1'
+                                  fontWeight='fw600'
+                                  className='fs-18 text-black w-100 mb-0'
+                                  typeofHeading='h2'
+                                  text='Megan Ruth'
+                                />
+                                <Text text="Friend"
+                                  color="text-col2"
+                                  className="fs-14 fw600" />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="user-info d-flex">
+                            <div className="user-post d-flex align-items-center">
+                              <div className="d-flex checkbox-types align-items-center">
+                                <CheckboxNew />
+                                <div className="user-box">
+                                  <Image src={UserPostTwo} name="user post" className="img-fluid" />
+                                </div>
+                              </div>
+                              <div className="ms-3">
+                                <Heading
+                                  color='text-col1'
+                                  fontWeight='fw600'
+                                  className='fs-18 text-black w-100 mb-0'
+                                  typeofHeading='h2'
+                                  text='Jenny  D’souza'
+                                />
+                                <Text text="Friend"
+                                  color="text-col2"
+                                  className="fs-14 fw600" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                    <Row className="mt-4">
+                      <Col xs={6}>
+                        <Buttons
+                          text="Cancel"
+                          variant="primary"
+                          className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
+                        />
+                      </Col>
+                      <Col xs={6} className="text-end">
+                        <Buttons
+                          text="Save Changes"
+                          variant="primary"
+                          className="primary pad1 fs-14 mb-0 mb-sm-0 fw600"
+                        />
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Body>
+                    <Row>
+                      <Col md={12}>
+                        <Text text="Add a Memeber to your list"
+                          color="text-col1"
+                          className="fs-20 fw600 mb-3" />
+                        <div className="mb-4">
+                          <InputComponent
+                            type="text"
+                            name="username"
+                            placeholder="User Name"
+                          />
+                        </div>
+                        <div className="mt-4 pt-3 d-flex align-items-center justify-content-between">
+                          <Buttons
+                            text="Cancel"
+                            variant="primary"
+                            className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
+                          />
+                          <Buttons
+                            text="Add"
+                            variant="primary"
+                            className="primary pad1 fs-14 me-3 mb-0 mb-sm-0 fw600"
+                          />
+                        </div>
+                      </Col>
+                    </Row>
                   </Card.Body>
                 </Card>
               </Tab.Pane>
@@ -1113,19 +1241,19 @@ const VerticalTab = ({ className, ...rest }) => {
                           </div>
                         </div>
                       </Col>
-                      <Col md={12}>
-                        <div className="d-flex justify-content-between">
-                          <Buttons
-                            text="Cancel"
-                            variant="primary"
-                            className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
-                          />
-                          <Buttons
-                            text="Next"
-                            variant="primary"
-                            className="primary pad1 fs-14 me-3 mb-3 mb-sm-0 fw600"
-                          />
-                        </div>  
+                    </Row>
+                    <Row>
+                      <Col xs={6}>
+                        <Buttons
+                          text="Cancel"
+                          variant="primary"
+                          className="btn-primary btn-cancel text-col5 pad1 fs-14 fw600"
+                        />
+                      </Col>  
+                      <Col xs={6}>
+                        <div className="text-end">
+                          <ConfirmModal />
+                        </div>
                       </Col>
                     </Row>
                   </Card.Body>

@@ -1,0 +1,40 @@
+@import '../../assets/scss/module/variables.scss'; 
+
+.inputFeild.search-input {
+  .input-group-text {
+    background-color: $col38;  
+    border-color: $col38; 
+    color: $col6; 
+    border-radius: 20px 20px 20px 20px; 
+    cursor: pointer;  
+    &:hover, &:focus {  
+      border-color: $col38;   
+    }
+  }
+  .form-control {
+    border-radius: 10px;
+    background: $col6;
+    padding: .675rem 1.125rem;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $col2 !important;
+    outline: 0;   
+    border-color: $col25;
+    box-shadow: 0px 6.87126px 41.2275px 1.37425px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+    &:hover,
+    &:focus {
+      box-shadow: none !important;
+    }
+
+    &::placeholder {
+      color: $col2; 
+    }
+
+    &:focus {  
+      border-color: $col10;
+      box-shadow: inherit;
+    }
+  }
+}

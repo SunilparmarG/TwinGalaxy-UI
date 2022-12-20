@@ -263,7 +263,7 @@
             .card-body {
                 background: $col33;  
                 padding: 20px 20px; 
-                min-height: 300px; 
+                // min-height: 300px; 
             }
         }
         .border-right-dashed {
@@ -294,6 +294,21 @@
                             &:hover, &:focus {
                                 box-shadow: none; 
                             }
+                        }
+                    }
+                }
+                .accordion-button {
+                    &::after {
+                        background-image: url('../../assets/images/svg/less.svg');  
+                        background-repeat: no-repeat;
+                        background-size: 18px;    
+                        width: 18px;
+                        height: 18px;
+                        font-size: 0px; 
+                    }
+                    &.collapsed {
+                        &::after {
+                            background-image: url('../../assets/images/svg/exp.svg');  
                         }
                     }
                 }
@@ -342,4 +357,25 @@
 }
 .min72 {
     min-width: 72px; 
+}
+.user-list {
+    .user-info {
+        border-bottom: solid 1px $col12; 
+        padding-bottom: 15px;
+        margin-bottom: 15px; 
+        &:last-child {
+            border-bottom: none; 
+        }
+        .user-post {
+            .user-box {
+                width: 55px; 
+                height: 55px; 
+                overflow: hidden; 
+                border-radius: 50%; 
+                &>img {
+                    height: auto; 
+                }
+            }
+        }       
+    }
 }
