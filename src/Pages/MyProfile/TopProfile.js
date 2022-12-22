@@ -84,10 +84,10 @@ const TopProfile = () => {
                                 </Col>
                             </Row>
                         </div>
-                        <div className='p-4 bg-col31 userPost'>
+                        <div className='p-4 bg-col31 userPost'>       
                             <Row className='align-items-center'>
                                 <Col md={8}>
-                                    <Row className='mb-4 md-mb-0'>
+                                    <Row className='mb-4 mb-md-0'>
                                         <Col xs={12} sm={6} md={6} lg={3}>
                                             <div className='colBorder d-flex flex-column mb-3 mb-lg-0'>
                                                 <Text text="Posts" className="fs-18 fw600 text-col2" />

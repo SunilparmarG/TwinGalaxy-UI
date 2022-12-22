@@ -1,13 +1,14 @@
 import React, { memo } from "react";
 import { Tabs, Tab, Container, Row, Col } from "react-bootstrap";
 import "./tab.scss";
-import VerticalmenuTab from "./VerticalmenuTab"; 
+import VerticalmenuTab from "./VerticalmenuTab";
 import MyNetworkTab from "./MyNetworkTab";
+import RecordTab from "./RecordTab";
 
-const tab = ({ className, ...rest }) => { 
+const tab = ({ className, ...rest }) => {
   // const 
   return (
-    <section className="wrapper">      
+    <section className="wrapper">
       <Container>
         <div className="mt-36 mb-lg-5 pb-lg-5 mb-3 tabs-style" {...rest}>
           <Tabs id="controlled-tab-example" className="">
@@ -17,23 +18,13 @@ const tab = ({ className, ...rest }) => {
               mountOnEnter
               unmountOnExit={false}
             >
-               <VerticalmenuTab /> 
+              <VerticalmenuTab />
             </Tab>
-            <Tab eventKey="Activity" title="My Network">  
+            <Tab eventKey="Activity" title="My Network">
               <MyNetworkTab />
             </Tab>
             <Tab eventKey="Achivements" title="Records &  Achivements">
-              <Row>
-                <Col lg={4}>
-                  Hello
-                </Col>
-                <Col lg={4}>
-                  Hello 2
-                </Col>
-                <Col lg={4}>
-                  Hello 3
-                </Col>
-              </Row>
+              <RecordTab /> 
             </Tab>
           </Tabs>
         </div>

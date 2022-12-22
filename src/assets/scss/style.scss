@@ -223,3 +223,21 @@ textarea {
 .italic {
   font-style: italic; 
 }
+.show-no {
+   select.form-select {
+    width: auto; 
+    margin-left: auto; 
+    font-size: 14px; 
+    font-weight: 600; 
+    color: $col2; 
+    border: solid 2px $col2; 
+    border-radius: 5px; 
+    background-color: transparent; 
+    &:hover, &:focus {
+      box-shadow: none; 
+    }
+   }
+  }
+  .table-border {
+    
+  }

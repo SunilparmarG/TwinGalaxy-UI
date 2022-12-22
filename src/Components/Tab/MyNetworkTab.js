@@ -2,15 +2,11 @@ import React, { memo } from "react";
 import { Card, Tab, Row, Col, Nav, Form, Accordion } from "react-bootstrap";
 
 // components 
-import Text from "../text/Text";
 import Heading from "../heading/Heading";
-import SelectComponent from "../Input/SelectFloat";
 import InputComponent from "../Input/InputFloat";
-import Checkbox from "../checkbox/Checkbox";
-import Buttons from "../Buttons/Button";
+import Buttons from "../Buttons/Button"; 
 import UploadButton from "../UploadButton/UploadButton";
 import Chips from "../Chips/ChipsComponent";
-import CheckboxNew from "../checkbox/CheckboxNew";
 import ProfileModal from "../Modal/ProfileModal";
 import ConfirmModal from "../Modal/ConfirmModal";
 import Image from "../image/Image";
