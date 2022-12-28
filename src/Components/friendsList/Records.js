@@ -20,9 +20,9 @@ const RecordsComponent = (props) => {
                         <Col md={12}>
                             <div className="d-flex pt-5 pb-5 flex-column align-items-center justify-content-center">
                                 <Image src={Games} name="Games" className="img-fluid mb-4" />
-                                <Text text="Player holds no rankings" 
+                                <Text text="No Info Available"  
                                     color="text-col2"
-                                    className="fs-25 fw600 text-center" />  
+                                    className="fs-25 fw600 text-center" />    
                             </div>
                         </Col>
                     </Row>
