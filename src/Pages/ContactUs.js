@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'; 
+import { Container, Row, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
@@ -60,7 +60,7 @@ const ContactUs = () => {
                                         <Col md={3} className="mt-2 mb-3">
                                             <Checkbox label="Site Feedback" />
                                         </Col>
-                                        <Col md={3} className="mt-2 mb-3">
+                                        <Col md={4} className="mt-2 mb-3">
                                             <Checkbox label="Registration Problem" />
                                         </Col>
                                     </Row>
