@@ -10,7 +10,7 @@ import DataTables from "../DataTables/DataTables";
 import "./tab.scss";
 import SearchComponent from "../Search/Search";
 
-const VerticalTab = ({ className, ...rest }) => {
+const VerticalTab = ({ className, ...rest }) => {   
     // const 
     return (
         <section className="vertical-tab" aria-label="Vertical Tab Section">

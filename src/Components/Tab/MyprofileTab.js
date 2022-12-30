@@ -18,7 +18,7 @@ const tab = ({ className, ...rest }) => {
               mountOnEnter
               unmountOnExit={false}
             >
-              <VerticalmenuTab />
+              <VerticalmenuTab />   
             </Tab>
             <Tab eventKey="Activity" title="My Network">
               <MyNetworkTab />

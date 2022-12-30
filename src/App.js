@@ -5,13 +5,14 @@ import Header from './Layout/Header/Header';
 import Footer from './Layout/Footer/Footer';
 import ContactUs from './Pages/ContactUs';
 import MyProfile from './Pages/MyProfile/MyProfile'; 
+import MySettings from './Pages/MySettings/MySettings'
 
 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import ThewallHome from './Pages/Home/ThewallHome';
 import VotingpollHome from './Pages/Home/VotingpollHome';
-import VottingPerformance from './Pages/VottingPerformance/VottingPerformance';
+import VottingPerformance from './Pages/VottingPerformance/VottingPerformance'; 
 
 import "../src/assets/scss/style.scss"; 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="vottingperformance" element={<VottingPerformance />} />  
         <Route path="contactus" element={<ContactUs />} />
         <Route path="myprofile" element={<MyProfile />} />
+        <Route path="mysettings" element={<MySettings />} />
       </Routes>
       <Footer />  
     </div>
