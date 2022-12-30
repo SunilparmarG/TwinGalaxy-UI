@@ -23,7 +23,7 @@ const Login = () => {
     <div>
       
       <div className='position-relative overflow-hidden'>
-        <Container className='mt-5 mb-5'>
+        <Container className='mt-3 mb-5'>
           <div className='userLayout'>
             <div className='backBtn pt-3 ps-3'>
                 <NavLink className="fs-18 p-0  d-flex align-items-center">

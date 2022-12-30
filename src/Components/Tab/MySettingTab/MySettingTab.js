@@ -5,6 +5,8 @@ import "../tab.scss";
 import Image from "../../image/Image";
 import { NavLink } from 'react-router-dom'; 
 import GenaralSettings from "./GeneralSetting"; 
+import UserTagging from "./UserTagging"; 
+import MiscellnneousTab from "./MiscellaneousTab"; 
 
 // images 
 import BackArrow from '../../../assets/images/svg/backArrow.svg';
@@ -14,7 +16,7 @@ const tab = ({ className, ...rest }) => {
   return (
     <section className="wrapper">  
       <Container>
-        <div className='backBtn mt-5 mb-3'>
+        <div className='backBtn mt-3 mb-3'>
           <NavLink className="fs-25 p-0  d-flex align-items-center">
             <Image src={BackArrow} className="img-fluid" />
             <span className='text-col2 ms-2 fw500'>Back</span>
@@ -23,18 +25,18 @@ const tab = ({ className, ...rest }) => {
         <div className="mt-36 mb-lg-5 pb-lg-5 mb-3 tabs-style" {...rest}>
           <Tabs id="controlled-tab-example">
             <Tab
-              eventKey="Wall"
+              eventKey="Genaralsetting"
               title={<React.Fragment>General Settings</React.Fragment>}
               mountOnEnter
               unmountOnExit={false}
             >
-              <GenaralSettings />
+              <GenaralSettings />  
             </Tab>
-            <Tab eventKey="Activity" title="User Tagging">
-              User Tagging
+            <Tab eventKey="Usertagging" title="User Tagging">  
+              <UserTagging />  
             </Tab>
-            <Tab eventKey="Achivements" title="Records &  Achivements">
-              Records &  Achivements
+            <Tab eventKey="Miscellaneous" title="Miscellaneous">  
+              <MiscellnneousTab />
             </Tab>
           </Tabs>
         </div>

@@ -214,30 +214,36 @@ textarea {
 .border-bottom-solid {
   height: 2.5px;
   width: 100%;
-  background: $col5;   
-  border-radius: 20px 20px 0px 0px; 
+  background: $col5;
+  border-radius: 20px 20px 0px 0px;
 }
+
 .pointer {
-  cursor: pointer; 
+  cursor: pointer;
 }
+
 .italic {
-  font-style: italic; 
+  font-style: italic;
 }
+
 .show-no {
-   select.form-select {
-    width: auto; 
-    margin-left: auto; 
-    font-size: 14px; 
-    font-weight: 600; 
-    color: $col2; 
-    border: solid 2px $col2; 
-    border-radius: 5px; 
-    background-color: transparent; 
-    &:hover, &:focus {
-      box-shadow: none; 
+  select.form-select {
+    width: auto;
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: $col2;
+    border: solid 2px $col2;
+    border-radius: 5px;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
     }
-   }
   }
-  .table-border {
-    
-  }
+}
+
+.margin-left-space {
+   margin-left: 30px;  
+}

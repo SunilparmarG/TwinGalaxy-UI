@@ -24,7 +24,7 @@ const ContactUs = () => {
         <main>
             <TopBarOne name="Jonathan Doe" profile={Profile1} post="(Junior Member)" backgroundColor="default" />
             <section className='position-relative overflow-hidden' aria-label="Contact Us Section">
-                <Container className='mt-5 mb-5'>
+                <Container className='mt-3 mb-5'>
                     <div className='backBtn mb-3'>
                         <NavLink className="fs-25 p-0  d-flex align-items-center">
                             <Image src={BackArrow} className="img-fluid" />

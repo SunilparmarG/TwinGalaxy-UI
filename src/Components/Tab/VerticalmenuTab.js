@@ -312,7 +312,7 @@ const VerticalTab = ({ className, ...rest }) => {
                                 </Col>
                               </Row>
                               <Row>
-                                <Col md={6} lg={3}>
+                                <Col md={6} lg={3}>      
                                   <div>
                                     <Text text="Twin Galaxies Live Feed"
                                       color="text-col5"
