@@ -5,8 +5,8 @@ import Header from './Layout/Header/Header';
 import Footer from './Layout/Footer/Footer';
 import ContactUs from './Pages/ContactUs';
 import MyProfile from './Pages/MyProfile/MyProfile'; 
-import MySettings from './Pages/MySettings/MySettings'
-
+import MySettings from './Pages/MySettings/MySettings'; 
+import MyMessges from './Pages/MyMessages/MyMessge';
 
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
@@ -30,6 +30,7 @@ function App() {
         <Route path="contactus" element={<ContactUs />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="mysettings" element={<MySettings />} />
+        <Route path="mymessges" element={<MyMessges />} />
       </Routes>
       <Footer />  
     </div>

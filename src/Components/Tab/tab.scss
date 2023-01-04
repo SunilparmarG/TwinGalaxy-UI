@@ -248,73 +248,86 @@
         padding: 0 0;
 
         .card {
-            border-radius: 12px; 
-            border: 1px solid $col25; 
-            overflow: hidden; 
+            border-radius: 12px;
+            border: 1px solid $col25;
+            overflow: hidden;
+
             .card-header {
                 padding-left: 20px;
-                padding-right: 20px; 
-                background: $col32; 
-                border-radius: 12px 12px 0px 0px;   
-                min-height: 56px; 
+                padding-right: 20px;
+                background: $col32;
+                border-radius: 12px 12px 0px 0px;
+                min-height: 56px;
                 display: flex;
                 align-items: center;
             }
+
             .card-body {
-                background: $col33;  
-                padding: 20px 20px; 
+                background: $col33;
+                padding: 20px 20px;
                 // min-height: 300px; 
             }
         }
+
         .border-right-dashed {
             @media (min-width: 992px) {
-                border-right: 1px dashed $col12;  
+                border-right: 1px dashed $col12;
             }
         }
+
         .border-bottom-dashed {
-            border-bottom: 1px dashed $col12;  
+            border-bottom: 1px dashed $col12;
         }
-        .border-bottom-solid { 
-            border-bottom: 1px solid $col12;  
+
+        .border-bottom-solid {
+            border-bottom: 1px solid $col12;
         }
+
         .accordian-form {
             .accordion {
                 .accordion-item {
-                    background-color: $col33;  
-                    border: none; 
+                    background-color: $col33;
+                    border: none;
+
                     .accordion-header {
                         button {
-                            background-color: transparent;  
-                            box-shadow: none; 
+                            background-color: transparent;
+                            box-shadow: none;
                             border: none;
-                            padding: 0 0; 
-                            color: $col5; 
-                            font-size: 18px; 
-                            font-weight: 600; 
-                            &:hover, &:focus {
-                                box-shadow: none; 
+                            padding: 0 0;
+                            color: $col5;
+                            font-size: 18px;
+                            font-weight: 600;
+
+                            &:hover,
+                            &:focus {
+                                box-shadow: none;
                             }
                         }
                     }
                 }
+
                 .accordion-button {
                     &::after {
-                        background-image: url('../../assets/images/svg/less.svg');  
+                        background-image: url('../../assets/images/svg/less.svg');
                         background-repeat: no-repeat;
-                        background-size: 18px;    
+                        background-size: 18px;
                         width: 18px;
                         height: 18px;
-                        font-size: 0px; 
+                        font-size: 0px;
                     }
+
                     &.collapsed {
                         &::after {
-                            background-image: url('../../assets/images/svg/exp.svg');  
+                            background-image: url('../../assets/images/svg/exp.svg');
                         }
                     }
                 }
+
                 .accordion-body {
-                    padding: 0 0;  
-                    padding-top: 30px; 
+                    padding: 0 0;
+                    padding-top: 30px;
+
                     .checkbox-types {
                         .radioWrap {
                             &:last-child {
@@ -327,55 +340,75 @@
         }
     }
 }
+
 .listing-validtext {
     li {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
         margin-left: 3px;
+
         .list-circle {
-            width: 5px; 
-            min-width: 5px; 
-            height: 5px; 
-            margin-right: 5px; 
-            border-radius: 50%; 
+            width: 5px;
+            min-width: 5px;
+            height: 5px;
+            margin-right: 5px;
+            border-radius: 50%;
             background-color: $col13;
-            display: inline-block; 
+            display: inline-block;
             position: relative;
-            top: -3px;  
-        } 
+            top: -3px;
+        }
     }
 }
+
 .border-bottom-platform {
-    border-bottom: solid 1px $col12; 
+    border-bottom: solid 1px $col12;
 }
+
 .verify-box {
-    padding: 10px; 
-    background-color: $col36; 
-    border: solid 1px $col37;   
-    border-radius: 12px; 
+    padding: 10px;
+    background-color: $col36;
+    border: solid 1px $col37;
+    border-radius: 12px;
 }
+
 .min72 {
-    min-width: 72px; 
+    min-width: 72px;
 }
+
 .user-list {
     .user-info {
-        border-bottom: solid 1px $col12; 
+        border-bottom: solid 1px $col12;
         padding-bottom: 15px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
+
         &:last-child {
-            border-bottom: none; 
+            border-bottom: none;
         }
+
         .user-post {
             .user-box {
-                width: 55px; 
-                height: 55px; 
-                overflow: hidden; 
-                border-radius: 50%; 
+                width: 55px;
+                height: 55px;
+                overflow: hidden;
+                border-radius: 50%;
+
                 &>img {
-                    height: auto; 
+                    height: auto;
                 }
             }
-        }       
+        }
+    }
+}
+
+.vertical-tabstyle {  
+    background: $col6; 
+    border: 1px solid $col25;  
+    box-shadow: 0px 10px 50px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; 
+    padding: 20px 20px; 
+    .card {
+        
     }
 }

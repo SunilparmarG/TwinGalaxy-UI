@@ -50,7 +50,7 @@ const VerticalTab = ({ className, ...rest }) => {
                 <Nav.Link eventKey="editconnections">Edit Connections</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="editignorelist">Edit Ignore List</Nav.Link>
+                <Nav.Link eventKey="editignorelist">Edit Ignore List</Nav.Link>  
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="reverify">Re Verify</Nav.Link>
@@ -61,7 +61,7 @@ const VerticalTab = ({ className, ...rest }) => {
             <Tab.Content>
               <Tab.Pane eventKey="myprofile">
                 <div className="my-profile">
-                  <Card>
+                  <Card> 
                     <Card.Header>
                       <Heading
                         color='text-col1'

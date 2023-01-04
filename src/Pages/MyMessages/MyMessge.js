@@ -1,12 +1,12 @@
 import React from 'react';
 // components 
-import MySettingTab from '../../Components/Tab/MySettingTab/MySettingTab';
+import MessageVerticalTab from '../../Components/Tab/MyMessageTab/MessageVerticalTab';
 
 
 const MyProfile = () => {
     return (
         <main>
-            <MySettingTab />
+            <MessageVerticalTab />  
         </main>
     )
 }
