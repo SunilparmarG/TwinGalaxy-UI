@@ -5,12 +5,10 @@ import "./Chips.scss";
 const ChipsComponent = (props) => {
   return (
     <div className="chips"> 
-      <span className="status-chip default">Allow Basic BB Code: Yes</span>
-      <span className="status-chip default">Allow Color BB Code: Yes</span>
-      <span className="status-chip default">Allow Basic BB Code: Yes</span>
-      <span className="status-chip default">Allow Color BB Code: Yes</span>
-      <span className="status-chip default">Allow Basic BB Code: Yes</span>
-      <span className="status-chip default">Allow Color BB Code: Yes</span>
+      <span className="status-chip default">Unread Message</span>
+      <span className="status-chip default">Read Message</span>
+      <span className="status-chip default">Replied-to Message</span>
+      <span className="status-chip default">orwarded Message</span>                 
     </div>
   );
 };

@@ -1,1 +1,21 @@
-@import '../../assets/scss/module/variables.scss'; 
+@import '../../assets/scss/module/variables.scss';
+
+.data-tables {
+    .rdt_TableHeadRow {
+        background-color: $col28;
+        border: 1px solid $col25;
+        border-radius: 12px;
+
+        .rdt_TableCol_Sortable {
+            div {
+                font-size: 14px;
+                font-weight: 600;
+                color: $col2;
+            }
+        }
+    }
+
+    .rdt_TableRow {
+        background-color: $col33;
+    }
+}

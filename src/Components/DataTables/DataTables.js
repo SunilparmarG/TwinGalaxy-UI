@@ -811,9 +811,8 @@ export default function DataTables() {
     console.log(row.PlayerName);
   };
   return (
-    <div className="App">
+    <div className="data-tables">
       <DataTable
-        title="Player Summary"
         columns={columns}
         data={playerSummary}
         defaultSortFieldId

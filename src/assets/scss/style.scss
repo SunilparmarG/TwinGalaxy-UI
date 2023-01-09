@@ -217,6 +217,12 @@ textarea {
   background: $col5;
   border-radius: 20px 20px 0px 0px;
 }
+.border-bottom-solid-two {
+  height: 2.5px;
+  width: 100%;
+  background: $col4;
+  border-radius: 20px 20px 0px 0px; 
+}
 
 .pointer {
   cursor: pointer;
