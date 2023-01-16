@@ -11,7 +11,7 @@ import './Profile.scss';
 // images  
 import ProfileImg from '../../assets/images/userprofile.png';
 import StarsRating from '../../assets/images/svg/stars.svg';
-import FacebookIcon from '../../assets/images/svg/Facebook-icon.svg';
+import FacebookIcon from '../../assets/images/svg/facebook-round-icon.svg';
 import TwitterIcon from '../../assets/images/svg/Twitter-icon.svg';
 import InstagramIcon from '../../assets/images/svg/Instagram-icon.svg';
 import YoutubeIcon from '../../assets/images/svg/YouTube-icon.svg';

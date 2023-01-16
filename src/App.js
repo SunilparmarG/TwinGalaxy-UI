@@ -12,7 +12,9 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import ThewallHome from './Pages/Home/ThewallHome';
 import VotingpollHome from './Pages/Home/VotingpollHome';
-import VottingPerformance from './Pages/VottingPerformance/VottingPerformance'; 
+import VottingPerformance from './Pages/VottingPerformance/VottingPerformance';
+
+import RankLists from './Components/RankList/RankList';
 
 import "../src/assets/scss/style.scss"; 
 
@@ -30,7 +32,8 @@ function App() {
         <Route path="contactus" element={<ContactUs />} />
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="mysettings" element={<MySettings />} />
-        <Route path="mymessges" element={<MyMessges />} />
+        <Route path="inbox" element={<MyMessges />} />
+        <Route path="ranklist" element={<RankLists rank="4" />} />
       </Routes>
       <Footer />  
     </div>

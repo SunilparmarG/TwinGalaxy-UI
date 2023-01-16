@@ -1,0 +1,79 @@
+@import "../../assets/scss/module/variables.scss";
+
+.listSecond {
+  li {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+    .title {
+      color: $col2;
+    }
+    .value {
+      color: $col1;
+    }
+    &::after {
+      content: "";
+      height: 100%;
+      border-right: 1px solid #888;
+      position: absolute;
+      right: 0;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.rl {
+  background: #f9f9f9;
+  padding: 12px 20px 18px;
+  &.rank1 {
+    background: #fff5f2;
+    .rl-profile {
+      .avatar {
+        border-color: #e74e21;
+      }
+    }
+  }
+  &.rank2 {
+    background: #f2f4ff;
+    .rl-profile {
+      .avatar {
+        border-color: #1736e0;
+      }
+    }
+  }
+  &.rank3 {
+    background: #fef1fa;
+    .rl-profile {
+      .avatar {
+        border-color: #f4b707;
+      }
+    }
+  }
+}
+
+.rl-profile {
+  .avatar {
+    width: 64px;
+    height: 64px;
+    left: 20.22px;
+    top: 12px;
+    border: 2px solid #888888;
+    filter: drop-shadow(0px 8px 16px rgba(231, 78, 33, 0.25));
+    border-radius: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+}
