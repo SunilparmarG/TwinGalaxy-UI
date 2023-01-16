@@ -41,6 +41,8 @@ $col37: #FED8D8;
 $col38: #5179EF; 
 $col39: #4DD566;
 $col40: #DADBDF;
+$col41: #F5F7F7;
+$col42: #D8EFFF;  
 // color classes
 $colours: (
   "col1" $col1,
@@ -81,8 +83,10 @@ $colours: (
   "col37" $col37,
   "col38" $col38,
   "col39" $col39,
-  "col40" $col40                 
-);
+  "col40" $col40,
+  "col41" $col41,
+  "col42" $col42                 
+); 
 
 // Color Function
 @each $i in $colours {

@@ -470,3 +470,38 @@
         }
     }
 }
+.inner-email-list { 
+    background-color: $col41; 
+    transition: 0.5s all; 
+    .timeset {
+        display: block !important; 
+        transition: 0.5s all; 
+    }
+    .trace-icon {
+        display: none !important; 
+        transition: 0.5s all; 
+    }
+    &:hover {
+        background-color: $col42; 
+        .timeset {
+            display: none !important; 
+        }
+        .trace-icon {
+            display: block !important; 
+        }
+    }
+    .user-text {
+        .form-check {
+            margin-bottom: 0;
+            position: relative;
+            top: 2px;
+        }
+        label {
+            max-width: 120px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-top: 0; 
+        }
+    }
+}

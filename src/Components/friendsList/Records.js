@@ -8,7 +8,7 @@ import Games from '../../assets/images/games.svg';
 
 const RecordsComponent = (props) => {
     return (
-        <div className="friend-list">   
+        <div className="friend-list">  
             <Card>
                 <Card.Header>
                     <Text text="Twin Galaxies Records"
@@ -33,4 +33,4 @@ const RecordsComponent = (props) => {
 };
 
 
-export default RecordsComponent; 
+export default RecordsComponent;  

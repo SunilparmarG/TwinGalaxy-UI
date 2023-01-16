@@ -11,7 +11,8 @@ import ChipsComponent from "../../Chips/ChipsComponent";
 import FolderComponent from "./FolderComponent";
 import InputComponent from "../../Input/InputFloat";
 import Buttons from "../../Buttons/Button";
-import CheckboxNew from "../../checkbox/CheckboxNew";
+import CheckboxNew from "../../checkbox/CheckboxNew";  
+import EmailList from "../MyMessageTab/EmailList"; 
 
 // images and scss
 import BackArrow from '../../../assets/images/svg/backArrow.svg';
@@ -32,7 +33,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                         <Image src={BackArrow} className="img-fluid" />
                         <span className='text-col2 ms-2 fw500'>Back</span></NavLink>
                 </div>
-                <div className="mt-36 mb-lg-5 pb-lg-5 mb-3">
+                <div className="mt-36 mb-lg-5 pb-lg-5 mb-3">  
                     <Tab.Container id="left-tabs-example" defaultActiveKey="inbox">
                         <Row>
                             <Col md={3}>
@@ -84,6 +85,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                         </Col>
                                                     </Row>
                                                     <div className="mb-3"></div>
+                                                    <EmailList />    
                                                     {/* <Row>
                                                         <Col lg={2} md={4}>
                                                             <SelectComponent />
@@ -99,7 +101,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                 </Card.Body>
                                             </Card>
                                         </div>
-                                    </Tab.Pane>
+                                    </Tab.Pane> 
                                     <Tab.Pane eventKey="sentitems">
                                         <Card className="d-none">
                                             <Card.Body>
