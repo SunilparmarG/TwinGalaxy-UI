@@ -12,6 +12,8 @@ import './RankList.scss'
 
 // images
 import Rank1 from './../../assets/images/svg/rank1.svg'
+import LeaderBoardList from '../LeaderBoardList/LeaderBoardList';
+
 
 
 
@@ -21,6 +23,7 @@ const RankLists = (props) => {
     const rank3 = props.rank == 3;
     const name = `${rank1 ? "rank1" : ""} ${rank2 ? "rank2" : ""} ${rank3 ? "rank3" : ""} ${"rl mx-0"}`; 
   return (
+   <>
     <Row className={name}>
     <Col lg={9}>
     <div className='d-flex flex-column flex-lg-row gap-3 align-items-center'>
@@ -94,7 +97,10 @@ const RankLists = (props) => {
                 src={Rank1}/> : ''}
         </div>
     </Col>
-</Row>
+    </Row>
+
+    <LeaderBoardList/>
+   </>
   )
 }
 
