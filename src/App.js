@@ -33,7 +33,7 @@ function App() {
         <Route path="myprofile" element={<MyProfile />} />
         <Route path="mysettings" element={<MySettings />} />
         <Route path="inbox" element={<MyMessges />} />
-        <Route path="ranklist" element={<RankLists rank="4" />} />
+        <Route path="ranklist" element={<RankLists rank="5" />} />
       </Routes>
       <Footer />  
     </div>

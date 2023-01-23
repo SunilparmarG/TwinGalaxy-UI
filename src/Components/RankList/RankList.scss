@@ -32,11 +32,52 @@
 .rl {
   background: #f9f9f9;
   padding: 12px 20px 18px;
+  .hex {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    // width: 320px;
+    // height: 277.12px; /* width * 0.866 */
+    width: 30px;
+    height: 25.98px;
+    background:  #FFFFFF;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    margin-top: -15px;
+  
+    .hex-background {
+      position: absolute;
+      background-color: #888888;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 27px;
+      height: 23.382px;
+      -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+      -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+  
   &.rank1 {
     background: #fff5f2;
     .rl-profile {
       .avatar {
         border-color: #e74e21;
+      }
+      .hex{
+        .hex-background {
+          background: #e74e21;
+        }
       }
     }
   }
@@ -44,7 +85,12 @@
     background: #f2f4ff;
     .rl-profile {
       .avatar {
-        border-color: #1736e0;
+        border-color:  #A819DB;
+      }
+      .hex{
+        .hex-background {
+          background: #A819DB;
+        }
       }
     }
   }
@@ -53,6 +99,11 @@
     .rl-profile {
       .avatar {
         border-color: #f4b707;
+      }
+      .hex{
+        .hex-background {
+          background: #f4b707;
+        }
       }
     }
   }
@@ -77,3 +128,4 @@
     }
   }
 }
+
