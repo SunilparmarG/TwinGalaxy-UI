@@ -1,6 +1,9 @@
 @import "../../assets/scss/module/variables.scss";
 
 .listSecond {
+  // @media (max-width:1200px){
+  //   gap: 10px;
+  // }
   li {
     font-weight: 600;
     font-size: 13px;
@@ -20,12 +23,21 @@
       border-right: 1px solid #888;
       position: absolute;
       right: 0;
+       @media (max-width:1200px) {
+          margin-right: 0;
+          padding-right: 0;
+          border: 0;
+        }
     }
     &:last-child {
       &::after {
         display: none;
       }
     }
+   
+  }
+  @media (max-width:1200px) {
+    gap: 7px;
   }
 }
 
