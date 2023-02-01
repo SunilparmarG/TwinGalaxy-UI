@@ -8,7 +8,7 @@ import TrashIcon from '../../../assets/images/svg/Trash.svg';
 import Sends from '../../../assets/images/svg/sends.svg';
 import CheckboxNew from "../../checkbox/CheckboxNew";
 
-const RecordsComponent = (props) => {
+const RecordsComponent = (props) => { 
     return (
         <div className="email-list">
             {/* <Image src={Games} name="Games" className="img-fluid mb-4" /> */}

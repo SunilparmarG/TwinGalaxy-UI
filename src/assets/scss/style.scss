@@ -174,6 +174,11 @@ a {
   &.btn-cancel {
     background: transparent;
     border: solid 1px $col5;
+    &:active {
+      &:focus {
+        background: transparent;  
+      }
+    }
   }
 
   &.btn-reset {

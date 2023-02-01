@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Card, Tab, Form, Row, Col, Nav, Container } from "react-bootstrap";
+import { Card, Tab, Form, Row, Col, Nav, Container, Dropdown, DropdownButton } from "react-bootstrap";
 
 // components 
 import Text from "../../text/Text";
@@ -11,8 +11,10 @@ import ChipsComponent from "../../Chips/ChipsComponent";
 import FolderComponent from "./FolderComponent";
 import InputComponent from "../../Input/InputFloat";
 import Buttons from "../../Buttons/Button";
-import CheckboxNew from "../../checkbox/CheckboxNew";  
-import EmailList from "../MyMessageTab/EmailList"; 
+import CheckboxNew from "../../checkbox/CheckboxNew";
+import EmailList from "../MyMessageTab/EmailList";
+import InboxDetail from "../MyMessageTab/InboxDetail";
+import Calendar from "../../Calendar/Calendar";
 
 // images and scss
 import BackArrow from '../../../assets/images/svg/backArrow.svg';
@@ -20,6 +22,7 @@ import AddIcons from '../../../assets/images/svg/PlusCircle.svg';
 import RightArrow from '../../../assets/images/svg/right-arrow.svg';
 import TraceIcons from '../../../assets/images/svg/Trash.svg';
 import SentIcons from '../../../assets/images/svg/sent-icon.svg';
+import EnvelopeSimple from '../../../assets/images/svg/EnvelopeSimples.svg';
 import NoData from '../../../assets/images/no-data.png';
 import "../tab.scss";
 
@@ -33,7 +36,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                         <Image src={BackArrow} className="img-fluid" />
                         <span className='text-col2 ms-2 fw500'>Back</span></NavLink>
                 </div>
-                <div className="mt-36 mb-lg-5 pb-lg-5 mb-3">  
+                <div className="mt-36 mb-lg-5 pb-lg-5 mb-3">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="inbox">
                         <Row>
                             <Col md={3}>
@@ -71,37 +74,120 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                         <div className="inbox-items">
                                             <Card>
                                                 <Card.Body>
-                                                    <Heading
-                                                        color='text-col1'
-                                                        fontWeight='fw600'
-                                                        className='fs-20 w-100 mb-3'
-                                                        typeofHeading='h3'
-                                                        text='Inbox'
-                                                    />
-                                                    <FolderComponent />
-                                                    <Row>
-                                                        <Col md={8}>
-                                                            <SearchComponent placeholder="Search Sender, Title etc.." />
-                                                        </Col>
-                                                    </Row>
-                                                    <div className="mb-3"></div>
-                                                    <EmailList />    
-                                                    {/* <Row>
+                                                    <div className="inbox-top d-nones">
+                                                        <Heading
+                                                            color='text-col1'
+                                                            fontWeight='fw600'
+                                                            className='fs-20 w-100 mb-3'
+                                                            typeofHeading='h3'
+                                                            text='Inbox'
+                                                        />
+                                                        <FolderComponent />
+                                                        <Row>
+                                                            <Col md={8}>
+                                                                <SearchComponent placeholder="Search Sender, Title etc.." />
+                                                            </Col>
+                                                        </Row>
+                                                        <div className="filter-box">
+                                                            <Row className="align-items-center"> 
+                                                                <Col md={10}>
+                                                                    <Row>
+                                                                        <Col md={6}> 
+                                                                            <div className="datepicker-section">
+                                                                                <Calendar label="From" />
+                                                                            </div>
+                                                                        </Col>
+                                                                        <Col md={3}>
+                                                                            <div className="datepicker-section">
+                                                                                <Calendar label="To" />
+                                                                            </div>
+                                                                        </Col>
+                                                                        <Col md={3}>
+                                                                            <div className="select-dropdowns">
+                                                                                <lable className="custom-labels">
+                                                                                    Read & replied status
+                                                                                </lable>
+                                                                                <Dropdown>
+                                                                                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                                                        <div className="d-flex drop-checkbox">
+                                                                                            <Image src={EnvelopeSimple} name="Mail" className="img-fluid envolop-img" /> <span className="ms-1">All Messages</span>
+                                                                                        </div>
+                                                                                    </Dropdown.Toggle>
+
+                                                                                    <Dropdown.Menu>
+                                                                                        <Dropdown.Item href="#">
+                                                                                            <span>Message 1</span>
+                                                                                        </Dropdown.Item>
+                                                                                        <Dropdown.Item href="#">
+                                                                                            <span>Message 2</span>
+                                                                                        </Dropdown.Item>
+                                                                                    </Dropdown.Menu>
+                                                                                </Dropdown>
+                                                                            </div>
+                                                                        </Col>
+                                                                        <Col md={3}>
+                                                                            <div className="select-dropdowns">
+                                                                                <lable className="custom-labels">
+                                                                                    Selected Messages
+                                                                                </lable>
+                                                                                <Dropdown>
+                                                                                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                                                                        <div className="d-flex drop-checkbox">
+                                                                                            <Form.Check aria-label="option 1" /> <span className="ms-1">Move to Folder</span>
+                                                                                        </div>
+                                                                                    </Dropdown.Toggle>
+
+                                                                                    <Dropdown.Menu>
+                                                                                        <Dropdown.Item href="#">
+                                                                                            <div className="d-flex drop-checkbox">
+                                                                                                <Form.Check aria-label="option 1" /> <span className="ms-1">Folder 1</span>
+                                                                                            </div>
+                                                                                        </Dropdown.Item>
+                                                                                        <Dropdown.Item href="#">
+                                                                                            <div className="d-flex drop-checkbox">
+                                                                                                <Form.Check aria-label="option 1" /> <span className="ms-1">Folder 2</span>
+                                                                                            </div>
+                                                                                        </Dropdown.Item>
+                                                                                    </Dropdown.Menu>
+                                                                                </Dropdown>
+                                                                            </div>
+                                                                        </Col>
+                                                                    </Row>
+                                                                </Col>
+                                                                <Col md={2} className="pe-md-0"> 
+                                                                    <div> 
+                                                                        <Buttons
+                                                                            text="Apply Filter"
+                                                                            variant="primary"
+                                                                            className="primary pad1 fs-12 px-3 me-3 mb-3 mb-sm-0 fw600"
+                                                                        />
+                                                                    </div>
+                                                                </Col>
+                                                            </Row>
+                                                        </div>
+                                                        <div className="mb-3"></div>
+                                                        <EmailList />
+                                                        {/* <Row>
                                                         <Col lg={2} md={4}>
                                                             <SelectComponent />
                                                         </Col>
                                                     </Row> */}
-                                                    <Text
-                                                        text="Signature Permissions"
-                                                        color="text-col5"
-                                                        className="fs-18 fw600 mb-2"
-                                                    />
-                                                    <div className="border-bottom-solid-two mb-3"></div>
-                                                    <ChipsComponent />
+                                                        <Text
+                                                            text="Signature Permissions"
+                                                            color="text-col5"
+                                                            className="fs-18 fw600 mb-2"
+                                                        />
+                                                        <div className="border-bottom-solid-two mb-3"></div>
+                                                        <ChipsComponent />
+                                                    </div>
+
+                                                    <div className="inbox-details d-none">
+                                                        <InboxDetail />
+                                                    </div>
                                                 </Card.Body>
                                             </Card>
                                         </div>
-                                    </Tab.Pane> 
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey="sentitems">
                                         <Card className="d-none">
                                             <Card.Body>
@@ -378,8 +464,8 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                     <Col md={12}>
                                                         <div className='mb-4'>
                                                             <Text text="Empty Folder"
-                                                                color="text-col5"     
-                                                                className="fs-15 fw500 mb-1" /> 
+                                                                color="text-col5"
+                                                                className="fs-15 fw500 mb-1" />
                                                             <InputComponent
                                                                 placeholder="Interests"
                                                                 name="interest"
