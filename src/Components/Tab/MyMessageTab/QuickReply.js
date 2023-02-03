@@ -1,16 +1,8 @@
 import { Card, Row, Col, Form } from "react-bootstrap";
 
-import Image from "../../image/Image";
 import Text from "../../text/Text";
-import Heading from "../../heading/Heading";
 import Buttons from "../../Buttons/Button";
-import ChipsComponent from "../../Chips/ChipsComponent";
-import CheckboxNew from "../../../Components/checkbox/CheckboxNew";
 import InputComponent from "../../Input/InputFloat";
-
-// images icons 
-import CrossLeft from '../../../assets/images/svg/back-svgrepo.svg';
-import UserPro from '../../../assets/images/userprofile.png';
 
 
 const QuickReply = (props) => {

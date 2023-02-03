@@ -409,6 +409,10 @@
     border-radius: 12px;
     padding: 20px 20px;
     min-height: 80vh; 
+    @media (max-width: 767px) {
+        min-height: initial; 
+        margin-bottom: 30px; 
+    }
 }
 
 .inbox-tabcontent {
@@ -544,6 +548,7 @@ span.inbox-tag {
     }
 }
 .select-dropdowns {
+    margin-bottom: 1rem;
     .custom-labels {
         font-size: 12px; 
         font-weight: 500; 
@@ -611,10 +616,18 @@ span.inbox-tag {
 img.envolop-img {
     position: relative; 
     top: 1px; 
+    width: 15px; 
 }
 .filter-box {
     .button.pad1 {
         padding: 11px 20px; 
         margin-top: 10px; 
     }
+}
+
+.email-list {
+    background-image: url('../../assets/images/send-bg.png'); 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 }

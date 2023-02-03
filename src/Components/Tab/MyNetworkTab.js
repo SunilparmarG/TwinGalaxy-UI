@@ -107,4 +107,5 @@ const VerticalTab = ({ className, ...rest }) => {
   );
 };
 
-export default memo(VerticalTab);  
+export default memo(VerticalTab); 
+

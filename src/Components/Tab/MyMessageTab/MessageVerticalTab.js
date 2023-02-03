@@ -39,7 +39,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                 <div className="mt-36 mb-lg-5 pb-lg-5 mb-3">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="inbox">
                         <Row>
-                            <Col md={3}>
+                            <Col md={4} lg={3}>
                                 <div className="vertical-tabstyle">
                                     <div className="d-flex align-items-center">
                                         <Image src={AddIcons} name="inbox add icon" className="img-fluid pointer" />
@@ -68,7 +68,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                     </Nav>
                                 </div>
                             </Col>
-                            <Col md={9}>
+                            <Col md={8} lg={9}> 
                                 <Tab.Content className="inbox-tabcontent">
                                     <Tab.Pane eventKey="inbox">
                                         <div className="inbox-items">
@@ -90,19 +90,19 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                         </Row>
                                                         <div className="filter-box">
                                                             <Row className="align-items-center"> 
-                                                                <Col md={10}>
+                                                                <Col md={12} lg={12} xl={10}>
                                                                     <Row>
-                                                                        <Col md={6}> 
+                                                                        <Col md={6} lg={3}> 
                                                                             <div className="datepicker-section">
                                                                                 <Calendar label="From" />
                                                                             </div>
                                                                         </Col>
-                                                                        <Col md={3}>
+                                                                        <Col md={6} lg={3}>
                                                                             <div className="datepicker-section">
                                                                                 <Calendar label="To" />
                                                                             </div>
                                                                         </Col>
-                                                                        <Col md={3}>
+                                                                        <Col md={6} lg={3}>
                                                                             <div className="select-dropdowns">
                                                                                 <lable className="custom-labels">
                                                                                     Read & replied status
@@ -125,7 +125,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                                                 </Dropdown>
                                                                             </div>
                                                                         </Col>
-                                                                        <Col md={3}>
+                                                                        <Col md={6} lg={3}>
                                                                             <div className="select-dropdowns">
                                                                                 <lable className="custom-labels">
                                                                                     Selected Messages
@@ -154,7 +154,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                                         </Col>
                                                                     </Row>
                                                                 </Col>
-                                                                <Col md={2} className="pe-md-0"> 
+                                                                <Col md={12} lg={12} xl={2} className="pe-md-0"> 
                                                                     <div> 
                                                                         <Buttons
                                                                             text="Apply Filter"
@@ -188,7 +188,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                             </Card>
                                         </div>
                                     </Tab.Pane>
-                                    <Tab.Pane eventKey="sentitems">
+                                    <Tab.Pane eventKey="sentitems">   
                                         <Card className="d-none">
                                             <Card.Body>
                                                 <Heading
@@ -437,7 +437,7 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                 </div>
                                                 <div className="border-bottom editfolder-list pb-3 mb-3">
                                                     <Row className="align-items-center">
-                                                        <Col sm={6}>
+                                                        <Col lg={6}>
                                                             <Text text="My Folder"
                                                                 color="text-block"
                                                                 className="fs-18 fw600 mb-0" />
@@ -445,10 +445,10 @@ const MessageVerticalTab = ({ className, ...rest }) => {
                                                                 color="text-col2"
                                                                 className="fs-14 fw600" />
                                                         </Col>
-                                                        <Col sm={6}>
-                                                            <div className="d-flex ms-auto justify-content-end">
+                                                        <Col lg={6}>
+                                                            <div className="d-flex ms-auto mt-3 mt-lg-0 justify-content-lg-end">
                                                                 <Text text="Edit Folder"
-                                                                    className="fs-16 fw600 status-edit ms-4" />
+                                                                    className="fs-16 fw600 status-edit ms-lg-4" />
                                                                 <Text text="Empty Folder"
                                                                     className="fs-16 fw600 status-remove ms-4" />
                                                                 <Text text="Remove"

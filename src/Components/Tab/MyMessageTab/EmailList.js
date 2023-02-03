@@ -63,6 +63,106 @@ const RecordsComponent = (props) => {
                     </Col>  
                 </Row>
             </div>
+            <div className="inner-email-list p-2 px-3 mb-2">
+                <Row className="align-items-center">
+                    <Col>
+                        <div className="d-flex user-text">
+                            <CheckboxNew id="maillist" label="Jacob Jones Jacob JonesJacob Jones" />
+                        </div>
+                    </Col>
+                    <Col md={8}>
+                        <Text text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit."
+                            color="text-col5"
+                            className="fs-14 fw500 text-truncate" />
+                    </Col>
+                    <Col>
+                        <div className="d-flex justify-content-end">
+                            <Text text="10:30 AM"
+                                color="text-col2"
+                                className="fs-14 fw500 text-truncate timeset" />
+                        </div>
+                        <div className="d-flex text-end trace-icon align-items-center justify-content-end">
+                            <Image src={TrashIcon} name="Trash" className="img-fluid pointer me-3" />
+                            <Image src={Sends} name="Send Icon" className="img-fluid pointer" />
+                        </div>
+                    </Col>  
+                </Row>
+            </div>
+            <div className="inner-email-list p-2 px-3 mb-2">
+                <Row className="align-items-center">
+                    <Col>
+                        <div className="d-flex user-text">
+                            <CheckboxNew id="maillist" label="Jacob Jones Jacob JonesJacob Jones" />
+                        </div>
+                    </Col>
+                    <Col md={8}>
+                        <Text text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit."
+                            color="text-col5"
+                            className="fs-14 fw500 text-truncate" />
+                    </Col>
+                    <Col>
+                        <div className="d-flex justify-content-end">
+                            <Text text="10:30 AM"
+                                color="text-col2"
+                                className="fs-14 fw500 text-truncate timeset" />
+                        </div>
+                        <div className="d-flex text-end trace-icon align-items-center justify-content-end">
+                            <Image src={TrashIcon} name="Trash" className="img-fluid pointer me-3" />
+                            <Image src={Sends} name="Send Icon" className="img-fluid pointer" />
+                        </div>
+                    </Col>  
+                </Row>
+            </div>
+            <div className="inner-email-list p-2 px-3 mb-2">
+                <Row className="align-items-center">
+                    <Col>
+                        <div className="d-flex user-text">
+                            <CheckboxNew id="maillist" label="Jacob Jones Jacob JonesJacob Jones" />
+                        </div>
+                    </Col>
+                    <Col md={8}>
+                        <Text text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit."
+                            color="text-col5"
+                            className="fs-14 fw500 text-truncate" />
+                    </Col>
+                    <Col>
+                        <div className="d-flex justify-content-end">
+                            <Text text="10:30 AM"
+                                color="text-col2"
+                                className="fs-14 fw500 text-truncate timeset" />
+                        </div>
+                        <div className="d-flex text-end trace-icon align-items-center justify-content-end">
+                            <Image src={TrashIcon} name="Trash" className="img-fluid pointer me-3" />
+                            <Image src={Sends} name="Send Icon" className="img-fluid pointer" />
+                        </div>
+                    </Col>  
+                </Row>
+            </div>
+            <div className="inner-email-list p-2 px-3 mb-2">
+                <Row className="align-items-center">
+                    <Col>
+                        <div className="d-flex user-text">
+                            <CheckboxNew id="maillist" label="Jacob Jones Jacob JonesJacob Jones" />
+                        </div>
+                    </Col>
+                    <Col md={8}>
+                        <Text text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit."
+                            color="text-col5"
+                            className="fs-14 fw500 text-truncate" />
+                    </Col>
+                    <Col>
+                        <div className="d-flex justify-content-end">
+                            <Text text="10:30 AM"
+                                color="text-col2"
+                                className="fs-14 fw500 text-truncate timeset" />
+                        </div>
+                        <div className="d-flex text-end trace-icon align-items-center justify-content-end">
+                            <Image src={TrashIcon} name="Trash" className="img-fluid pointer me-3" />
+                            <Image src={Sends} name="Send Icon" className="img-fluid pointer" />
+                        </div>
+                    </Col>  
+                </Row>
+            </div>
         </div>
     );
 };
