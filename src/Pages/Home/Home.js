@@ -287,7 +287,7 @@ const Home = () => {
                       </div>
 
                       <Buttons
-                        text="Vote Now"
+                        text="Vote Now "
                         variant="primary"
                         className="primary pad1 fs-14 fw600 ms-0 ms-lg-3"
                       />
