@@ -25,7 +25,7 @@ const LeaderBoardList = () => {
                     fontWeight='fw600'
                     className='fs-18 mb-0 text-col3'
                 />
-                <ul className='list-unstyled d-flex flex-wrap flex-lg-row align-items-center mb-0 justify-content-center justify-content-lg-start mt-2 mt-lg-1'>
+                <ul className='list-unstyled listThird d-flex flex-wrap flex-lg-row align-items-center mb-0 justify-content-center justify-content-lg-start mt-3'>
                     <li>
                         <Text
                             text='Platform:'
@@ -33,10 +33,19 @@ const LeaderBoardList = () => {
                         />
                         <Text
                             text='Android, Playstation 5'
-                            className='d-inline-block fs-16 fw600'
+                            className='d-inline-block text-col4 fs-16 fw600'
                         />
                     </li>
-                    
+                    <li>
+                        <Text
+                            text='Records: '
+                            className='d-inline-block fs-16 fw600 me-1'
+                        />
+                        <Text
+                            text='27,606'
+                            className='d-inline-block text-col4 fs-16 fw600'
+                        />
+                    </li>
                 </ul>
                 <Button
                     className='borderDanger mt-3'

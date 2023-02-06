@@ -20,7 +20,7 @@
     &::after {
       content: "";
       height: 100%;
-      border-right: 1px solid #888;
+      border-right: 1px solid $col2;
       position: absolute;
       right: 0;
        @media (max-width:1200px) {

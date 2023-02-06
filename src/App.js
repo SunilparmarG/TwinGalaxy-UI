@@ -17,6 +17,7 @@ import VottingPerformance from './Pages/VottingPerformance/VottingPerformance';
 import RankLists from './Components/RankList/RankList';
 
 import "../src/assets/scss/style.scss"; 
+import Leaderboard from './Pages/Leaderboard/Leaderboad';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="mysettings" element={<MySettings />} />
         <Route path="inbox" element={<MyMessges />} />
         <Route path="ranklist" element={<RankLists rank="5" />} />
+        <Route path="leaderboard" element={<Leaderboard />} />
       </Routes>
       <Footer />  
     </div>

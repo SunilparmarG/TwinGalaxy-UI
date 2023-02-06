@@ -1,3 +1,5 @@
+@import "../../assets/scss/module/variables.scss";
+
 .lb-pic{
     width: 101.73px;
     height: 127.16px;
@@ -5,3 +7,45 @@
     object-fit: cover;
     object-position: top center;
 }
+
+
+.listThird {
+    // @media (max-width:1200px){
+    //   gap: 10px;
+    // }
+    li {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      position: relative;
+      padding-right: 10px;
+      margin-right: 10px;
+      .title {
+        color: $col2;
+      }
+      .value {
+        color: $col1;
+      }
+      &::after {
+        content: "";
+        height: 100%;
+        border-right: 1px solid $col2;
+        position: absolute;
+        right: 0;
+         @media (max-width:1200px) {
+            margin-right: 0;
+            padding-right: 0;
+            border: 0;
+          }
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+     
+    }
+    @media (max-width:1200px) {
+      gap: 7px;
+    }
+  }

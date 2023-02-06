@@ -99,7 +99,6 @@ const RankLists = (props) => {
     </Col>
     </Row>
 
-    <LeaderBoardList/>
    </>
   )
 }
