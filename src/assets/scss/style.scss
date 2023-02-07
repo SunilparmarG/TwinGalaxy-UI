@@ -174,6 +174,11 @@ a {
   &.btn-cancel {
     background: transparent;
     border: solid 1px $col5;
+    &:active {
+      &:focus {
+        background: transparent;  
+      }
+    }
   }
 
   &.btn-reset {
@@ -252,4 +257,47 @@ textarea {
 
 .margin-left-space {  
    margin-left: 30px; 
+}
+
+.btn-primary {
+  &.btn-msg {  
+    padding: 10px 21px; 
+  }
+}
+
+.backBtn {
+  &>a.fs-25 {     
+    @media (max-width: 767px) {  
+      font-size: 18px; 
+      &>span {
+        font-size: 18px; 
+      }
+      &>img {
+        width: 8px;  
+      }
+    }
+  }
+}
+
+.view-board-input {
+  .inputFeild {
+    .form-label {
+      display: none; 
+    }
+    .form-control {
+      height: 40px; 
+      border: solid 1px $col25;  
+      color: $col5 !important;  
+      font-size: 14px; 
+      font-weight: 500;
+      border-radius: 6px;   
+      &::placeholder {
+        color: $col5 !important;  
+      }
+    }
+  }
+}
+.border-bottom-lightgray {  
+  border-bottom: solid 1px $col12; 
+  opacity: 0.7;   
 }

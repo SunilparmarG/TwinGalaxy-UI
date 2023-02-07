@@ -12,12 +12,13 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import ThewallHome from './Pages/Home/ThewallHome';
 import VotingpollHome from './Pages/Home/VotingpollHome';
-import VottingPerformance from './Pages/VottingPerformance/VottingPerformance';
+import VottingPerformance from './Pages/VottingPerformance/VottingPerformance'; 
+import ViewleaderBoard from './Pages/LeaderBoard/ViewLeaderboard'; 
 
 import RankLists from './Components/RankList/RankList';
 
 import "../src/assets/scss/style.scss"; 
-import Leaderboard from './Pages/Leaderboard/Leaderboad';
+import Leaderboard from './Pages/Leaderboard/Leaderboard';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="inbox" element={<MyMessges />} />
         <Route path="ranklist" element={<RankLists rank="5" />} />
         <Route path="leaderboard" element={<Leaderboard />} />
+        <Route path="viewleaderboard" element={<ViewleaderBoard />} />
       </Routes>
       <Footer />  
     </div>

@@ -1,0 +1,118 @@
+@import '../../assets/scss/module/variables.scss';   
+
+.react-datepicker__input-container {
+    input {
+        width: 100%;
+        color: $col3;
+        font-size: 14px;
+        font-weight: 400;
+        height: 34px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 5px;
+        border: solid 1px $col4;
+        background-color: white;
+        background-image: url('../../assets/images/svg/CalendarBlue.svg'); 
+        background-repeat: no-repeat;
+        background-size: 18px;
+        background-position: right 12px bottom 14px;
+        cursor: pointer;
+
+        &:hover {
+            outline: 0;
+            border: solid 1px $col3;
+        }
+
+        &:focus {
+            outline: 0;
+            border: solid 1px $col1;
+        }
+
+        &::placeholder {
+            color: $col3;
+            opacity: 1;
+        }
+
+        &:disabled {
+            background-color: $col7 !important;
+            border: solid 1px $col7 !important;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        &.sm {
+            height: 30px;
+            font-size: 14px;
+            font-weight: 400;
+            padding-left: 9px;
+        }
+    }
+}
+
+.react-datepicker__month {
+    .react-datepicker__week {
+        .react-datepicker__day--selected {
+            background-color: $col1 !important;
+        }
+    }
+}
+
+.new-datepicker {
+    position: relative; 
+    min-height: 34px;    
+
+    .react-date-picker { 
+        width: 100%;
+
+        .react-date-picker__wrapper {
+            border: solid 1px $col25; 
+            border-radius: 7px;
+            padding-left: 10px;
+            padding-right: 5px;
+            background: white; 
+            border-radius: 8.24551px;
+
+            .react-date-picker__inputGroup {  
+                color: $col5; 
+                font-size: 12px;
+                font-weight: 500;
+                height: 34px; 
+                box-shadow: none;
+                overflow: hidden;
+
+                input {
+                    border: none;
+                    border-radius: 0px; 
+                    outline: 0; 
+                    background: white !important; 
+                }
+            }
+            .react-date-picker__calendar-button {
+                svg {
+                    background-image: url('../../assets/images/svg/CalendarBlue.svg'); 
+                    background-size: 15px; 
+                    width: 15px;
+                    height: 15px;   
+                    background-repeat: no-repeat; 
+                    background-position: right; 
+                    rect {
+                        display: none; 
+                    }
+                    line {
+                        display: none; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.datepicker-section {
+  .inputFeild {
+    label {
+      color: $col2; 
+      font-size: 12px; 
+      font-weight: 500; 
+    }
+  }
+}
